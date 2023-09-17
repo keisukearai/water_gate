@@ -52,13 +52,13 @@ export default function ContentList() {
   // console.log("areaSelectedName:" + areaSelectedName)
 
   return (
-    <main className="p-5 pt-20 mt-2 md:mt-3.5 mb-12 sm:ml-64">
-      <div>
-        <span className={`inline-flex items-center justify-center w-15 h-6 mr-4 p-2 text-amber-900 bg-amber-200 rounded-full
+    <main className="p-5 pt-20 mb-12 sm:ml-64">
+      <div className="pt-1 my-4 md:mb-2">
+        <span className={`inline-flex items-center justify-center text-lg w-15 h-8 mr-5 p-3 text-amber-900 bg-amber-200 rounded-full
           ${menuSelectedName === '' ? "hidden" : ""}`}>
           #{menuSelectedName}
         </span>
-        <span className={`inline-flex items-center justify-center w-15 h-6 mr-4 p-2 text-amber-900 bg-amber-200 rounded-full
+        <span className={`inline-flex items-center justify-center text-lg w-15 h-8 mr-5 p-3 text-amber-900 bg-amber-200 rounded-full
           ${areaSelectedName === '' ? "hidden" : ""}`}>
           #{(areaSelectedName !== '') ? areaSelectedName : ''}
         </span>
