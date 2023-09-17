@@ -5,6 +5,7 @@ import { isMobile } from "react-device-detect"
 import { Loading } from "src/app/components/Loading"
 import Error from "src/app/components/Error"
 import MapGoogle from "src/app/components/GoogleMap"
+import { BASE_STATE } from 'src/app/utils/Constants'
 import { useApiContenDatail } from "src/api/Api"
 
 {/*
@@ -24,7 +25,7 @@ export default function ContentDetail() {
   if (error) return <Error />
 
   return (
-    <main className="p-5 pt-16 mb-12 sm:ml-64">
+    <main className="p-5 pt-16 mb-6 sm:ml-64">
       <div className="bg-white py-6 sm:py-4 lg:py-4">
         <div className="mx-auto max-w-screen-lg p-4 md:p-8">
           <div className="grid gap-4 md:grid-cols-2">
@@ -42,10 +43,10 @@ export default function ContentDetail() {
                   状態
                 </span>
                 <div className="flex flex-wrap gap-2">
-                  <span className={`mr-2 px-3 py-1 rounded shadow-md text-lg font-bold
+                  <span className={`mr-2 px-3 py-1 rounded-md shadow-md text-lg font-bold border border-stone-200
                         ${(data.id % 2 === 0) ? "bg-gray-600 text-white" : "bg-pink-100 text-pink-800"}`}
                   >
-                    {(data.id % 2 === 0) ? '閉' : '開'}
+                    {(data.id % 2 === 0) ? BASE_STATE.CLOSE.NAME : BASE_STATE.OPEN.NAME}
                   </span>
                 </div>
               </div>
@@ -54,8 +55,8 @@ export default function ContentDetail() {
                   バッテリー容量
                 </span>
                 <div className="flex flex-wrap gap-3">
-                  <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                    <div className="bg-sky-600 text-lg font-medium text-blue-100 text-center p-2 leading-none rounded-full"
+                  <div className="w-full bg-gray-200 rounded-xl dark:bg-gray-700">
+                    <div className="bg-teal-600 text-base font-medium text-teal-100 text-center p-1 leading-none rounded-xl"
                       style={{ width: (data.stock >= 100 ? 100 : data.stock) + '%' }}>{(data.stock >= 100 ? 100 : data.stock)}%
                     </div>
                   </div>
@@ -92,7 +93,7 @@ export default function ContentDetail() {
             </div>
             <div className="space-y-4 z-5">
               {/* メイン画像 */}
-              <div className="rounded-lg border-4 border-dark-500">
+              <div className="rounded-md shadow-md border-2 border-dark-500">
                 <Image
                   src="/sample.jpg"
                   alt="Vercel Logo"
@@ -104,7 +105,7 @@ export default function ContentDetail() {
                   quality={isMobile ? 10 : 100}
                 />
               </div>
-              <div className="z-5 relative w-full h-80 border-4 border-dark-500 rounded-lg">
+              <div className="z-5 relative w-full h-80 rounded-md shadow-md border-2 border-dark-500">
                 <MapGoogle lat="34.322113346548036" lng="132.8181288949294" />
               </div>
             </div>

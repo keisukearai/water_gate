@@ -8,8 +8,8 @@ export default function HamburgerMenuButton({ handleMenuOpen }) {
   // console.log(props)
   return (
     <div>
-      <HiMenuAlt2 size={45}
-        className="inline-flex items-center border p-2 mt-4 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+      <HiMenuAlt2 size={40}
+        className="inline-flex items-center border p-1.5 mt-5 ml-3 text-sm text-sky-100 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         onClick={() => handleMenuOpen()}
       />
     </div>
