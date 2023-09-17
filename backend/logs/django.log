@@ -1024,3 +1024,14 @@
 2023-09-17 12:56:49,824 [WARNING] 15896 139876260017920 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET / HTTP/1.1" 404 2166
 2023-09-17 12:56:50,444 [WARNING] 15896 139876260017920 /home/arai/.local/lib/python3.8/site-packages/django/utils/log.py:241 Not Found: /favicon.ico
 2023-09-17 12:56:50,445 [WARNING] 15896 139876260017920 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /favicon.ico HTTP/1.1" 404 2217
+2023-09-17 13:06:55,654 [INFO] 17539 140379601483584 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-17 13:07:16,364 [INFO] 17539 140379549841152 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 317
+2023-09-17 13:07:25,506 [INFO] 17539 140379549841152 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 317
+2023-09-17 13:07:36,723 [INFO] 17539 140379549841152 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 317
+2023-09-17 13:07:44,528 [INFO] 17539 140379549841152 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 317
+2023-09-17 13:07:59,973 [INFO] 17539 140379549841152 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 317
+2023-09-17 13:09:37,880 [INFO] 17539 140379549841152 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 317
+2023-09-17 13:09:47,797 [INFO] 17539 140379549841152 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 317
+2023-09-17 13:09:57,075 [INFO] 17539 140379549841152 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 317
+2023-09-17 13:10:52,859 [INFO] 17539 140379549841152 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 317
+2023-09-17 13:11:18,036 [INFO] 17539 140379549841152 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 317

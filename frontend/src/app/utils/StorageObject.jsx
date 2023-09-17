@@ -4,7 +4,7 @@
 
 {/* ページ表示情報 */}
 export const PageObject = {
-  currentPage: 0,
+  currentPage: 1,
   state: null,
   stateName: null,
   area: null,
