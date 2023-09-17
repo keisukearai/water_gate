@@ -21,13 +21,17 @@ export default function SidebarMenu({ handleMenuOpen, menuOpen }) {
   const [areaState, setAreaState] = useState(null)
   const [areaStateName, setAreaStateName] = useState(null)
 
+  {/* localStorageクリア */ }
+  // localStorage.removeItem("pageInfo")
+
   useEffect(() => {
     if (isTypeofWindow) {
       const pageinfo = JSON.parse(localStorage.getItem("pageInfo"))
-      setMenuState(pageinfo.state)
-      setMenuStateName(pageinfo.stateName)
-      setAreaState(pageinfo.area)
-      setAreaStateName(pageinfo.areaName)
+      // console.log(pageinfo?.state)
+      setMenuState((pageinfo?.state === undefined ? BASE_STATE.ALL.CODE : pageinfo.state))
+      setMenuStateName(pageinfo?.stateName)
+      setAreaState(pageinfo?.area)
+      setAreaStateName(pageinfo?.areaName)
     }
   }, [menuState, areaState])
 

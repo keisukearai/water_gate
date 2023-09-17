@@ -2,12 +2,13 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Pagination } from 'flowbite-react'
-import { useState, useCallback, useEffect } from "react"
+import { useState, useCallback } from "react"
 import { isMobile } from "react-device-detect"
 import { Loading } from "src/app/components/Loading"
 import Error from "src/app/components/Error"
 import { paginationTheme } from "src/app/utils/PaginationTheme"
-import { PageObject, isTypeofWindow } from "src/app/utils/StorageObject"
+import { isTypeofWindow } from "src/app/utils/StorageObject"
+import { BASE_STATE } from 'src/app/utils/Constants'
 import { useApiContenList } from "src/api/Api"
 
 {/*
@@ -17,16 +18,16 @@ export default function ContentList() {
 
   {/* ページネーション用 */}
   const [currentPage, setCurrentPage] = useState(
-    (typeof window !== 'undefined') ? Number(JSON.parse(localStorage.getItem("pageInfo")).currentPage) : 1
+    (typeof window !== 'undefined') ? (JSON.parse(localStorage.getItem("pageInfo"))?.currentPage == null) ? 1 : Number(JSON.parse(localStorage.getItem("pageInfo")).currentPage) : 1
   )
   {/* 状態用 */}
   const [menuSelectedName, setMenuSelectedName] = useState(
-    (typeof window !== 'undefined') ? JSON.parse(localStorage.getItem("pageInfo")).stateName : ''
+    (typeof window !== 'undefined') ? (JSON.parse(localStorage.getItem("pageInfo"))?.stateName == null) ? BASE_STATE.ALL.NAME : JSON.parse(localStorage.getItem("pageInfo")).stateName : ''
   )
 
   {/* 地域用 */}
   const [areaSelectedName, setAreaSelectedName] = useState(
-    (typeof window !== 'undefined') ? JSON.parse(localStorage.getItem("pageInfo")).areaName : ''
+    (typeof window !== 'undefined') ? (JSON.parse(localStorage.getItem("pageInfo"))?.areaName == null) ? '' : JSON.parse(localStorage.getItem("pageInfo")).areaName : ''
   )
 
   {/* ページネーションリンククリック処理 */}
