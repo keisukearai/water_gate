@@ -139,7 +139,7 @@ export default function SidebarMenu({ handleMenuOpen, menuOpen }) {
                   return (
                     <Sidebar.Item
                       key={item.id}
-                      href={`/?area=${item.areaName}`}
+                      href="/"
                       className={`hover:bg-gray-800 hover:text-white ${(areaState === item.area_name) ? "bg-gray-50" : "text-white"}`}
                       onClick={() => handleMenuLinkClick(
                         menuState,
