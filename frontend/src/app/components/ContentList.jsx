@@ -53,9 +53,9 @@ export default function ContentList() {
   // console.log("areaSelectedName:" + areaSelectedName)
 
   return (
-    <main className="p-5 pt-20 mb-12 sm:ml-64">
-      <HashTag menuSelectedName={menuSelectedName} areaSelectedName={areaSelectedName} />
+    <main className="p-5 pt-20 mb-12 sm:ml-64 bg-body-color">
       <div className="container mx-auto text-center">
+        <HashTag menuSelectedName={menuSelectedName} areaSelectedName={areaSelectedName} />
         <div className="-mx-4 flex flex-wrap">
           {/* 一覧の件数分ループ */}
           {Object.values(data.products).map((item, index) => {
@@ -86,7 +86,7 @@ export default function ContentList() {
                       サンプルサンプル{(item.id % 2 === 0) ? "サンプルサンプル" : ""}水門{item.id}
                     </h5>
                     <div className="text-xs mb-1">
-                      バッテリー容量
+                      バッテリー残量
                     </div>
                     <div className="w-full bg-gray-200 rounded-xl dark:bg-gray-700">
                       <div className="bg-teal-600 text-xs font-medium text-teal-100 text-center p-0.5 leading-none rounded-xl"

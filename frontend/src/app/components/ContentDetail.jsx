@@ -52,7 +52,7 @@ export default function ContentDetail() {
               </div>
               <div className="mb-4 md:mb-6">
                 <span className="mb-3 inline-block text-sm font-semibold text-gray-500 md:text-base">
-                  バッテリー容量
+                  バッテリー残量
                 </span>
                 <div className="flex flex-wrap gap-3">
                   <div className="w-full bg-gray-200 rounded-xl dark:bg-gray-700">
