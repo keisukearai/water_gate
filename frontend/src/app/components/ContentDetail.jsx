@@ -55,7 +55,7 @@ export default function ContentDetail() {
                   バッテリー残量
                 </span>
                 <div className="flex flex-wrap gap-3">
-                  <div className="w-full bg-gray-200 rounded-xl dark:bg-gray-700">
+                  <div className="w-8/12 bg-gray-200 rounded-xl">
                     <div className="bg-teal-600 text-base font-medium text-teal-100 text-center p-1 leading-none rounded-xl"
                       style={{ width: (data.stock >= 100 ? 100 : data.stock) + '%' }}>{(data.stock >= 100 ? 100 : data.stock)}%
                     </div>
@@ -75,7 +75,7 @@ export default function ContentDetail() {
                   更新日
                 </span>
                 <div className="flex flex-wrap gap-3">
-                  2023/10/10 10:10:10
+                  2023/09/27 12:34:56
                 </div>
               </div>
               <div className="mb-4 md:mb-6">
@@ -97,7 +97,6 @@ export default function ContentDetail() {
                 <Image
                   src="/sample.jpg"
                   alt="Vercel Logo"
-                  className="dark:invert"
                   width={500}
                   height={500}
                   priority={true}
