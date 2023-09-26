@@ -2520,3 +2520,5 @@
 2023-09-26 11:25:24,745 [INFO] 1634 140687693575744 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 145
 2023-09-26 11:26:03,954 [INFO] 1634 140687693575744 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 145
 2023-09-26 11:27:08,583 [INFO] 1634 140687693575744 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 145
+2023-09-26 11:38:27,152 [INFO] 23433 140483068236224 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-26 11:39:04,209 [INFO] 23433 140482944431680 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 145
