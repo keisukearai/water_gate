@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-0awl^i6sap1_-udy-(mw%hq6kqx=a8covzgjgf8an_*4ymslg*'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -84,11 +86,11 @@ WSGI_APPLICATION = 'admin_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'wg_api_db',
-        'USER': 'admin',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'HOST': os.getenv('DB_HOST'), # ホスト名
+        'NAME': os.getenv('DB_NAME'), #　作成したデータベース名
+        'USER': os.getenv('DB_USER'), # ログインユーザー名
+        'PASSWORD': os.getenv('DB_PASSWORD'), # ログインパスワード
+        'PORT': os.getenv('DB_PORT'), # ポート番号
         'OPTIONS': {
                 'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         },

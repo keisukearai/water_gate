@@ -149,7 +149,7 @@ export default function SidebarMenu({ handleMenuOpen, menuOpen }) {
                     >
                       {item.area_name}
                       <span className="inline-flex items-center justify-center w-8 h-4 ml-4 text-xs font-semibold text-slate-700 bg-slate-300 rounded-full">
-                        {item.area_count}
+                        20
                       </span>
                     </Sidebar.Item>
                   )

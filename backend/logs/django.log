@@ -2605,3 +2605,842 @@
 2023-09-27 08:43:55,003 [INFO] 1479 140285326177856 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 145
 2023-09-27 08:43:59,479 [INFO] 1479 140285326177856 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 145
 2023-09-27 08:44:04,424 [INFO] 1479 140285326177856 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 145
+2023-09-27 08:44:51,163 [INFO] 1479 140285326177856 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 145
+2023-09-27 08:45:01,685 [INFO] 1479 140285326177856 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 145
+2023-09-27 08:49:03,261 [INFO] 1479 140285326177856 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 145
+2023-09-27 08:58:11,314 [INFO] 1479 140285326177856 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /api/area HTTP/1.1" 200 145
+2023-09-27 15:43:47,909 [INFO] 15002 139664171413952 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 15:43:50,088 [WARNING] 15002 139664121812544 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /
+2023-09-27 15:43:50,089 [WARNING] 15002 139664121812544 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET / HTTP/1.1" 404 2166
+2023-09-27 15:43:50,211 [WARNING] 15002 139664121812544 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /favicon.ico
+2023-09-27 15:43:50,211 [WARNING] 15002 139664121812544 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /favicon.ico HTTP/1.1" 404 2217
+2023-09-27 15:43:57,526 [INFO] 15002 139664121812544 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin HTTP/1.1" 301 0
+2023-09-27 15:43:57,556 [INFO] 15002 139664113419840 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/ HTTP/1.1" 302 0
+2023-09-27 15:43:57,579 [INFO] 15002 139664113419840 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4343
+2023-09-27 15:43:57,667 [INFO] 15002 139664121812544 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2023-09-27 15:43:57,668 [INFO] 15002 139663738136128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/theme.js HTTP/1.1" 200 1943
+2023-09-27 15:43:57,668 [INFO] 15002 139664102929984 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2023-09-27 15:43:57,668 [INFO] 15002 139664094537280 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/login.css HTTP/1.1" 200 958
+2023-09-27 15:43:57,669 [INFO] 15002 139664113419840 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/base.css HTTP/1.1" 200 21207
+2023-09-27 15:43:57,669 [INFO] 15002 139663746528832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 200 18533
+2023-09-27 15:43:57,673 [INFO] 15002 139664102929984 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2023-09-27 15:44:09,168 [WARNING] 15002 139664113419840 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /
+2023-09-27 15:44:09,168 [WARNING] 15002 139664113419840 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET / HTTP/1.1" 404 2166
+2023-09-27 15:48:26,490 [WARNING] 15002 139664113419840 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /
+2023-09-27 15:48:26,490 [WARNING] 15002 139664113419840 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET / HTTP/1.1" 404 2166
+2023-09-27 15:48:29,054 [WARNING] 15002 139664113419840 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /
+2023-09-27 15:48:29,055 [WARNING] 15002 139664113419840 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET / HTTP/1.1" 404 2166
+2023-09-27 15:50:34,298 [INFO] 15002 139664171413952 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/settings.py changed, reloading.
+2023-09-27 15:55:16,203 [INFO] 16164 140228438245824 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 15:55:19,034 [WARNING] 16164 140228388644416 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /
+2023-09-27 15:55:19,034 [WARNING] 16164 140228388644416 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET / HTTP/1.1" 404 179
+2023-09-27 15:56:00,562 [INFO] 16164 140228438245824 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/urls.py changed, reloading.
+2023-09-27 15:56:00,772 [INFO] 16246 140235870396864 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 15:56:05,427 [WARNING] 16246 140235820795456 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/wg_admin
+2023-09-27 15:56:05,428 [WARNING] 16246 140235820795456 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/wg_admin HTTP/1.1" 404 179
+2023-09-27 15:56:07,568 [WARNING] 16246 140235820795456 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/wg_admin
+2023-09-27 15:56:07,569 [WARNING] 16246 140235820795456 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/wg_admin HTTP/1.1" 404 179
+2023-09-27 15:56:11,726 [INFO] 16278 139645470720448 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 15:56:13,797 [WARNING] 16278 139645421119040 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/wg_admin
+2023-09-27 15:56:13,797 [WARNING] 16278 139645421119040 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/wg_admin HTTP/1.1" 404 179
+2023-09-27 15:56:15,068 [WARNING] 16278 139645421119040 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/wg_admin
+2023-09-27 15:56:15,069 [WARNING] 16278 139645421119040 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/wg_admin HTTP/1.1" 404 179
+2023-09-27 15:56:15,524 [WARNING] 16278 139645421119040 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/wg_admin
+2023-09-27 15:56:15,524 [WARNING] 16278 139645421119040 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/wg_admin HTTP/1.1" 404 179
+2023-09-27 15:56:15,952 [WARNING] 16278 139645421119040 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/wg_admin
+2023-09-27 15:56:15,952 [WARNING] 16278 139645421119040 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/wg_admin HTTP/1.1" 404 179
+2023-09-27 15:56:49,037 [INFO] 16278 139645470720448 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 15:56:49,245 [INFO] 16350 140265542328768 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 15:57:05,446 [INFO] 16350 140265542328768 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 15:57:05,613 [INFO] 16382 140680539861440 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 15:57:16,760 [INFO] 16382 140680539861440 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 15:57:16,936 [INFO] 16402 140379067859392 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 15:57:19,032 [INFO] 16402 140379067859392 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 15:57:19,215 [INFO] 16410 140002787811776 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 15:57:25,339 [INFO] 16410 140002787811776 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 15:57:25,537 [INFO] 16424 140434113311168 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 15:57:30,653 [INFO] 16424 140434113311168 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 15:57:30,829 [INFO] 16438 140209318240704 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 15:57:32,918 [INFO] 16438 140209318240704 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 15:57:33,097 [INFO] 16443 139979394683328 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 15:58:18,425 [INFO] 16443 139979394683328 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/urls.py changed, reloading.
+2023-09-27 15:58:18,576 [INFO] 16517 140330312204736 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 15:58:22,217 [INFO] 16526 140042332979648 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 15:58:33,272 [WARNING] 16526 140042283378240 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/wg_admin
+2023-09-27 15:58:33,272 [WARNING] 16526 140042283378240 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/wg_admin HTTP/1.1" 404 179
+2023-09-27 15:58:36,950 [WARNING] 16526 140042283378240 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/admin
+2023-09-27 15:58:36,950 [WARNING] 16526 140042283378240 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/admin HTTP/1.1" 404 179
+2023-09-27 15:58:39,182 [WARNING] 16526 140042283378240 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/admin
+2023-09-27 15:58:39,182 [WARNING] 16526 140042283378240 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/admin HTTP/1.1" 404 179
+2023-09-27 15:58:50,933 [INFO] 16526 140042283378240 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin HTTP/1.1" 301 0
+2023-09-27 15:58:50,946 [INFO] 16526 140042274985536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/ HTTP/1.1" 302 0
+2023-09-27 15:58:50,962 [INFO] 16526 140042274985536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/login/?next=/wg_admin/ HTTP/1.1" 200 4355
+2023-09-27 15:58:55,484 [INFO] 16526 140042274985536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/login/?next=/wg_admin/ HTTP/1.1" 302 0
+2023-09-27 15:58:55,500 [INFO] 16526 140042274985536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/ HTTP/1.1" 200 8527
+2023-09-27 15:58:55,562 [WARNING] 16526 140042274985536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/dashboard.css
+2023-09-27 15:58:55,562 [WARNING] 16526 140042274985536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dashboard.css HTTP/1.1" 404 179
+2023-09-27 15:58:55,616 [WARNING] 16526 140042274985536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-addlink.svg
+2023-09-27 15:58:55,617 [WARNING] 16526 140042283378240 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-changelink.svg
+2023-09-27 15:58:55,618 [WARNING] 16526 140042274985536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-addlink.svg HTTP/1.1" 404 179
+2023-09-27 15:58:55,618 [WARNING] 16526 140042283378240 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-changelink.svg HTTP/1.1" 404 179
+2023-09-27 16:01:12,456 [INFO] 16526 140042274985536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/logout/ HTTP/1.1" 200 3735
+2023-09-27 16:01:14,106 [INFO] 16526 140042274985536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/ HTTP/1.1" 302 0
+2023-09-27 16:01:14,115 [INFO] 16526 140042274985536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/login/?next=/wg_admin/ HTTP/1.1" 200 4355
+2023-09-27 16:01:30,427 [INFO] 16526 140042332979648 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/urls.py changed, reloading.
+2023-09-27 16:01:30,614 [INFO] 16818 140117970567616 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:01:34,384 [INFO] 16818 140117920966208 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/login/?next=/wg_admin/ HTTP/1.1" 200 4365
+2023-09-27 16:01:52,846 [INFO] 16818 140117970567616 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/urls.py changed, reloading.
+2023-09-27 16:01:53,039 [INFO] 16867 139983292162496 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:06:43,911 [INFO] 16867 139983292162496 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/urls.py changed, reloading.
+2023-09-27 16:06:44,092 [INFO] 18045 140443062038976 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:06:50,196 [INFO] 18045 140443062038976 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/urls.py changed, reloading.
+2023-09-27 16:06:50,397 [INFO] 18059 139709660950976 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:06:53,472 [INFO] 18059 139709660950976 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/urls.py changed, reloading.
+2023-09-27 16:06:53,774 [INFO] 18067 139711177671104 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:07:00,897 [INFO] 18067 139711177671104 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/urls.py changed, reloading.
+2023-09-27 16:07:01,075 [INFO] 18084 139832808321472 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:07:17,251 [INFO] 18084 139832808321472 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/urls.py changed, reloading.
+2023-09-27 16:07:17,414 [INFO] 18113 140491073737152 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:07:21,521 [INFO] 18113 140491073737152 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/urls.py changed, reloading.
+2023-09-27 16:07:21,706 [INFO] 18124 140513384075712 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:07:24,810 [INFO] 18124 140513384075712 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/urls.py changed, reloading.
+2023-09-27 16:07:24,964 [INFO] 18135 140274387603904 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:07:29,637 [INFO] 18144 140372869362112 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:07:33,237 [INFO] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/login/?next=/wg_admin/ HTTP/1.1" 200 4353
+2023-09-27 16:07:41,065 [INFO] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/login/?next=/wg_admin/ HTTP/1.1" 302 0
+2023-09-27 16:07:41,082 [INFO] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/ HTTP/1.1" 200 8519
+2023-09-27 16:07:41,142 [WARNING] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/dashboard.css
+2023-09-27 16:07:41,143 [WARNING] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dashboard.css HTTP/1.1" 404 179
+2023-09-27 16:07:41,194 [WARNING] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-addlink.svg
+2023-09-27 16:07:41,195 [WARNING] 18144 140372743284288 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-changelink.svg
+2023-09-27 16:07:41,196 [WARNING] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-addlink.svg HTTP/1.1" 404 179
+2023-09-27 16:07:41,196 [WARNING] 18144 140372743284288 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-changelink.svg HTTP/1.1" 404 179
+2023-09-27 16:07:53,134 [INFO] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/ HTTP/1.1" 200 6131
+2023-09-27 16:07:53,149 [WARNING] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/dashboard.css
+2023-09-27 16:07:53,150 [WARNING] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dashboard.css HTTP/1.1" 404 179
+2023-09-27 16:07:57,391 [INFO] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/ HTTP/1.1" 200 8519
+2023-09-27 16:08:54,783 [INFO] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/area/ HTTP/1.1" 200 9871
+2023-09-27 16:08:54,815 [WARNING] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/changelists.css
+2023-09-27 16:08:54,818 [WARNING] 18144 140372707616320 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:08:54,820 [WARNING] 18144 140372716009024 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:08:54,821 [WARNING] 18144 140372724401728 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:08:54,823 [WARNING] 18144 140372732794432 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:08:54,824 [WARNING] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-09-27 16:08:54,825 [WARNING] 18144 140372707616320 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:08:54,826 [WARNING] 18144 140372716009024 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:08:54,828 [WARNING] 18144 140372724401728 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:08:54,829 [WARNING] 18144 140372732794432 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:08:54,831 [WARNING] 18144 140372707616320 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:08:54,832 [WARNING] 18144 140372716009024 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:08:54,833 [WARNING] 18144 140372724401728 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:08:54,834 [WARNING] 18144 140372732794432 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:08:54,835 [WARNING] 18144 140372707616320 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:08:54,835 [WARNING] 18144 140372716009024 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:08:54,835 [WARNING] 18144 140372724401728 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:08:54,839 [WARNING] 18144 140372732794432 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:08:54,839 [INFO] 18144 140372743284288 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:08:54,893 [WARNING] 18144 140372732794432 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/filters.js
+2023-09-27 16:08:54,893 [WARNING] 18144 140372732794432 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 404 179
+2023-09-27 16:08:54,896 [WARNING] 18144 140372716009024 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-addlink.svg
+2023-09-27 16:08:54,897 [WARNING] 18144 140372724401728 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/tooltag-add.svg
+2023-09-27 16:08:54,897 [WARNING] 18144 140372716009024 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-addlink.svg HTTP/1.1" 404 179
+2023-09-27 16:08:54,898 [WARNING] 18144 140372724401728 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/tooltag-add.svg HTTP/1.1" 404 179
+2023-09-27 16:09:05,702 [INFO] 18144 140372716009024 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/prefecture/ HTTP/1.1" 200 10621
+2023-09-27 16:09:05,717 [WARNING] 18144 140372716009024 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/changelists.css
+2023-09-27 16:09:05,718 [WARNING] 18144 140372732794432 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:09:05,719 [WARNING] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:09:05,721 [WARNING] 18144 140372707616320 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:09:05,721 [WARNING] 18144 140372743284288 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:09:05,722 [WARNING] 18144 140372716009024 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-09-27 16:09:05,723 [WARNING] 18144 140372732794432 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:09:05,723 [WARNING] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:09:05,724 [WARNING] 18144 140372707616320 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:09:05,726 [WARNING] 18144 140372743284288 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:09:05,729 [WARNING] 18144 140372732794432 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:09:05,730 [WARNING] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:09:05,731 [WARNING] 18144 140372707616320 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:09:05,731 [INFO] 18144 140372724401728 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:09:05,732 [WARNING] 18144 140372743284288 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:09:05,732 [WARNING] 18144 140372732794432 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:09:05,733 [WARNING] 18144 140372751676992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:09:05,733 [WARNING] 18144 140372707616320 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:09:05,734 [WARNING] 18144 140372743284288 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:09:05,782 [WARNING] 18144 140372732794432 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/filters.js
+2023-09-27 16:09:05,782 [WARNING] 18144 140372732794432 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 404 179
+2023-09-27 16:11:35,195 [INFO] 18144 140372869362112 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/models.py changed, reloading.
+2023-09-27 16:11:35,392 [INFO] 18562 140005398630848 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:11:38,877 [INFO] 18562 140005349029440 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/prefecture/ HTTP/1.1" 200 10621
+2023-09-27 16:11:38,897 [WARNING] 18562 140005349029440 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/changelists.css
+2023-09-27 16:11:38,901 [WARNING] 18562 140005349029440 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-09-27 16:11:38,903 [WARNING] 18562 140005129320000 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:11:38,904 [WARNING] 18562 140005119878720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:11:38,906 [WARNING] 18562 140005111486016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:11:38,907 [WARNING] 18562 140005119878720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:11:38,907 [WARNING] 18562 140005129320000 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:11:38,910 [WARNING] 18562 140005103093312 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:11:38,912 [WARNING] 18562 140005129320000 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:11:38,914 [WARNING] 18562 140005119878720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:11:38,916 [WARNING] 18562 140005111486016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:11:38,917 [WARNING] 18562 140005129320000 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:11:38,918 [INFO] 18562 140005340636736 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:11:38,918 [WARNING] 18562 140005103093312 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:11:38,918 [WARNING] 18562 140005119878720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:11:38,919 [WARNING] 18562 140005111486016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:11:38,921 [WARNING] 18562 140005111486016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:11:38,922 [WARNING] 18562 140005340636736 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:11:38,922 [WARNING] 18562 140005340636736 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:11:38,981 [WARNING] 18562 140005119878720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/filters.js
+2023-09-27 16:11:38,983 [WARNING] 18562 140005129320000 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-addlink.svg
+2023-09-27 16:11:38,984 [WARNING] 18562 140005111486016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/tooltag-add.svg
+2023-09-27 16:11:38,984 [WARNING] 18562 140005119878720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 404 179
+2023-09-27 16:11:38,985 [WARNING] 18562 140005129320000 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-addlink.svg HTTP/1.1" 404 179
+2023-09-27 16:11:38,985 [WARNING] 18562 140005111486016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/tooltag-add.svg HTTP/1.1" 404 179
+2023-09-27 16:11:46,648 [INFO] 18562 140005398630848 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/models.py changed, reloading.
+2023-09-27 16:11:46,824 [INFO] 18603 140102025830848 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:11:49,394 [INFO] 18603 140101976229440 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/prefecture/ HTTP/1.1" 200 10621
+2023-09-27 16:11:49,415 [WARNING] 18603 140101976229440 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/changelists.css
+2023-09-27 16:11:49,420 [WARNING] 18603 140101889812032 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:11:49,422 [WARNING] 18603 140101881419328 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:11:49,423 [WARNING] 18603 140101976229440 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-09-27 16:11:49,425 [WARNING] 18603 140101873026624 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:11:49,427 [WARNING] 18603 140101864633920 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:11:49,428 [WARNING] 18603 140101889812032 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:11:49,432 [WARNING] 18603 140101881419328 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:11:49,435 [WARNING] 18603 140101864633920 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:11:49,435 [WARNING] 18603 140101873026624 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:11:49,436 [WARNING] 18603 140101889812032 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:11:49,437 [INFO] 18603 140101900301888 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:11:49,438 [WARNING] 18603 140101881419328 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:11:49,440 [WARNING] 18603 140101864633920 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:11:49,441 [WARNING] 18603 140101873026624 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:11:49,441 [WARNING] 18603 140101889812032 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:11:49,442 [WARNING] 18603 140101881419328 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:11:49,443 [WARNING] 18603 140101873026624 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:11:49,443 [WARNING] 18603 140101864633920 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:11:49,491 [WARNING] 18603 140101881419328 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/filters.js
+2023-09-27 16:11:49,492 [WARNING] 18603 140101881419328 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 404 179
+2023-09-27 16:11:50,529 [INFO] 18603 140101881419328 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/prefecture/ HTTP/1.1" 200 10621
+2023-09-27 16:11:50,549 [WARNING] 18603 140101881419328 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/changelists.css
+2023-09-27 16:11:50,549 [WARNING] 18603 140101864633920 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:11:50,550 [WARNING] 18603 140101873026624 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:11:50,551 [WARNING] 18603 140101976229440 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:11:50,552 [WARNING] 18603 140101900301888 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:11:50,553 [WARNING] 18603 140101881419328 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-09-27 16:11:50,554 [WARNING] 18603 140101864633920 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:11:50,555 [WARNING] 18603 140101873026624 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:11:50,556 [WARNING] 18603 140101976229440 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:11:50,559 [WARNING] 18603 140101900301888 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:11:50,561 [WARNING] 18603 140101864633920 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:11:50,561 [INFO] 18603 140101889812032 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:11:50,562 [WARNING] 18603 140101873026624 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:11:50,563 [WARNING] 18603 140101976229440 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:11:50,564 [WARNING] 18603 140101900301888 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:11:50,564 [WARNING] 18603 140101864633920 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:11:50,565 [WARNING] 18603 140101873026624 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:11:50,565 [WARNING] 18603 140101976229440 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:11:50,566 [WARNING] 18603 140101900301888 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:11:50,622 [WARNING] 18603 140101900301888 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/filters.js
+2023-09-27 16:11:50,623 [WARNING] 18603 140101900301888 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 404 179
+2023-09-27 16:11:53,794 [INFO] 18603 140101900301888 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/prefecture/1/change/ HTTP/1.1" 200 9553
+2023-09-27 16:11:53,814 [WARNING] 18603 140101900301888 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/forms.css
+2023-09-27 16:11:53,816 [WARNING] 18603 140101864633920 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:11:53,817 [WARNING] 18603 140101976229440 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:11:53,818 [WARNING] 18603 140101881419328 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:11:53,818 [WARNING] 18603 140101889812032 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:11:53,819 [WARNING] 18603 140101900301888 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/forms.css HTTP/1.1" 404 179
+2023-09-27 16:11:53,820 [WARNING] 18603 140101864633920 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:11:53,820 [WARNING] 18603 140101976229440 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:11:53,822 [WARNING] 18603 140101881419328 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:11:53,823 [WARNING] 18603 140101889812032 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:11:53,825 [WARNING] 18603 140101864633920 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:11:53,827 [WARNING] 18603 140101976229440 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate_init.js
+2023-09-27 16:11:53,827 [INFO] 18603 140101873026624 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:11:53,827 [WARNING] 18603 140101881419328 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:11:53,828 [WARNING] 18603 140101889812032 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:11:53,829 [WARNING] 18603 140101976229440 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate_init.js HTTP/1.1" 404 179
+2023-09-27 16:11:53,829 [WARNING] 18603 140101864633920 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:11:53,830 [WARNING] 18603 140101881419328 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:11:53,831 [WARNING] 18603 140101873026624 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:11:53,831 [WARNING] 18603 140101889812032 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:11:53,832 [WARNING] 18603 140101873026624 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:11:53,882 [WARNING] 18603 140101976229440 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/change_form.js
+2023-09-27 16:11:53,882 [WARNING] 18603 140101976229440 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/change_form.js HTTP/1.1" 404 179
+2023-09-27 16:11:53,891 [WARNING] 18603 140101873026624 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-deletelink.svg
+2023-09-27 16:11:53,891 [WARNING] 18603 140101873026624 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-deletelink.svg HTTP/1.1" 404 179
+2023-09-27 16:11:59,370 [INFO] 18603 140101873026624 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/prefecture/ HTTP/1.1" 200 10621
+2023-09-27 16:16:18,535 [INFO] 18603 140102025830848 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 16:16:18,699 [INFO] 19020 140632449085888 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:16:47,947 [INFO] 19020 140632449085888 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 16:16:48,094 [INFO] 19073 139856978522560 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:16:55,986 [INFO] 19091 140424207847872 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:18:44,846 [INFO] 19259 140695189672384 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:18:53,103 [INFO] 19259 140695140070976 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/prefecture/ HTTP/1.1" 200 10621
+2023-09-27 16:18:53,120 [WARNING] 19259 140695140070976 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/changelists.css
+2023-09-27 16:18:53,125 [WARNING] 19259 140695104403008 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:18:53,126 [WARNING] 19259 140695113844288 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:18:53,126 [WARNING] 19259 140695140070976 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-09-27 16:18:53,127 [WARNING] 19259 140695122236992 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:18:53,128 [WARNING] 19259 140695096010304 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:18:53,130 [WARNING] 19259 140695104403008 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:18:53,130 [WARNING] 19259 140695113844288 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:18:53,131 [WARNING] 19259 140695122236992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:18:53,133 [WARNING] 19259 140695096010304 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:18:53,135 [WARNING] 19259 140695104403008 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:18:53,136 [WARNING] 19259 140695113844288 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:18:53,137 [WARNING] 19259 140695122236992 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:18:53,138 [WARNING] 19259 140695096010304 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:18:53,139 [WARNING] 19259 140695104403008 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:18:53,140 [WARNING] 19259 140695113844288 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:18:53,141 [WARNING] 19259 140695122236992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:18:53,141 [WARNING] 19259 140695096010304 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:18:53,142 [INFO] 19259 140695131678272 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:18:53,193 [WARNING] 19259 140695122236992 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/filters.js
+2023-09-27 16:18:53,194 [WARNING] 19259 140695113844288 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-addlink.svg
+2023-09-27 16:18:53,195 [WARNING] 19259 140695096010304 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/tooltag-add.svg
+2023-09-27 16:18:53,196 [WARNING] 19259 140695122236992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 404 179
+2023-09-27 16:18:53,196 [WARNING] 19259 140695113844288 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-addlink.svg HTTP/1.1" 404 179
+2023-09-27 16:18:53,197 [WARNING] 19259 140695096010304 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/tooltag-add.svg HTTP/1.1" 404 179
+2023-09-27 16:18:56,141 [INFO] 19259 140695096010304 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/area/ HTTP/1.1" 200 9871
+2023-09-27 16:18:56,155 [WARNING] 19259 140695096010304 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/changelists.css
+2023-09-27 16:18:56,157 [WARNING] 19259 140695122236992 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:18:56,158 [WARNING] 19259 140695104403008 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:18:56,158 [WARNING] 19259 140695131678272 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:18:56,160 [WARNING] 19259 140695140070976 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:18:56,160 [WARNING] 19259 140695096010304 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-09-27 16:18:56,161 [WARNING] 19259 140695104403008 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:18:56,162 [WARNING] 19259 140695122236992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:18:56,162 [WARNING] 19259 140695131678272 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:18:56,164 [WARNING] 19259 140695140070976 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:18:56,167 [WARNING] 19259 140695104403008 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:18:56,168 [WARNING] 19259 140695122236992 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:18:56,169 [WARNING] 19259 140695131678272 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:18:56,170 [WARNING] 19259 140695140070976 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:18:56,171 [INFO] 19259 140695113844288 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:18:56,171 [WARNING] 19259 140695104403008 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:18:56,171 [WARNING] 19259 140695122236992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:18:56,172 [WARNING] 19259 140695131678272 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:18:56,172 [WARNING] 19259 140695140070976 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:18:56,221 [WARNING] 19259 140695140070976 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/filters.js
+2023-09-27 16:18:56,222 [WARNING] 19259 140695140070976 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 404 179
+2023-09-27 16:18:56,926 [INFO] 19259 140695140070976 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/prefecture/ HTTP/1.1" 200 10621
+2023-09-27 16:18:56,947 [WARNING] 19259 140695140070976 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/changelists.css
+2023-09-27 16:18:56,949 [WARNING] 19259 140695131678272 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:18:56,950 [WARNING] 19259 140695122236992 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:18:56,950 [WARNING] 19259 140695096010304 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:18:56,951 [WARNING] 19259 140695113844288 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:18:56,952 [WARNING] 19259 140695140070976 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-09-27 16:18:56,953 [WARNING] 19259 140695122236992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:18:56,953 [WARNING] 19259 140695131678272 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:18:56,954 [WARNING] 19259 140695096010304 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:18:56,956 [WARNING] 19259 140695113844288 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:18:56,957 [WARNING] 19259 140695122236992 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:18:56,958 [WARNING] 19259 140695131678272 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:18:56,959 [WARNING] 19259 140695096010304 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:18:56,960 [WARNING] 19259 140695113844288 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:18:56,961 [WARNING] 19259 140695122236992 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:18:56,961 [INFO] 19259 140695104403008 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:18:56,961 [WARNING] 19259 140695131678272 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:18:56,962 [WARNING] 19259 140695096010304 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:18:56,962 [WARNING] 19259 140695113844288 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:18:57,012 [WARNING] 19259 140695131678272 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/filters.js
+2023-09-27 16:18:57,013 [WARNING] 19259 140695131678272 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 404 179
+2023-09-27 16:20:40,027 [INFO] 19454 140528578445760 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:20:41,124 [INFO] 19454 140528528844352 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/prefecture/ HTTP/1.1" 200 10621
+2023-09-27 16:20:41,158 [WARNING] 19454 140528528844352 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/changelists.css
+2023-09-27 16:20:41,161 [WARNING] 19454 140528283797056 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:20:41,162 [WARNING] 19454 140528292189760 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:20:41,163 [WARNING] 19454 140528300582464 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:20:41,165 [WARNING] 19454 140528308975168 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:20:41,166 [WARNING] 19454 140528528844352 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-09-27 16:20:41,168 [WARNING] 19454 140528283797056 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:20:41,171 [WARNING] 19454 140528292189760 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:20:41,174 [WARNING] 19454 140528300582464 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:20:41,174 [WARNING] 19454 140528308975168 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:20:41,175 [INFO] 19454 140528520451648 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:20:41,177 [WARNING] 19454 140528283797056 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:20:41,179 [WARNING] 19454 140528292189760 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:20:41,180 [WARNING] 19454 140528300582464 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:20:41,181 [WARNING] 19454 140528308975168 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:20:41,182 [WARNING] 19454 140528283797056 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:20:41,183 [WARNING] 19454 140528292189760 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:20:41,184 [WARNING] 19454 140528300582464 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:20:41,184 [WARNING] 19454 140528308975168 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:20:41,243 [WARNING] 19454 140528292189760 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/filters.js
+2023-09-27 16:20:41,243 [WARNING] 19454 140528292189760 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 404 179
+2023-09-27 16:20:41,253 [WARNING] 19454 140528308975168 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-addlink.svg
+2023-09-27 16:20:41,254 [WARNING] 19454 140528283797056 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/tooltag-add.svg
+2023-09-27 16:20:41,254 [WARNING] 19454 140528308975168 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-addlink.svg HTTP/1.1" 404 179
+2023-09-27 16:20:41,255 [WARNING] 19454 140528283797056 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/tooltag-add.svg HTTP/1.1" 404 179
+2023-09-27 16:20:43,869 [INFO] 19454 140528283797056 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 10615
+2023-09-27 16:20:43,885 [WARNING] 19454 140528283797056 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/changelists.css
+2023-09-27 16:20:43,886 [WARNING] 19454 140528292189760 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:20:43,887 [WARNING] 19454 140528528844352 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:20:43,887 [WARNING] 19454 140528520451648 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:20:43,889 [WARNING] 19454 140528300582464 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:20:43,890 [WARNING] 19454 140528283797056 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-09-27 16:20:43,891 [WARNING] 19454 140528292189760 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:20:43,892 [WARNING] 19454 140528528844352 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:20:43,892 [WARNING] 19454 140528520451648 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:20:43,893 [WARNING] 19454 140528300582464 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:20:43,897 [WARNING] 19454 140528292189760 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:20:43,898 [INFO] 19454 140528308975168 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:20:43,899 [WARNING] 19454 140528520451648 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:20:43,900 [WARNING] 19454 140528528844352 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:20:43,900 [WARNING] 19454 140528300582464 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:20:43,901 [WARNING] 19454 140528292189760 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:20:43,901 [WARNING] 19454 140528520451648 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:20:43,902 [WARNING] 19454 140528528844352 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:20:43,902 [WARNING] 19454 140528300582464 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:20:43,951 [WARNING] 19454 140528528844352 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/filters.js
+2023-09-27 16:20:43,951 [WARNING] 19454 140528528844352 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 404 179
+2023-09-27 16:20:45,857 [INFO] 19454 140528528844352 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/prefecture/ HTTP/1.1" 200 10621
+2023-09-27 16:20:45,877 [WARNING] 19454 140528528844352 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/changelists.css
+2023-09-27 16:20:45,878 [WARNING] 19454 140528308975168 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:20:45,878 [WARNING] 19454 140528300582464 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:20:45,879 [WARNING] 19454 140528520451648 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:20:45,880 [WARNING] 19454 140528283797056 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:20:45,881 [WARNING] 19454 140528528844352 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-09-27 16:20:45,882 [WARNING] 19454 140528308975168 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:20:45,882 [WARNING] 19454 140528300582464 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:20:45,883 [WARNING] 19454 140528520451648 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:20:45,885 [WARNING] 19454 140528283797056 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:20:45,887 [WARNING] 19454 140528308975168 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:20:45,887 [WARNING] 19454 140528300582464 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:20:45,888 [INFO] 19454 140528292189760 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:20:45,889 [WARNING] 19454 140528520451648 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:20:45,890 [WARNING] 19454 140528283797056 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:20:45,891 [WARNING] 19454 140528300582464 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:20:45,891 [WARNING] 19454 140528308975168 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:20:45,891 [WARNING] 19454 140528520451648 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:20:45,892 [WARNING] 19454 140528283797056 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:20:45,942 [WARNING] 19454 140528520451648 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/filters.js
+2023-09-27 16:20:45,943 [WARNING] 19454 140528520451648 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 404 179
+2023-09-27 16:20:47,581 [INFO] 19454 140528520451648 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/area/ HTTP/1.1" 200 9871
+2023-09-27 16:20:47,596 [WARNING] 19454 140528520451648 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/changelists.css
+2023-09-27 16:20:47,597 [WARNING] 19454 140528300582464 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:20:47,597 [WARNING] 19454 140528292189760 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:20:47,599 [WARNING] 19454 140528528844352 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:20:47,600 [WARNING] 19454 140528283797056 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:20:47,600 [WARNING] 19454 140528520451648 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-09-27 16:20:47,602 [WARNING] 19454 140528300582464 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:20:47,603 [WARNING] 19454 140528292189760 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:20:47,604 [WARNING] 19454 140528528844352 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:20:47,607 [WARNING] 19454 140528283797056 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:20:47,608 [WARNING] 19454 140528300582464 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:20:47,608 [INFO] 19454 140528308975168 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:20:47,609 [WARNING] 19454 140528292189760 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:20:47,610 [WARNING] 19454 140528528844352 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:20:47,611 [WARNING] 19454 140528283797056 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:20:47,611 [WARNING] 19454 140528300582464 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:20:47,613 [WARNING] 19454 140528528844352 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:20:47,613 [WARNING] 19454 140528283797056 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:20:47,613 [WARNING] 19454 140528292189760 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:20:47,661 [WARNING] 19454 140528292189760 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/filters.js
+2023-09-27 16:20:47,661 [WARNING] 19454 140528292189760 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 404 179
+2023-09-27 16:21:34,494 [INFO] 19454 140528578445760 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 16:21:34,688 [INFO] 19550 140157488513472 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:21:56,093 [INFO] 19597 140431920468416 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:22:15,331 [INFO] 19634 139833996452288 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:22:35,751 [INFO] 19673 139644641989056 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:22:39,650 [INFO] 19673 139644592387648 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/area/ HTTP/1.1" 200 9871
+2023-09-27 16:22:39,679 [WARNING] 19673 139644592387648 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/changelists.css
+2023-09-27 16:22:39,681 [WARNING] 19673 139644574553664 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:22:39,682 [WARNING] 19673 139644592387648 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-09-27 16:22:39,684 [WARNING] 19673 139644565112384 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:22:39,686 [WARNING] 19673 139644217849408 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:22:39,688 [WARNING] 19673 139644209456704 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:22:39,688 [WARNING] 19673 139644574553664 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:22:39,690 [WARNING] 19673 139644565112384 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:22:39,692 [WARNING] 19673 139644574553664 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:22:39,694 [WARNING] 19673 139644217849408 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:22:39,695 [INFO] 19673 139644583994944 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:22:39,695 [WARNING] 19673 139644209456704 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:22:39,696 [WARNING] 19673 139644565112384 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:22:39,697 [WARNING] 19673 139644574553664 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:22:39,698 [WARNING] 19673 139644565112384 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:22:39,699 [WARNING] 19673 139644217849408 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:22:39,699 [WARNING] 19673 139644217849408 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:22:39,700 [WARNING] 19673 139644209456704 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:22:39,700 [WARNING] 19673 139644209456704 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:22:39,753 [WARNING] 19673 139644217849408 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/filters.js
+2023-09-27 16:22:39,753 [WARNING] 19673 139644217849408 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 404 179
+2023-09-27 16:22:39,764 [WARNING] 19673 139644209456704 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-addlink.svg
+2023-09-27 16:22:39,767 [WARNING] 19673 139644574553664 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/tooltag-add.svg
+2023-09-27 16:22:39,767 [WARNING] 19673 139644209456704 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-addlink.svg HTTP/1.1" 404 179
+2023-09-27 16:22:39,768 [WARNING] 19673 139644574553664 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/tooltag-add.svg HTTP/1.1" 404 179
+2023-09-27 16:22:57,972 [INFO] 19673 139644641989056 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 16:22:58,132 [INFO] 19723 140168993059264 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:23:01,238 [INFO] 19723 140168993059264 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 16:23:01,393 [INFO] 19735 140595270205888 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:23:17,596 [INFO] 19735 140595270205888 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 16:23:17,755 [INFO] 19764 139751849456064 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:23:26,196 [INFO] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/prefecture/ HTTP/1.1" 200 10621
+2023-09-27 16:23:26,225 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/changelists.css
+2023-09-27 16:23:26,229 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:23:26,230 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-09-27 16:23:26,232 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:23:26,234 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:23:26,235 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:23:26,237 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:23:26,238 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:23:26,239 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:23:26,239 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:23:26,241 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:23:26,243 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:23:26,243 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:23:26,245 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:23:26,246 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:23:26,248 [INFO] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:23:26,250 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:23:26,251 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:23:26,252 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:23:26,299 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/filters.js
+2023-09-27 16:23:26,300 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 404 179
+2023-09-27 16:23:27,878 [INFO] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 10615
+2023-09-27 16:23:27,895 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/changelists.css
+2023-09-27 16:23:27,896 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:23:27,897 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:23:27,898 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:23:27,898 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:23:27,899 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-09-27 16:23:27,900 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:23:27,901 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:23:27,904 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:23:27,904 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:23:27,907 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:23:27,907 [INFO] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:23:27,909 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:23:27,910 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:23:27,911 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:23:27,914 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:23:27,915 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:23:27,915 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:23:27,916 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:23:27,972 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/filters.js
+2023-09-27 16:23:27,972 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 404 179
+2023-09-27 16:23:27,974 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/tooltag-add.svg
+2023-09-27 16:23:27,975 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-addlink.svg
+2023-09-27 16:23:27,975 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/tooltag-add.svg HTTP/1.1" 404 179
+2023-09-27 16:23:27,976 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-addlink.svg HTTP/1.1" 404 179
+2023-09-27 16:23:30,445 [INFO] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 13965
+2023-09-27 16:23:30,468 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/forms.css
+2023-09-27 16:23:30,469 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:23:30,470 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:23:30,471 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:23:30,471 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:23:30,472 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/forms.css HTTP/1.1" 404 179
+2023-09-27 16:23:30,473 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:23:30,474 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:23:30,474 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:23:30,474 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:23:30,478 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:23:30,479 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:23:30,479 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:23:30,481 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:23:30,481 [INFO] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:23:30,481 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:23:30,482 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:23:30,482 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:23:30,482 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:23:30,531 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate_init.js
+2023-09-27 16:23:30,532 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-changelink.svg
+2023-09-27 16:23:30,533 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-viewlink.svg
+2023-09-27 16:23:30,533 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-addlink.svg
+2023-09-27 16:23:30,534 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/change_form.js
+2023-09-27 16:23:30,535 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-deletelink.svg
+2023-09-27 16:23:30,536 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate_init.js HTTP/1.1" 404 179
+2023-09-27 16:23:30,536 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-changelink.svg HTTP/1.1" 404 179
+2023-09-27 16:23:30,536 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-viewlink.svg HTTP/1.1" 404 179
+2023-09-27 16:23:30,536 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-addlink.svg HTTP/1.1" 404 179
+2023-09-27 16:23:30,537 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/change_form.js HTTP/1.1" 404 179
+2023-09-27 16:23:30,537 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-deletelink.svg HTTP/1.1" 404 179
+2023-09-27 16:23:34,533 [INFO] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 13965
+2023-09-27 16:23:34,552 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/base.css
+2023-09-27 16:23:34,552 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/forms.css
+2023-09-27 16:23:34,553 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/nav_sidebar.css
+2023-09-27 16:23:34,554 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/dark_mode.css
+2023-09-27 16:23:34,556 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:23:34,557 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/base.css HTTP/1.1" 404 179
+2023-09-27 16:23:34,557 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/forms.css HTTP/1.1" 404 179
+2023-09-27 16:23:34,560 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:23:34,561 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-09-27 16:23:34,561 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-09-27 16:23:34,563 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/responsive.css
+2023-09-27 16:23:34,563 [INFO] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:23:34,564 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:23:34,565 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:23:34,566 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:23:34,567 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-09-27 16:23:34,567 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:23:34,568 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:23:34,568 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:23:34,569 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:23:34,569 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:23:34,612 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:23:34,613 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:23:34,620 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:23:34,621 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:23:34,621 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:23:34,621 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:23:34,675 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate_init.js
+2023-09-27 16:23:34,676 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate_init.js HTTP/1.1" 404 179
+2023-09-27 16:23:34,677 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/nav_sidebar.js
+2023-09-27 16:23:34,678 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/responsive.css
+2023-09-27 16:23:34,678 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/theme.js
+2023-09-27 16:23:34,679 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-changelink.svg
+2023-09-27 16:23:34,680 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-addlink.svg
+2023-09-27 16:23:34,680 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-09-27 16:23:34,680 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-09-27 16:23:34,681 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/theme.js HTTP/1.1" 404 179
+2023-09-27 16:23:34,682 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-changelink.svg HTTP/1.1" 404 179
+2023-09-27 16:23:34,682 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-addlink.svg HTTP/1.1" 404 179
+2023-09-27 16:23:34,686 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-viewlink.svg
+2023-09-27 16:23:34,686 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-viewlink.svg HTTP/1.1" 404 179
+2023-09-27 16:23:34,687 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/change_form.js
+2023-09-27 16:23:34,687 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/change_form.js HTTP/1.1" 404 179
+2023-09-27 16:23:34,770 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /favicon.ico
+2023-09-27 16:23:34,770 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /favicon.ico HTTP/1.1" 404 179
+2023-09-27 16:23:37,261 [INFO] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 13965
+2023-09-27 16:23:37,276 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/dark_mode.css
+2023-09-27 16:23:37,277 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/forms.css
+2023-09-27 16:23:37,277 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:23:37,278 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/base.css
+2023-09-27 16:23:37,280 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/nav_sidebar.css
+2023-09-27 16:23:37,281 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-09-27 16:23:37,282 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/forms.css HTTP/1.1" 404 179
+2023-09-27 16:23:37,282 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/base.css HTTP/1.1" 404 179
+2023-09-27 16:23:37,284 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:23:37,287 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/responsive.css
+2023-09-27 16:23:37,288 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-09-27 16:23:37,289 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:23:37,290 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:23:37,290 [INFO] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:23:37,291 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-09-27 16:23:37,291 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:23:37,292 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:23:37,292 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:23:37,293 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:23:37,293 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:23:37,294 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:23:37,331 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:23:37,331 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:23:37,339 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:23:37,340 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:23:37,340 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:23:37,340 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:23:37,392 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate_init.js
+2023-09-27 16:23:37,393 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-addlink.svg
+2023-09-27 16:23:37,393 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/theme.js
+2023-09-27 16:23:37,394 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/responsive.css
+2023-09-27 16:23:37,395 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/nav_sidebar.js
+2023-09-27 16:23:37,395 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-changelink.svg
+2023-09-27 16:23:37,396 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate_init.js HTTP/1.1" 404 179
+2023-09-27 16:23:37,397 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/theme.js HTTP/1.1" 404 179
+2023-09-27 16:23:37,397 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-addlink.svg HTTP/1.1" 404 179
+2023-09-27 16:23:37,397 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-09-27 16:23:37,397 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-09-27 16:23:37,398 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-changelink.svg HTTP/1.1" 404 179
+2023-09-27 16:23:37,402 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/img/icon-viewlink.svg
+2023-09-27 16:23:37,403 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/change_form.js
+2023-09-27 16:23:37,403 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-viewlink.svg HTTP/1.1" 404 179
+2023-09-27 16:23:37,404 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/change_form.js HTTP/1.1" 404 179
+2023-09-27 16:23:40,132 [INFO] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 10615
+2023-09-27 16:23:41,708 [INFO] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/prefecture/ HTTP/1.1" 200 10621
+2023-09-27 16:23:42,371 [INFO] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/area/ HTTP/1.1" 200 9871
+2023-09-27 16:23:43,304 [INFO] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/area/ HTTP/1.1" 200 9871
+2023-09-27 16:23:43,319 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/nav_sidebar.css
+2023-09-27 16:23:43,323 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/base.css
+2023-09-27 16:23:43,324 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/dark_mode.css
+2023-09-27 16:23:43,325 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/changelists.css
+2023-09-27 16:23:43,326 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:23:43,327 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/base.css HTTP/1.1" 404 179
+2023-09-27 16:23:43,327 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-09-27 16:23:43,330 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-09-27 16:23:43,330 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-09-27 16:23:43,332 [INFO] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:23:43,333 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:23:43,334 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/responsive.css
+2023-09-27 16:23:43,335 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:23:43,336 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:23:43,337 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:23:43,337 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:23:43,337 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-09-27 16:23:43,338 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:23:43,338 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:23:43,338 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:23:43,339 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:23:43,379 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:23:43,379 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:23:43,388 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:23:43,389 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:23:43,390 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:23:43,391 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:23:43,442 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/theme.js
+2023-09-27 16:23:43,443 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/filters.js
+2023-09-27 16:23:43,444 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/responsive.css
+2023-09-27 16:23:43,445 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/nav_sidebar.js
+2023-09-27 16:23:43,445 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/theme.js HTTP/1.1" 404 179
+2023-09-27 16:23:43,446 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 404 179
+2023-09-27 16:23:43,446 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-09-27 16:23:43,446 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-09-27 16:23:47,561 [INFO] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/area/ HTTP/1.1" 200 9871
+2023-09-27 16:23:47,575 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/base.css
+2023-09-27 16:23:47,577 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/dark_mode.css
+2023-09-27 16:23:47,578 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/changelists.css
+2023-09-27 16:23:47,579 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/nav_sidebar.css
+2023-09-27 16:23:47,580 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/jquery/jquery.min.js
+2023-09-27 16:23:47,580 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/base.css HTTP/1.1" 404 179
+2023-09-27 16:23:47,581 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-09-27 16:23:47,581 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-09-27 16:23:47,583 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-09-27 16:23:47,584 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-09-27 16:23:47,587 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/jquery.init.js
+2023-09-27 16:23:47,588 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/responsive.css
+2023-09-27 16:23:47,589 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/core.js
+2023-09-27 16:23:47,589 [INFO] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:23:47,590 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/admin/RelatedObjectLookups.js
+2023-09-27 16:23:47,590 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-09-27 16:23:47,591 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-09-27 16:23:47,591 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 404 179
+2023-09-27 16:23:47,593 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/actions.js
+2023-09-27 16:23:47,593 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-09-27 16:23:47,594 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 404 179
+2023-09-27 16:23:47,628 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/urlify.js
+2023-09-27 16:23:47,629 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-09-27 16:23:47,638 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/prepopulate.js
+2023-09-27 16:23:47,639 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/vendor/xregexp/xregexp.min.js
+2023-09-27 16:23:47,640 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-09-27 16:23:47,641 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-09-27 16:23:47,690 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/nav_sidebar.js
+2023-09-27 16:23:47,691 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/theme.js
+2023-09-27 16:23:47,692 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/filters.js
+2023-09-27 16:23:47,693 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/responsive.css
+2023-09-27 16:23:47,693 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-09-27 16:23:47,693 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/theme.js HTTP/1.1" 404 179
+2023-09-27 16:23:47,694 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-09-27 16:23:47,694 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 404 179
+2023-09-27 16:24:01,543 [INFO] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/prefecture/ HTTP/1.1" 200 10621
+2023-09-27 16:24:10,201 [INFO] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/ HTTP/1.1" 200 8519
+2023-09-27 16:24:10,213 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/base.css
+2023-09-27 16:24:10,214 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/responsive.css
+2023-09-27 16:24:10,215 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/dark_mode.css
+2023-09-27 16:24:10,216 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/dashboard.css
+2023-09-27 16:24:10,216 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/nav_sidebar.css
+2023-09-27 16:24:10,217 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/base.css HTTP/1.1" 404 179
+2023-09-27 16:24:10,218 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-09-27 16:24:10,218 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-09-27 16:24:10,218 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-09-27 16:24:10,219 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dashboard.css HTTP/1.1" 404 179
+2023-09-27 16:24:10,224 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/theme.js
+2023-09-27 16:24:10,225 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/nav_sidebar.js
+2023-09-27 16:24:10,225 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/theme.js HTTP/1.1" 404 179
+2023-09-27 16:24:10,226 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-09-27 16:24:16,727 [INFO] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/logout/ HTTP/1.1" 200 3733
+2023-09-27 16:24:16,747 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/base.css
+2023-09-27 16:24:16,748 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/responsive.css
+2023-09-27 16:24:16,749 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/dark_mode.css
+2023-09-27 16:24:16,749 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/nav_sidebar.css
+2023-09-27 16:24:16,750 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/theme.js
+2023-09-27 16:24:16,751 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/nav_sidebar.js
+2023-09-27 16:24:16,751 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/base.css HTTP/1.1" 404 179
+2023-09-27 16:24:16,752 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-09-27 16:24:16,752 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-09-27 16:24:16,753 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-09-27 16:24:16,753 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/theme.js HTTP/1.1" 404 179
+2023-09-27 16:24:16,754 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-09-27 16:24:22,571 [INFO] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/ HTTP/1.1" 302 0
+2023-09-27 16:24:22,581 [INFO] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/login/?next=/wg_admin/ HTTP/1.1" 200 4353
+2023-09-27 16:24:22,650 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/base.css
+2023-09-27 16:24:22,651 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/dark_mode.css
+2023-09-27 16:24:22,652 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/nav_sidebar.css
+2023-09-27 16:24:22,652 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/theme.js
+2023-09-27 16:24:22,653 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/responsive.css
+2023-09-27 16:24:22,653 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/nav_sidebar.js
+2023-09-27 16:24:22,654 [WARNING] 19764 139751701071424 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/base.css HTTP/1.1" 404 179
+2023-09-27 16:24:22,655 [WARNING] 19764 139751709464128 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-09-27 16:24:22,655 [WARNING] 19764 139751717856832 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-09-27 16:24:22,655 [WARNING] 19764 139751726249536 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/theme.js HTTP/1.1" 404 179
+2023-09-27 16:24:22,656 [WARNING] 19764 139751692678720 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-09-27 16:24:22,656 [WARNING] 19764 139751684286016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-09-27 16:24:33,375 [INFO] 19899 140462087504320 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:24:35,649 [WARNING] 19899 140462037902912 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /
+2023-09-27 16:24:35,650 [WARNING] 19899 140462037902912 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET / HTTP/1.1" 404 179
+2023-09-27 16:24:41,530 [INFO] 19899 140462037902912 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/ HTTP/1.1" 302 0
+2023-09-27 16:24:41,549 [INFO] 19899 140462037902912 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/login/?next=/wg_admin/ HTTP/1.1" 200 4353
+2023-09-27 16:24:41,609 [WARNING] 19899 140462037902912 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/base.css
+2023-09-27 16:24:41,610 [WARNING] 19899 140462029510208 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/dark_mode.css
+2023-09-27 16:24:41,611 [WARNING] 19899 140462037902912 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/base.css HTTP/1.1" 404 179
+2023-09-27 16:24:41,611 [WARNING] 19899 140462029510208 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-09-27 16:24:41,614 [WARNING] 19899 140462020068928 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/nav_sidebar.css
+2023-09-27 16:24:41,616 [WARNING] 19899 140461805139520 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/responsive.css
+2023-09-27 16:24:41,617 [WARNING] 19899 140462020068928 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-09-27 16:24:41,617 [WARNING] 19899 140461805139520 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-09-27 16:24:41,621 [WARNING] 19899 140462029510208 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/theme.js
+2023-09-27 16:24:41,622 [WARNING] 19899 140461796746816 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/nav_sidebar.js
+2023-09-27 16:24:41,622 [WARNING] 19899 140462029510208 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/theme.js HTTP/1.1" 404 179
+2023-09-27 16:24:41,623 [WARNING] 19899 140461796746816 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-09-27 16:24:44,478 [INFO] 19899 140462029510208 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/login/?next=/wg_admin/ HTTP/1.1" 200 4353
+2023-09-27 16:24:44,493 [WARNING] 19899 140462037902912 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/dark_mode.css
+2023-09-27 16:24:44,494 [WARNING] 19899 140462020068928 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/responsive.css
+2023-09-27 16:24:44,495 [WARNING] 19899 140462029510208 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/base.css
+2023-09-27 16:24:44,495 [WARNING] 19899 140461796746816 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/nav_sidebar.css
+2023-09-27 16:24:44,496 [WARNING] 19899 140461805139520 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/login.css
+2023-09-27 16:24:44,497 [WARNING] 19899 140462037902912 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-09-27 16:24:44,498 [WARNING] 19899 140462020068928 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-09-27 16:24:44,498 [WARNING] 19899 140462029510208 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/base.css HTTP/1.1" 404 179
+2023-09-27 16:24:44,499 [WARNING] 19899 140461796746816 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-09-27 16:24:44,499 [WARNING] 19899 140461805139520 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/login.css HTTP/1.1" 404 179
+2023-09-27 16:24:44,503 [WARNING] 19899 140461788354112 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/theme.js
+2023-09-27 16:24:44,504 [WARNING] 19899 140461788354112 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/theme.js HTTP/1.1" 404 179
+2023-09-27 16:24:44,505 [WARNING] 19899 140461805139520 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/js/nav_sidebar.js
+2023-09-27 16:24:44,505 [WARNING] 19899 140461805139520 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-09-27 16:24:44,567 [WARNING] 19899 140461805139520 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /favicon.ico
+2023-09-27 16:24:44,567 [WARNING] 19899 140461805139520 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /favicon.ico HTTP/1.1" 404 179
+2023-09-27 16:24:47,110 [WARNING] 19899 140462029510208 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/dark_mode.css
+2023-09-27 16:24:47,111 [WARNING] 19899 140461796746816 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/login.css
+2023-09-27 16:24:47,112 [WARNING] 19899 140461805139520 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/base.css
+2023-09-27 16:24:47,113 [WARNING] 19899 140462020068928 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/responsive.css
+2023-09-27 16:24:47,114 [WARNING] 19899 140461788354112 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/static/admin/css/nav_sidebar.css
+2023-09-27 16:24:47,115 [WARNING] 19899 140462029510208 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-09-27 16:24:47,115 [WARNING] 19899 140461796746816 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/login.css HTTP/1.1" 404 179
+2023-09-27 16:24:47,116 [WARNING] 19899 140461805139520 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/base.css HTTP/1.1" 404 179
+2023-09-27 16:24:47,116 [WARNING] 19899 140462020068928 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-09-27 16:24:47,117 [WARNING] 19899 140461788354112 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-09-27 16:25:14,134 [INFO] 19986 140578725511616 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:25:16,930 [INFO] 19986 140578675910208 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/login/?next=/wg_admin/ HTTP/1.1" 200 4353
+2023-09-27 16:25:16,970 [INFO] 19986 140578667517504 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2023-09-27 16:25:16,971 [INFO] 19986 140578658076224 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2023-09-27 16:25:16,972 [INFO] 19986 140578440345152 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/login.css HTTP/1.1" 200 958
+2023-09-27 16:25:16,973 [INFO] 19986 140578675910208 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/base.css HTTP/1.1" 200 21207
+2023-09-27 16:25:16,973 [INFO] 19986 140578431952448 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 200 18533
+2023-09-27 16:25:16,991 [INFO] 19986 140578667517504 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2023-09-27 16:25:16,992 [INFO] 19986 140578431952448 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/theme.js HTTP/1.1" 200 1943
+2023-09-27 16:25:39,676 [INFO] 19986 140578667517504 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/login/?next=/wg_admin/ HTTP/1.1" 302 0
+2023-09-27 16:25:39,694 [INFO] 19986 140578667517504 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/ HTTP/1.1" 200 8519
+2023-09-27 16:25:39,762 [INFO] 19986 140578667517504 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dashboard.css HTTP/1.1" 200 441
+2023-09-27 16:25:39,825 [INFO] 19986 140578431952448 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2023-09-27 16:25:39,825 [INFO] 19986 140578667517504 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2023-09-27 16:25:55,385 [INFO] 19986 140578667517504 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/area/ HTTP/1.1" 200 9863
+2023-09-27 16:25:55,411 [INFO] 19986 140578667517504 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 200 6566
+2023-09-27 16:25:55,415 [INFO] 19986 140578423559744 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 200 5682
+2023-09-27 16:25:55,415 [INFO] 19986 140578658076224 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2023-09-27 16:25:55,419 [INFO] 19986 140578675910208 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:25:55,424 [INFO] 19986 140578423559744 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 200 7872
+2023-09-27 16:25:55,424 [INFO] 19986 140578658076224 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2023-09-27 16:25:55,428 [INFO] 19986 140578675910208 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 200 7887
+2023-09-27 16:25:55,429 [INFO] 19986 140578440345152 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2023-09-27 16:25:55,430 [INFO] 19986 140578431952448 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2023-09-27 16:25:55,454 [INFO] 19986 140578431952448 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2023-09-27 16:25:55,515 [INFO] 19986 140578431952448 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 200 978
+2023-09-27 16:25:55,542 [INFO] 19986 140578440345152 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2023-09-27 16:25:57,445 [INFO] 19986 140578440345152 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/prefecture/ HTTP/1.1" 200 10613
+2023-09-27 16:25:57,465 [INFO] 19986 140578440345152 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:25:59,764 [INFO] 19986 140578440345152 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 10607
+2023-09-27 16:25:59,782 [INFO] 19986 140578440345152 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:26:01,174 [INFO] 19986 140578440345152 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 13957
+2023-09-27 16:26:01,193 [INFO] 19986 140578440345152 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/forms.css HTTP/1.1" 200 9047
+2023-09-27 16:26:01,195 [INFO] 19986 140578431952448 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:26:01,223 [INFO] 19986 140578431952448 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+2023-09-27 16:26:01,241 [INFO] 19986 140578440345152 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+2023-09-27 16:26:01,242 [INFO] 19986 140578675910208 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/widgets.css HTTP/1.1" 200 11900
+2023-09-27 16:26:01,290 [INFO] 19986 140578675910208 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/change_form.js HTTP/1.1" 200 606

@@ -14,10 +14,17 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+import os
 from django.contrib import admin
 from django.urls import include, path
+from dotenv import load_dotenv
+load_dotenv()
+
+admin.site.site_header = os.getenv('SITE_HEADER')
+admin.site.site_title = os.getenv('SITE_TITLE')
+admin.site.index_title = os.getenv('INDEX_TITLE')
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('wg_admin/', admin.site.urls),
     path('api/', include('api.urls')),
 ]

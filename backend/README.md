@@ -60,6 +60,7 @@ python manage.py createsuperuser
 
 ### makemigrations
 python manage.py makemigrations api
+
 python manage.py migrate
 
 ### nginx config
@@ -124,3 +125,20 @@ pkill gunicorn
 
 ### gunicorn status
 ps aux | grep gunicorn
+
+## db init
+
+### table drop
+use wg_api_db;
+drop table watergate;
+drop table area;
+drop table prefecture;
+
+### migrations file delete
+rm -rf /root/water_gate/water_gate/backend/api/migrations/*.py
+
+python manage.py makemigrations api
+python manage.py migrate
+
+### data import
+python manage.py loaddata master.json

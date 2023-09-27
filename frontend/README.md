@@ -126,7 +126,7 @@ nginx -t
 systemctl restart nginx
 
 ### git config
-git config --global user.name "keisukearai"
+git config --global user.name "hoge"
 
 git config --global user.email "hoge@hoge.com"
 
