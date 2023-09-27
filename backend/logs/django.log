@@ -3444,3 +3444,495 @@
 2023-09-27 16:26:01,241 [INFO] 19986 140578440345152 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
 2023-09-27 16:26:01,242 [INFO] 19986 140578675910208 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/widgets.css HTTP/1.1" 200 11900
 2023-09-27 16:26:01,290 [INFO] 19986 140578675910208 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/change_form.js HTTP/1.1" 200 606
+2023-09-27 16:34:44,572 [INFO] 19986 140578725511616 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/models.py changed, reloading.
+2023-09-27 16:34:44,755 [INFO] 20910 139703937622464 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:35:02,922 [INFO] 20910 139703937622464 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/models.py changed, reloading.
+2023-09-27 16:35:03,087 [INFO] 20942 140664229642688 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:36:11,493 [INFO] 20942 140664229642688 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 16:36:11,666 [INFO] 21049 140418393186752 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:36:29,828 [INFO] 21049 140418393186752 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 16:36:29,989 [INFO] 21081 139680130982336 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:37:03,193 [INFO] 21081 139680130982336 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 16:37:03,365 [INFO] 21134 140256917201344 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:37:06,423 [INFO] 21134 140256917201344 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 16:37:06,585 [INFO] 21142 139648929026496 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:37:14,700 [INFO] 21142 139648929026496 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 16:37:14,859 [INFO] 21159 140212963774912 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:37:27,006 [INFO] 21159 140212963774912 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 16:37:27,173 [INFO] 21182 140597075763648 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:38:00,438 [INFO] 21182 140597075763648 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 16:38:00,596 [INFO] 21238 140116970529216 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:41:26,433 [INFO] 21629 140525383389632 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:41:37,238 [INFO] 21629 140525326825024 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 302 0
+2023-09-27 16:41:37,260 [INFO] 21629 140525326825024 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/ HTTP/1.1" 200 8735
+2023-09-27 16:41:37,362 [INFO] 21629 140525326825024 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+2023-09-27 16:41:40,798 [INFO] 21629 140525326825024 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/area/ HTTP/1.1" 200 8443
+2023-09-27 16:41:40,821 [INFO] 21629 140525326825024 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:41:53,984 [INFO] 21629 140525326825024 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/area/ HTTP/1.1" 200 9863
+2023-09-27 16:41:54,014 [INFO] 21629 140525326825024 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:41:55,156 [ERROR] 21629 140525326825024 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Internal Server Error: /wg_admin/api/watergate/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/db/models/options.py", line 681, in get_field
+    return self.fields_map[field_name]
+KeyError: 'wg_image'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/utils.py", line 272, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/utils.py", line 303, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "/usr/local/lib/python3.10/dist-packages/django/db/models/options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: WaterGate has no field named 'wg_image'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.10/dist-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.10/dist-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/templatetags/admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/templatetags/admin_list.py", line 312, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/templatetags/admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/templatetags/admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/utils.py", line 281, in lookup_field
+    value = attr(obj)
+  File "/root/water_gate/water_gate/backend/api/admin.py", line 18, in wg_image
+    if obj.image:
+AttributeError: 'WaterGate' object has no attribute 'image'
+2023-09-27 16:41:55,157 [ERROR] 21629 140525326825024 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 500 376430
+2023-09-27 16:42:32,930 [INFO] 21629 140525383389632 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 16:42:33,113 [INFO] 21746 139818093105600 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:42:34,269 [INFO] 21746 139817962698304 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/area/ HTTP/1.1" 200 9863
+2023-09-27 16:42:35,487 [INFO] 21746 139817962698304 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11311
+2023-09-27 16:42:35,510 [INFO] 21746 139817962698304 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:43:22,512 [INFO] 21746 139818093105600 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/models.py changed, reloading.
+2023-09-27 16:43:22,684 [INFO] 21831 139701974647232 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:43:29,846 [INFO] 21831 139701974647232 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/models.py changed, reloading.
+2023-09-27 16:43:30,017 [INFO] 21849 140376957772224 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:43:36,139 [INFO] 21849 140376957772224 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/models.py changed, reloading.
+2023-09-27 16:43:36,324 [INFO] 21863 139931947012544 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:43:52,068 [INFO] 21863 139931890480704 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11313
+2023-09-27 16:43:52,096 [INFO] 21863 139931890480704 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:44:16,671 [INFO] 21863 139931890480704 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 14701
+2023-09-27 16:44:16,706 [INFO] 21863 139931890480704 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:45:15,500 [INFO] 21863 139931890480704 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/api/watergate/1/change/ HTTP/1.1" 302 0
+2023-09-27 16:45:15,550 [ERROR] 21863 139931890480704 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Internal Server Error: /wg_admin/api/watergate/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/db/models/options.py", line 681, in get_field
+    return self.fields_map[field_name]
+KeyError: 'wg_image'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/utils.py", line 272, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/utils.py", line 303, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "/usr/local/lib/python3.10/dist-packages/django/db/models/options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: WaterGate has no field named 'wg_image'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.10/dist-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.10/dist-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.10/dist-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+  File "/usr/local/lib/python3.10/dist-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/templatetags/admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/templatetags/admin_list.py", line 312, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/templatetags/admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/templatetags/admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/usr/local/lib/python3.10/dist-packages/django/contrib/admin/utils.py", line 281, in lookup_field
+    value = attr(obj)
+  File "/root/water_gate/water_gate/backend/api/admin.py", line 19, in wg_image
+    return mark_safe(f'<img src="{ obj.water_gate_image.url }" style="width:5rem;">')
+NameError: name 'mark_safe' is not defined
+2023-09-27 16:45:15,551 [ERROR] 21863 139931890480704 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 500 376979
+2023-09-27 16:45:42,207 [INFO] 21863 139931947012544 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/admin.py changed, reloading.
+2023-09-27 16:45:42,401 [INFO] 22100 139622974296512 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:45:49,641 [INFO] 22100 139622918125120 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 14984
+2023-09-27 16:45:52,575 [INFO] 22100 139622918125120 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/api/watergate/1/change/ HTTP/1.1" 302 0
+2023-09-27 16:45:52,599 [INFO] 22100 139622918125120 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11593
+2023-09-27 16:45:52,674 [INFO] 22100 139622918125120 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:45:52,700 [WARNING] 22100 139622909732416 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /mobile_sample_dIpeFxf.jpg
+2023-09-27 16:45:52,700 [WARNING] 22100 139622909732416 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /mobile_sample_dIpeFxf.jpg HTTP/1.1" 404 2262
+2023-09-27 16:45:52,733 [INFO] 22100 139622918125120 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2023-09-27 16:45:56,825 [INFO] 22100 139622918125120 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 15000
+2023-09-27 16:45:56,846 [INFO] 22100 139622918125120 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:45:59,375 [WARNING] 22100 139622918125120 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /mobile_sample_dIpeFxf.jpg
+2023-09-27 16:45:59,375 [WARNING] 22100 139622918125120 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /mobile_sample_dIpeFxf.jpg HTTP/1.1" 404 2262
+2023-09-27 16:46:25,883 [WARNING] 22100 139622918125120 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /admin/mobile_sample_dIpeFxf.jpg
+2023-09-27 16:46:25,883 [WARNING] 22100 139622918125120 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/mobile_sample_dIpeFxf.jpg HTTP/1.1" 404 2280
+2023-09-27 16:48:21,554 [INFO] 22100 139622974296512 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/settings.py changed, reloading.
+2023-09-27 16:48:21,758 [INFO] 22365 140705388663232 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:48:29,911 [INFO] 22365 140705388663232 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/settings.py changed, reloading.
+2023-09-27 16:48:30,097 [INFO] 22388 140538444001728 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:48:46,284 [INFO] 22388 140538444001728 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/settings.py changed, reloading.
+2023-09-27 16:48:46,456 [INFO] 22414 140449324913088 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:49:09,129 [INFO] 22414 140449188673088 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 15006
+2023-09-27 16:49:12,853 [INFO] 22414 140449188673088 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/api/watergate/1/change/ HTTP/1.1" 302 0
+2023-09-27 16:49:12,874 [INFO] 22414 140449188673088 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11536
+2023-09-27 16:49:12,953 [INFO] 22414 140449188673088 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:49:14,486 [INFO] 22414 140449188673088 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 14701
+2023-09-27 16:49:14,507 [INFO] 22414 140449188673088 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:49:21,295 [INFO] 22414 140449188673088 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/api/watergate/1/change/ HTTP/1.1" 302 0
+2023-09-27 16:49:21,316 [INFO] 22414 140449188673088 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11599
+2023-09-27 16:49:21,404 [INFO] 22414 140449188673088 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:49:21,405 [WARNING] 22414 140449268364864 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample_TIhGX4d.jpg
+2023-09-27 16:49:21,406 [WARNING] 22414 140449268364864 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample_TIhGX4d.jpg HTTP/1.1" 404 2280
+2023-09-27 16:49:25,807 [INFO] 22414 140449188673088 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 15006
+2023-09-27 16:49:25,829 [INFO] 22414 140449188673088 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:49:49,456 [INFO] 22414 140449188673088 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/api/watergate/1/change/ HTTP/1.1" 302 0
+2023-09-27 16:49:49,471 [INFO] 22414 140449188673088 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11536
+2023-09-27 16:49:49,558 [INFO] 22414 140449188673088 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:49:56,235 [INFO] 22574 140249070645696 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:49:59,285 [INFO] 22574 140249014466112 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/prefecture/ HTTP/1.1" 200 10613
+2023-09-27 16:49:59,307 [INFO] 22574 140249014466112 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:49:59,913 [INFO] 22574 140249014466112 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11313
+2023-09-27 16:49:59,937 [INFO] 22574 140249014466112 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:50:05,682 [INFO] 22574 140249014466112 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 14701
+2023-09-27 16:50:05,706 [INFO] 22574 140249014466112 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:50:12,085 [INFO] 22574 140249014466112 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/api/watergate/1/change/ HTTP/1.1" 302 0
+2023-09-27 16:50:12,101 [INFO] 22574 140249014466112 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11599
+2023-09-27 16:50:12,178 [INFO] 22574 140249014466112 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:50:12,192 [WARNING] 22574 140248935822912 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample_LzWYYFn.jpg
+2023-09-27 16:50:12,193 [WARNING] 22574 140248935822912 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample_LzWYYFn.jpg HTTP/1.1" 404 2280
+2023-09-27 16:50:21,882 [INFO] 22574 140249014466112 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 15006
+2023-09-27 16:50:21,910 [INFO] 22574 140249014466112 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:50:30,584 [INFO] 22574 140249070645696 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/settings.py changed, reloading.
+2023-09-27 16:50:30,771 [INFO] 22649 140487646507456 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:50:35,340 [INFO] 22649 140487589623360 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/api/watergate/1/change/ HTTP/1.1" 302 0
+2023-09-27 16:50:35,370 [INFO] 22649 140487589623360 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11536
+2023-09-27 16:50:35,442 [INFO] 22649 140487589623360 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:50:40,301 [INFO] 22679 140669569089984 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:50:43,201 [INFO] 22679 140669439964736 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/prefecture/ HTTP/1.1" 200 10613
+2023-09-27 16:50:43,225 [INFO] 22679 140669439964736 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:50:43,647 [INFO] 22679 140669439964736 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11313
+2023-09-27 16:50:43,674 [INFO] 22679 140669439964736 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:50:44,489 [INFO] 22679 140669439964736 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 14701
+2023-09-27 16:50:44,511 [INFO] 22679 140669439964736 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:50:50,104 [INFO] 22679 140669439964736 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/api/watergate/1/change/ HTTP/1.1" 302 0
+2023-09-27 16:50:50,124 [INFO] 22679 140669439964736 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11591
+2023-09-27 16:50:50,217 [INFO] 22679 140669439964736 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:50:50,218 [WARNING] 22679 140669431572032 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 16:50:50,219 [WARNING] 22679 140669431572032 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 16:51:22,904 [WARNING] 22679 140669439964736 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 16:51:22,904 [WARNING] 22679 140669439964736 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 16:51:30,640 [WARNING] 22679 140669439964736 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/
+2023-09-27 16:51:30,641 [WARNING] 22679 140669439964736 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/ HTTP/1.1" 404 2205
+2023-09-27 16:55:11,101 [INFO] 22679 140669569089984 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/urls.py changed, reloading.
+2023-09-27 16:55:11,299 [INFO] 23112 139847773774272 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:55:19,429 [INFO] 23112 139847773774272 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/urls.py changed, reloading.
+2023-09-27 16:55:19,592 [INFO] 23133 140690689327552 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:55:32,625 [INFO] 23157 140156304290240 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:55:41,380 [INFO] 23157 140156247995968 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 16:55:41,410 [INFO] 23157 140156247995968 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:55:41,463 [WARNING] 23157 140156239603264 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 16:55:41,464 [WARNING] 23157 140156239603264 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 16:55:49,894 [INFO] 23157 140156239603264 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 16:55:49,916 [WARNING] 23157 140156247995968 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 16:55:49,916 [WARNING] 23157 140156247995968 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 16:55:49,919 [INFO] 23157 140156239603264 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:56:27,051 [INFO] 23157 140156304290240 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/urls.py changed, reloading.
+2023-09-27 16:56:27,266 [INFO] 23250 140167480689088 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:57:01,559 [INFO] 23250 140167480689088 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/settings.py changed, reloading.
+2023-09-27 16:57:01,740 [INFO] 23307 140123254403520 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:57:05,201 [INFO] 23316 139932227658176 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:57:08,251 [INFO] 23316 139932171499072 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 16:57:08,280 [INFO] 23316 139932171499072 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:57:08,329 [WARNING] 23316 139932163106368 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 16:57:08,331 [WARNING] 23316 139932163106368 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 16:57:10,577 [INFO] 23316 139932163106368 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 16:57:10,610 [INFO] 23316 139932163106368 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/base.css HTTP/1.1" 200 21207
+2023-09-27 16:57:10,612 [INFO] 23316 139932144223808 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 200 6566
+2023-09-27 16:57:10,612 [INFO] 23316 139932171499072 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2023-09-27 16:57:10,614 [INFO] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2023-09-27 16:57:10,614 [INFO] 23316 139932127438400 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 200 18533
+2023-09-27 16:57:10,621 [INFO] 23316 139932135831104 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:57:10,624 [INFO] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 200 5682
+2023-09-27 16:57:10,624 [INFO] 23316 139932171499072 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2023-09-27 16:57:10,625 [INFO] 23316 139932127438400 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2023-09-27 16:57:10,626 [INFO] 23316 139932144223808 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2023-09-27 16:57:10,627 [INFO] 23316 139932135831104 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 200 7872
+2023-09-27 16:57:10,661 [INFO] 23316 139932163106368 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 200 7887
+2023-09-27 16:57:10,670 [INFO] 23316 139932171499072 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2023-09-27 16:57:10,671 [INFO] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2023-09-27 16:57:10,721 [INFO] 23316 139932171499072 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/theme.js HTTP/1.1" 200 1943
+2023-09-27 16:57:10,727 [INFO] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2023-09-27 16:57:10,744 [INFO] 23316 139932163106368 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 200 978
+2023-09-27 16:57:10,745 [WARNING] 23316 139932144223808 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 16:57:10,746 [INFO] 23316 139932127438400 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2023-09-27 16:57:10,746 [WARNING] 23316 139932144223808 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 16:57:10,747 [INFO] 23316 139932135831104 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2023-09-27 16:57:10,815 [WARNING] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /favicon.ico
+2023-09-27 16:57:10,815 [WARNING] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /favicon.ico HTTP/1.1" 404 2220
+2023-09-27 16:57:10,844 [INFO] 23316 139932163106368 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 16:57:10,863 [INFO] 23316 139932163106368 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/base.css HTTP/1.1" 200 21207
+2023-09-27 16:57:10,864 [INFO] 23316 139932171499072 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2023-09-27 16:57:10,864 [INFO] 23316 139932144223808 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2023-09-27 16:57:10,878 [INFO] 23316 139932144223808 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2023-09-27 16:57:10,880 [INFO] 23316 139932135831104 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 200 6566
+2023-09-27 16:57:10,882 [INFO] 23316 139932127438400 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:57:10,883 [INFO] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 200 18533
+2023-09-27 16:57:10,884 [INFO] 23316 139932135831104 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 200 5682
+2023-09-27 16:57:10,885 [INFO] 23316 139932171499072 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2023-09-27 16:57:10,889 [INFO] 23316 139932127438400 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2023-09-27 16:57:10,889 [INFO] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 200 7872
+2023-09-27 16:57:10,910 [INFO] 23316 139932163106368 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 200 7887
+2023-09-27 16:57:10,929 [INFO] 23316 139932144223808 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2023-09-27 16:57:10,930 [INFO] 23316 139932135831104 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2023-09-27 16:57:10,988 [INFO] 23316 139932135831104 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/theme.js HTTP/1.1" 200 1943
+2023-09-27 16:57:10,990 [INFO] 23316 139932144223808 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2023-09-27 16:57:11,005 [INFO] 23316 139932171499072 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 200 978
+2023-09-27 16:57:11,007 [INFO] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2023-09-27 16:57:11,010 [WARNING] 23316 139932163106368 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 16:57:11,010 [INFO] 23316 139932127438400 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2023-09-27 16:57:11,011 [WARNING] 23316 139932163106368 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 16:57:11,064 [WARNING] 23316 139932135831104 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /favicon.ico
+2023-09-27 16:57:11,065 [WARNING] 23316 139932135831104 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /favicon.ico HTTP/1.1" 404 2220
+2023-09-27 16:57:11,099 [INFO] 23316 139932144223808 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 16:57:11,118 [INFO] 23316 139932144223808 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/base.css HTTP/1.1" 200 21207
+2023-09-27 16:57:11,126 [INFO] 23316 139932163106368 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2023-09-27 16:57:11,128 [INFO] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2023-09-27 16:57:11,130 [INFO] 23316 139932127438400 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 200 6566
+2023-09-27 16:57:11,136 [INFO] 23316 139932171499072 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:57:11,137 [INFO] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2023-09-27 16:57:11,138 [INFO] 23316 139932163106368 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 200 18533
+2023-09-27 16:57:11,139 [INFO] 23316 139932127438400 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 200 5682
+2023-09-27 16:57:11,141 [INFO] 23316 139932135831104 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2023-09-27 16:57:11,142 [INFO] 23316 139932171499072 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2023-09-27 16:57:11,171 [INFO] 23316 139932144223808 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 200 7872
+2023-09-27 16:57:11,180 [INFO] 23316 139932135831104 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 200 7887
+2023-09-27 16:57:11,186 [INFO] 23316 139932135831104 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2023-09-27 16:57:11,188 [INFO] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2023-09-27 16:57:11,245 [INFO] 23316 139932135831104 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/theme.js HTTP/1.1" 200 1943
+2023-09-27 16:57:11,256 [INFO] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2023-09-27 16:57:11,275 [INFO] 23316 139932144223808 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 200 978
+2023-09-27 16:57:11,276 [INFO] 23316 139932163106368 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2023-09-27 16:57:11,277 [INFO] 23316 139932127438400 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2023-09-27 16:57:11,278 [WARNING] 23316 139932171499072 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 16:57:11,278 [WARNING] 23316 139932171499072 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 16:57:11,332 [WARNING] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /favicon.ico
+2023-09-27 16:57:11,332 [WARNING] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /favicon.ico HTTP/1.1" 404 2220
+2023-09-27 16:57:21,192 [INFO] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 16:57:21,217 [WARNING] 23316 139932135831104 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 16:57:21,217 [WARNING] 23316 139932135831104 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 16:57:21,220 [INFO] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:57:32,244 [INFO] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 14990
+2023-09-27 16:57:32,267 [INFO] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:57:36,121 [WARNING] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 16:57:36,122 [WARNING] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 16:57:58,827 [INFO] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 14990
+2023-09-27 16:58:00,799 [INFO] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 16:58:37,355 [WARNING] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 16:58:37,356 [WARNING] 23316 139932152616512 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 16:59:21,118 [INFO] 23316 139932227658176 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/settings.py changed, reloading.
+2023-09-27 16:59:21,392 [INFO] 23536 140591838216640 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:59:33,404 [INFO] 23565 140469038154176 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 16:59:36,545 [WARNING] 23565 140468913436224 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 16:59:36,546 [WARNING] 23565 140468913436224 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 16:59:38,337 [INFO] 23565 140468913436224 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 16:59:38,360 [INFO] 23565 140468913436224 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:59:38,398 [WARNING] 23565 140468905043520 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 16:59:38,398 [WARNING] 23565 140468905043520 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 16:59:38,926 [INFO] 23565 140468913436224 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 16:59:38,947 [WARNING] 23565 140468905043520 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 16:59:38,947 [WARNING] 23565 140468905043520 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 16:59:38,951 [INFO] 23565 140468913436224 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 16:59:39,355 [INFO] 23565 140468913436224 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 16:59:39,377 [WARNING] 23565 140468905043520 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 16:59:39,378 [WARNING] 23565 140468905043520 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 16:59:39,380 [INFO] 23565 140468913436224 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 17:01:28,209 [INFO] 23565 140469038154176 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/urls.py changed, reloading.
+2023-09-27 17:01:28,381 [INFO] 23746 140426115211712 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 17:02:12,584 [INFO] 23816 139951134167488 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 17:02:16,037 [INFO] 23816 139951077324352 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 17:02:16,065 [INFO] 23816 139951077324352 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 17:02:16,107 [WARNING] 23816 139951068931648 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 17:02:16,107 [WARNING] 23816 139951068931648 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 17:02:29,794 [INFO] 23816 139951134167488 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/urls.py changed, reloading.
+2023-09-27 17:02:29,965 [INFO] 23852 140152571376064 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 17:02:36,531 [INFO] 23852 140152515065408 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 17:02:36,556 [INFO] 23852 140152515065408 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 17:02:36,559 [WARNING] 23852 140152433276480 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 17:02:36,560 [WARNING] 23852 140152433276480 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 17:10:44,294 [INFO] 23852 140152515065408 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 17:10:44,320 [INFO] 23852 140152515065408 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 17:10:44,365 [WARNING] 23852 140152433276480 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 17:10:44,365 [WARNING] 23852 140152433276480 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 17:12:26,671 [INFO] 23852 140152571376064 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/urls.py changed, reloading.
+2023-09-27 17:12:26,837 [INFO] 24792 139889985298880 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 17:12:47,058 [INFO] 24792 139889985298880 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/urls.py changed, reloading.
+2023-09-27 17:12:47,228 [INFO] 24831 140585093099968 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 17:12:51,323 [INFO] 24843 140211891220928 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 17:12:55,696 [INFO] 24843 140211835106880 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 17:12:55,724 [INFO] 24843 140211835106880 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 17:12:55,768 [WARNING] 24843 140211757512256 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 17:12:55,768 [WARNING] 24843 140211757512256 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 17:12:58,018 [INFO] 24843 140211835106880 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 17:12:58,055 [INFO] 24843 140211739678272 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 200 6566
+2023-09-27 17:12:58,056 [INFO] 24843 140211757512256 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2023-09-27 17:12:58,057 [INFO] 24843 140211835106880 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/base.css HTTP/1.1" 200 21207
+2023-09-27 17:12:58,059 [INFO] 24843 140211748070976 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2023-09-27 17:12:58,065 [INFO] 24843 140211722892864 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 17:12:58,065 [INFO] 24843 140211731285568 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 200 18533
+2023-09-27 17:12:58,068 [INFO] 24843 140211757512256 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2023-09-27 17:12:58,070 [INFO] 24843 140211748070976 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 200 5682
+2023-09-27 17:12:58,073 [INFO] 24843 140211731285568 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2023-09-27 17:12:58,073 [INFO] 24843 140211722892864 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 200 7872
+2023-09-27 17:12:58,074 [INFO] 24843 140211739678272 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2023-09-27 17:12:58,089 [INFO] 24843 140211835106880 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 200 7887
+2023-09-27 17:12:58,120 [INFO] 24843 140211757512256 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2023-09-27 17:12:58,122 [INFO] 24843 140211748070976 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2023-09-27 17:12:58,173 [INFO] 24843 140211757512256 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/theme.js HTTP/1.1" 200 1943
+2023-09-27 17:12:58,182 [INFO] 24843 140211748070976 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2023-09-27 17:12:58,197 [INFO] 24843 140211731285568 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2023-09-27 17:12:58,198 [INFO] 24843 140211835106880 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 200 978
+2023-09-27 17:12:58,198 [INFO] 24843 140211722892864 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2023-09-27 17:12:58,201 [WARNING] 24843 140211739678272 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /media/mobile_sample.jpg
+2023-09-27 17:12:58,202 [WARNING] 24843 140211739678272 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 404 2256
+2023-09-27 17:12:58,255 [WARNING] 24843 140211748070976 /usr/local/lib/python3.10/dist-packages/django/utils/log.py:241 Not Found: /favicon.ico
+2023-09-27 17:12:58,255 [WARNING] 24843 140211748070976 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /favicon.ico HTTP/1.1" 404 2220
+2023-09-27 17:13:38,716 [INFO] 24843 140211891220928 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/api/urls.py changed, reloading.
+2023-09-27 17:13:38,907 [INFO] 24932 139994252833216 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 17:13:52,090 [INFO] 24932 139994252833216 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:266 /root/water_gate/water_gate/backend/admin_api/urls.py changed, reloading.
+2023-09-27 17:13:52,258 [INFO] 24959 140345181004224 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 17:13:57,442 [INFO] 24974 140528315810240 /usr/local/lib/python3.10/dist-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-27 17:14:02,698 [INFO] 24974 140528259692096 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 17:14:02,730 [INFO] 24974 140528259692096 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 17:14:02,775 [INFO] 24974 140528175806016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 200 80980
+2023-09-27 17:14:09,552 [INFO] 24974 140528175806016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 14990
+2023-09-27 17:14:09,576 [INFO] 24974 140528175806016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 17:14:15,693 [INFO] 24974 140528175806016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 14990
+2023-09-27 17:14:20,019 [INFO] 24974 140528175806016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 14990
+2023-09-27 17:14:21,665 [INFO] 24974 140528175806016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11368
+2023-09-27 17:14:25,432 [INFO] 24974 140528175806016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 14990
+2023-09-27 17:14:25,464 [INFO] 24974 140528175806016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-27 17:14:28,165 [INFO] 24974 140528175806016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 14990
+2023-09-27 17:18:04,069 [INFO] 24974 140528175806016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 304 0

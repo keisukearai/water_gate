@@ -139,6 +139,10 @@ STATIC_URL = 'admin/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# 画像をdjango側で読み込むための設定
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
 ####################
 # ログ設定
 ####################

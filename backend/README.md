@@ -137,6 +137,7 @@ drop table prefecture;
 ### migrations file delete
 rm -rf /root/water_gate/water_gate/backend/api/migrations/*.py
 
+python manage.py migrate --fake api zero
 python manage.py makemigrations api
 python manage.py migrate
 
