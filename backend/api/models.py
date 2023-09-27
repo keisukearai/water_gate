@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.db import models
+from django_resized import ResizedImageField
 
 class Prefecture(models.Model):
     """
@@ -39,7 +40,7 @@ class WaterGate(models.Model):
     water_gate_name = models.CharField(verbose_name="水門名", max_length=50)
     water_gateaddress = models.CharField(verbose_name="住所", max_length=256)
     water_gate_supplement = models.TextField(verbose_name="補足", blank=True, null=True)
-    water_gate_image = models.ImageField(verbose_name="画像", upload_to='', blank=True, null=True)
+    water_gate_image = ResizedImageField(verbose_name="画像", upload_to='', blank=True, null=True)
     water_gate_latitude = models.DecimalField(verbose_name="緯度", max_digits=9, decimal_places=6, default=0)
     water_gate_longitude = models.DecimalField(verbose_name="経度", max_digits=9, decimal_places=6, default=0)
 

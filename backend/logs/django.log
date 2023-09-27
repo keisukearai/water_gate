@@ -3936,3 +3936,248 @@ NameError: name 'mark_safe' is not defined
 2023-09-27 17:14:25,464 [INFO] 24974 140528175806016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
 2023-09-27 17:14:28,165 [INFO] 24974 140528175806016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 14990
 2023-09-27 17:18:04,069 [INFO] 24974 140528175806016 /usr/local/lib/python3.10/dist-packages/django/core/servers/basehttp.py:212 "GET /media/mobile_sample.jpg HTTP/1.1" 304 0
+2023-09-28 06:29:42,554 [INFO] 1843 140259280758592 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 06:29:56,761 [WARNING] 1843 140259214231296 /home/arai/.local/lib/python3.8/site-packages/django/utils/log.py:241 Not Found: /
+2023-09-28 06:29:56,764 [WARNING] 1843 140259214231296 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET / HTTP/1.1" 404 2295
+2023-09-28 06:29:58,271 [WARNING] 1843 140259214231296 /home/arai/.local/lib/python3.8/site-packages/django/utils/log.py:241 Not Found: /favicon.ico
+2023-09-28 06:29:58,273 [WARNING] 1843 140259214231296 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /favicon.ico HTTP/1.1" 404 2346
+2023-09-28 06:30:08,446 [INFO] 1843 140259214231296 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/ HTTP/1.1" 200 9104
+2023-09-28 06:30:08,544 [INFO] 1843 140259222624000 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2023-09-28 06:30:08,551 [INFO] 1843 140259214231296 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/base.css HTTP/1.1" 200 21207
+2023-09-28 06:30:08,605 [INFO] 1843 140259002152704 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2023-09-28 06:30:08,625 [INFO] 1843 140258993760000 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/dashboard.css HTTP/1.1" 200 441
+2023-09-28 06:30:08,629 [INFO] 1843 140258985367296 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/responsive.css HTTP/1.1" 200 18533
+2023-09-28 06:30:09,032 [INFO] 1843 140258985367296 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/theme.js HTTP/1.1" 200 1943
+2023-09-28 06:30:09,043 [INFO] 1843 140258993760000 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2023-09-28 06:30:09,076 [INFO] 1843 140258993760000 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2023-09-28 06:30:09,080 [INFO] 1843 140258985367296 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2023-09-28 06:30:17,190 [ERROR] 1843 140258985367296 /home/arai/.local/lib/python3.8/site-packages/django/utils/log.py:241 Internal Server Error: /wg_admin/api/area/
+Traceback (most recent call last):
+  File "/home/arai/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'wg_api_db.area' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/arai/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1926, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 836, in get_changelist_instance
+    return ChangeList(
+  File "/home/arai/.local/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 123, in __init__
+    self.get_results(request)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 279, in get_results
+    result_count = paginator.count
+  File "/home/arai/.local/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/core/paginator.py", line 93, in count
+    return c()
+  File "/home/arai/.local/lib/python3.8/site-packages/django/db/models/query.py", line 608, in count
+    return self.query.get_count(using=self.db)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 568, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+  File "/home/arai/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 554, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/arai/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/arai/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/arai/.local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'wg_api_db.area' doesn't exist")
+2023-09-28 06:30:17,213 [ERROR] 1843 140258985367296 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/area/ HTTP/1.1" 500 201867
+2023-09-28 06:35:08,407 [INFO] 2220 140283102279488 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 06:35:12,818 [INFO] 2220 140283044144896 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/ HTTP/1.1" 200 9104
+2023-09-28 06:35:16,761 [INFO] 2220 140283044144896 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 8478
+2023-09-28 06:35:16,843 [INFO] 2220 140283044144896 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/changelists.css HTTP/1.1" 200 6566
+2023-09-28 06:35:16,945 [INFO] 2220 140283044144896 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/actions.js HTTP/1.1" 200 7872
+2023-09-28 06:35:17,002 [INFO] 2220 140283035752192 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 06:35:17,005 [INFO] 2220 140282815833856 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/core.js HTTP/1.1" 200 5682
+2023-09-28 06:35:17,014 [INFO] 2220 140283044144896 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/urlify.js HTTP/1.1" 200 7887
+2023-09-28 06:35:17,062 [INFO] 2220 140282799048448 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2023-09-28 06:35:17,067 [INFO] 2220 140282807441152 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2023-09-28 06:35:17,077 [INFO] 2220 140283035752192 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2023-09-28 06:35:17,085 [INFO] 2220 140282815833856 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2023-09-28 06:35:17,108 [INFO] 2220 140282824226560 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2023-09-28 06:35:17,504 [INFO] 2220 140283035752192 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/filters.js HTTP/1.1" 200 978
+2023-09-28 06:35:17,613 [INFO] 2220 140283035752192 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2023-09-28 06:35:37,682 [INFO] 2281 140321127692096 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 06:35:42,292 [INFO] 2281 140321069557504 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11313
+2023-09-28 06:35:42,415 [INFO] 2281 140321069557504 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 06:35:46,151 [INFO] 2281 140321069557504 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 14701
+2023-09-28 06:35:46,235 [INFO] 2281 140321069557504 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/forms.css HTTP/1.1" 200 9047
+2023-09-28 06:35:46,281 [INFO] 2281 140321061164800 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 06:35:46,678 [INFO] 2281 140321061164800 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+2023-09-28 06:35:46,680 [INFO] 2281 140321069557504 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/css/widgets.css HTTP/1.1" 200 11900
+2023-09-28 06:35:46,703 [INFO] 2281 140321061164800 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+2023-09-28 06:35:46,741 [INFO] 2281 140321069557504 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/change_form.js HTTP/1.1" 200 606
+2023-09-28 06:36:18,672 [INFO] 2281 140321069557504 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/api/watergate/1/change/ HTTP/1.1" 302 0
+2023-09-28 06:36:18,800 [INFO] 2281 140321069557504 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11582
+2023-09-28 06:36:18,984 [INFO] 2281 140321069557504 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 06:36:19,431 [INFO] 2281 140321069557504 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/moon.jpg HTTP/1.1" 200 68554
+2023-09-28 06:36:19,733 [INFO] 2281 140321069557504 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2023-09-28 06:47:17,607 [INFO] 2281 140321127692096 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:266 /home/arai/water_gate/backend/admin_api/urls.py changed, reloading.
+2023-09-28 06:47:20,475 [INFO] 2975 140151212607296 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 06:47:58,140 [INFO] 2975 140151087134464 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/area/ HTTP/1.1" 200 9863
+2023-09-28 06:47:58,335 [INFO] 2975 140151087134464 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 06:48:06,785 [INFO] 3033 139759413729088 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 06:48:09,799 [INFO] 3033 139759355594496 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/prefecture/ HTTP/1.1" 200 10613
+2023-09-28 06:48:09,993 [INFO] 3033 139759355594496 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 06:54:10,439 [INFO] 3406 139746464925504 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 06:57:15,302 [INFO] 3600 140389430609728 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 06:58:34,656 [INFO] 3689 140214011082560 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:28:59,499 [INFO] 5496 140397824157504 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:29:04,094 [INFO] 5496 140397757839104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11359
+2023-09-28 07:29:04,388 [INFO] 5496 140397757839104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:29:05,711 [INFO] 5496 140397757839104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/moon.jpg HTTP/1.1" 304 0
+2023-09-28 07:29:09,156 [INFO] 5496 140397757839104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/change/ HTTP/1.1" 200 14972
+2023-09-28 07:29:09,273 [INFO] 5496 140397757839104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:29:14,893 [INFO] 5496 140397757839104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/1/delete/ HTTP/1.1" 200 8476
+2023-09-28 07:29:14,978 [INFO] 5496 140397757839104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /admin/static/admin/js/cancel.js HTTP/1.1" 200 884
+2023-09-28 07:29:16,966 [INFO] 5496 140397757839104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/api/watergate/1/delete/ HTTP/1.1" 302 0
+2023-09-28 07:29:17,125 [INFO] 5496 140397757839104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11181
+2023-09-28 07:29:17,295 [INFO] 5496 140397757839104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:29:21,399 [INFO] 5496 140397757839104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/2/change/ HTTP/1.1" 200 14701
+2023-09-28 07:29:21,531 [INFO] 5496 140397757839104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:29:32,507 [INFO] 5496 140397757839104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/api/watergate/2/change/ HTTP/1.1" 302 0
+2023-09-28 07:29:32,816 [INFO] 5496 140397757839104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11277
+2023-09-28 07:29:33,095 [INFO] 5496 140397757839104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter.jpg HTTP/1.1" 200 105868
+2023-09-28 07:29:33,193 [INFO] 5496 140397766231808 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:29:41,767 [INFO] 5496 140397766231808 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/2/change/ HTTP/1.1" 200 14976
+2023-09-28 07:29:41,898 [INFO] 5496 140397766231808 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:29:44,356 [INFO] 5496 140397766231808 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter.jpg HTTP/1.1" 304 0
+2023-09-28 07:29:47,899 [INFO] 5496 140397766231808 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/2/change/ HTTP/1.1" 200 14976
+2023-09-28 07:32:41,084 [INFO] 5496 140397824157504 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:266 /home/arai/water_gate/backend/api/models.py changed, reloading.
+2023-09-28 07:32:43,168 [INFO] 5776 140304681252672 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:34:09,886 [INFO] 5776 140304681252672 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:266 /home/arai/water_gate/backend/api/models.py changed, reloading.
+2023-09-28 07:34:12,608 [INFO] 5875 140080371758912 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:39:01,665 [INFO] 5875 140080371758912 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:266 /home/arai/water_gate/backend/api/models.py changed, reloading.
+2023-09-28 07:39:03,446 [INFO] 6153 139681297332032 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:39:05,823 [INFO] 6153 139681297332032 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:266 /home/arai/water_gate/backend/api/models.py changed, reloading.
+2023-09-28 07:39:07,630 [INFO] 6159 139900649396032 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:39:24,108 [INFO] 6159 139900649396032 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:266 /home/arai/water_gate/backend/api/models.py changed, reloading.
+2023-09-28 07:39:26,358 [INFO] 6186 140420489369408 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:39:37,832 [INFO] 6186 140420489369408 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:266 /home/arai/water_gate/backend/api/models.py changed, reloading.
+2023-09-28 07:39:39,546 [INFO] 6207 140684198569792 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:40:39,130 [INFO] 6282 140538403764032 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:40:43,100 [INFO] 6282 140538345576192 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11054
+2023-09-28 07:40:43,274 [INFO] 6282 140538345576192 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:40:44,393 [INFO] 6282 140538345576192 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter.jpg HTTP/1.1" 304 0
+2023-09-28 07:40:48,131 [INFO] 6282 140538345576192 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/2/change/ HTTP/1.1" 200 14976
+2023-09-28 07:40:48,255 [INFO] 6282 140538345576192 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:40:53,616 [INFO] 6282 140538345576192 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/api/watergate/2/change/ HTTP/1.1" 302 0
+2023-09-28 07:40:53,750 [INFO] 6282 140538345576192 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11229
+2023-09-28 07:40:53,913 [INFO] 6282 140538345576192 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:40:56,929 [INFO] 6282 140538345576192 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/2/change/ HTTP/1.1" 200 14701
+2023-09-28 07:40:57,048 [INFO] 6282 140538345576192 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:41:08,384 [INFO] 6282 140538345576192 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/api/watergate/2/change/ HTTP/1.1" 302 0
+2023-09-28 07:41:08,493 [INFO] 6282 140538345576192 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11278
+2023-09-28 07:41:08,625 [INFO] 6282 140538345576192 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter.jpeg HTTP/1.1" 200 1400
+2023-09-28 07:41:08,673 [INFO] 6282 140538337183488 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:41:12,561 [INFO] 6282 140538337183488 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/2/change/ HTTP/1.1" 200 14978
+2023-09-28 07:41:12,673 [INFO] 6282 140538337183488 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:41:15,319 [INFO] 6282 140538337183488 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter.jpeg HTTP/1.1" 304 0
+2023-09-28 07:43:27,583 [INFO] 6282 140538403764032 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:266 /home/arai/water_gate/backend/admin_api/settings.py changed, reloading.
+2023-09-28 07:43:29,503 [INFO] 6478 140169305896768 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:43:39,865 [INFO] 6478 140169305896768 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:266 /home/arai/water_gate/backend/admin_api/settings.py changed, reloading.
+2023-09-28 07:43:41,669 [INFO] 6500 139707644712768 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:43:46,040 [INFO] 6500 139707644712768 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:266 /home/arai/water_gate/backend/admin_api/settings.py changed, reloading.
+2023-09-28 07:43:47,773 [INFO] 6512 140415472899904 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:44:06,228 [INFO] 6512 140415472899904 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:266 /home/arai/water_gate/backend/admin_api/settings.py changed, reloading.
+2023-09-28 07:44:08,122 [INFO] 6538 140284090308416 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:44:15,471 [INFO] 6538 140283964815104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11055
+2023-09-28 07:44:15,734 [INFO] 6538 140283964815104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:44:16,109 [INFO] 6538 140283964815104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter.jpeg HTTP/1.1" 304 0
+2023-09-28 07:44:18,500 [INFO] 6538 140283964815104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/3/change/ HTTP/1.1" 200 14701
+2023-09-28 07:44:18,619 [INFO] 6538 140283964815104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:44:31,036 [INFO] 6538 140283964815104 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11055
+2023-09-28 07:44:54,771 [INFO] 6612 140690374547264 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:44:58,124 [INFO] 6612 140690243712768 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/3/change/ HTTP/1.1" 200 14701
+2023-09-28 07:44:58,303 [INFO] 6612 140690243712768 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:45:09,681 [INFO] 6612 140690243712768 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/api/watergate/3/change/ HTTP/1.1" 302 0
+2023-09-28 07:45:09,846 [INFO] 6612 140690243712768 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11334
+2023-09-28 07:45:09,983 [INFO] 6612 140690243712768 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter_GRXKIhe.jpg HTTP/1.1" 200 885
+2023-09-28 07:45:10,023 [INFO] 6612 140690235320064 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:45:10,363 [INFO] 6612 140690235320064 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter.jpeg HTTP/1.1" 304 0
+2023-09-28 07:45:14,786 [INFO] 6612 140690235320064 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/3/change/ HTTP/1.1" 200 14992
+2023-09-28 07:45:14,903 [INFO] 6612 140690235320064 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:45:17,671 [INFO] 6612 140690235320064 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter_GRXKIhe.jpg HTTP/1.1" 304 0
+2023-09-28 07:48:09,586 [INFO] 6612 140690374547264 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:266 /home/arai/water_gate/backend/admin_api/settings.py changed, reloading.
+2023-09-28 07:48:12,135 [INFO] 6898 140367887710016 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:48:23,273 [INFO] 6915 140606428178240 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:48:26,024 [INFO] 6915 140606370514688 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11111
+2023-09-28 07:48:26,373 [INFO] 6915 140606370514688 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:48:26,865 [INFO] 6915 140606370514688 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter_GRXKIhe.jpg HTTP/1.1" 304 0
+2023-09-28 07:48:26,872 [INFO] 6915 140606282131200 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter.jpeg HTTP/1.1" 304 0
+2023-09-28 07:48:30,323 [INFO] 6915 140606282131200 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/4/change/ HTTP/1.1" 200 14701
+2023-09-28 07:48:30,497 [INFO] 6915 140606282131200 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:48:40,150 [INFO] 6915 140606282131200 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/api/watergate/4/change/ HTTP/1.1" 302 0
+2023-09-28 07:48:40,396 [INFO] 6915 140606282131200 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11390
+2023-09-28 07:48:40,545 [INFO] 6915 140606282131200 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter_eDCWWJ6.jpg HTTP/1.1" 200 1262
+2023-09-28 07:48:40,590 [INFO] 6915 140606370514688 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:48:44,166 [INFO] 6915 140606370514688 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/4/change/ HTTP/1.1" 200 14992
+2023-09-28 07:48:44,308 [INFO] 6915 140606370514688 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:48:47,257 [INFO] 6915 140606370514688 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter_eDCWWJ6.jpg HTTP/1.1" 304 0
+2023-09-28 07:49:08,778 [INFO] 6915 140606428178240 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:266 /home/arai/water_gate/backend/admin_api/settings.py changed, reloading.
+2023-09-28 07:49:11,411 [INFO] 6981 140058098161472 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:49:14,722 [INFO] 6981 140058098161472 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:266 /home/arai/water_gate/backend/admin_api/settings.py changed, reloading.
+2023-09-28 07:49:18,549 [INFO] 6998 139766251964224 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:49:34,641 [INFO] 6998 139766251964224 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:266 /home/arai/water_gate/backend/api/models.py changed, reloading.
+2023-09-28 07:50:00,432 [INFO] 7067 140594094364480 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
+2023-09-28 07:50:05,016 [INFO] 7067 140594027783936 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11167
+2023-09-28 07:50:05,293 [INFO] 7067 140594027783936 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:50:06,089 [INFO] 7067 140594036176640 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter_GRXKIhe.jpg HTTP/1.1" 304 0
+2023-09-28 07:50:06,097 [INFO] 7067 140594027783936 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter_eDCWWJ6.jpg HTTP/1.1" 304 0
+2023-09-28 07:50:06,133 [INFO] 7067 140593808275200 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter.jpeg HTTP/1.1" 304 0
+2023-09-28 07:50:08,566 [INFO] 7067 140593808275200 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/5/change/ HTTP/1.1" 200 14701
+2023-09-28 07:50:08,727 [INFO] 7067 140593808275200 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:50:18,883 [INFO] 7067 140593808275200 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "POST /wg_admin/api/watergate/5/change/ HTTP/1.1" 302 0
+2023-09-28 07:50:19,093 [INFO] 7067 140593808275200 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/ HTTP/1.1" 200 11446
+2023-09-28 07:50:19,273 [INFO] 7067 140593808275200 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter_n9CWZhb.jpg HTTP/1.1" 200 68065
+2023-09-28 07:50:19,335 [INFO] 7067 140594027783936 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:50:19,698 [INFO] 7067 140594027783936 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter_eDCWWJ6.jpg HTTP/1.1" 304 0
+2023-09-28 07:50:22,350 [INFO] 7067 140594027783936 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/api/watergate/5/change/ HTTP/1.1" 200 14992
+2023-09-28 07:50:22,485 [INFO] 7067 140594027783936 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /wg_admin/jsi18n/ HTTP/1.1" 200 9739
+2023-09-28 07:50:24,894 [INFO] 7067 140594027783936 /home/arai/.local/lib/python3.8/site-packages/django/core/servers/basehttp.py:212 "GET /media/guiter_n9CWZhb.jpg HTTP/1.1" 304 0
+2023-09-28 07:51:47,228 [INFO] 7067 140594094364480 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:266 /home/arai/water_gate/backend/admin_api/settings.py changed, reloading.
+2023-09-28 07:51:49,607 [INFO] 7200 140130441176896 /home/arai/.local/lib/python3.8/site-packages/django/utils/autoreload.py:668 Watching for file changes with StatReloader
