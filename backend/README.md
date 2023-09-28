@@ -74,7 +74,7 @@ server {
     listen 80;
     server_name test.kotoragk.com www.test.kotoragk.com;
 
-    location /admin {
+    location ~ (/admin|/api) {
         proxy_pass http://127.0.0.1:8000;
         proxy_read_timeout 60;
         proxy_connect_timeout 60;
@@ -88,18 +88,8 @@ server {
         proxy_cache_bypass $http_upgrade;
     }
 
-    location /api {
-        proxy_pass http://127.0.0.1:8000;
-        proxy_read_timeout 60;
-        proxy_connect_timeout 60;
-        proxy_redirect off;
-
-        # Allow the use of websockets
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
+    location /media  {
+        alias /var/www/html/water_gate/backend/media; # Absolute path.
     }
 
     ・・・・
@@ -114,17 +104,23 @@ systemctl restart nginx
 https://test.kotoragk.com/admin
 
 ### gunicorn
-apt install gunicorn
-python -m pip install gunicorn
+#apt install gunicorn
+#python -m pip install gunicorn
 
 ### gunicorn start
-gunicorn --bind 127.0.0.1:8000 admin_api.wsgi -D
+#gunicorn --bind 127.0.0.1:8000 admin_api.wsgi -D --insecure
 
 ### gunicorn stop
-pkill gunicorn
+#pkill gunicorn
 
 ### gunicorn status
-ps aux | grep gunicorn
+#ps aux | grep gunicorn
+
+### runserver
+python manage.py runserver 127.0.0.1:8000 --insecure &
+
+ps aux | grep runserver
+kill -9 %1
 
 ## db init
 
