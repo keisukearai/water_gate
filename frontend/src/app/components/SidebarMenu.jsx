@@ -64,7 +64,7 @@ export default function SidebarMenu({ handleMenuOpen, menuOpen }) {
   return (
     <div>
       {/* モバイルでハンバガーメニュークリックした場合のみクリック可能とする */}
-      <Sidebar className={`fixed top-20 left-0 z-10 w-64 h-screen
+      <Sidebar className={`fixed top-20 left-0 z-20 w-64 h-screen
       ${menuOpen ? "-translate-x-full transition-transform sm:translate-x-0" : ""}`}
         onClick={() => !menuOpen ? handleMenuOpen() : ""}
         theme={SideBarTheme}
