@@ -27,7 +27,7 @@ admin.site.site_title = os.getenv('SITE_TITLE')
 admin.site.index_title = os.getenv('INDEX_TITLE')
 
 urlpatterns = [
-    path('wg_admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
 ]
 

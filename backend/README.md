@@ -111,7 +111,7 @@ nginx -t
 systemctl restart nginx
 
 ### admin site confirm
-http://test.kotoragk.com/admin
+https://test.kotoragk.com/admin
 
 ### gunicorn
 apt install gunicorn
@@ -136,6 +136,7 @@ drop table prefecture;
 
 ### migrations file delete
 rm -rf /root/water_gate/water_gate/backend/api/migrations/*.py
+rm -rf /var/www/html/water_gate/backend/api/migrations/*.py
 
 python manage.py migrate --fake api zero
 python manage.py makemigrations api
