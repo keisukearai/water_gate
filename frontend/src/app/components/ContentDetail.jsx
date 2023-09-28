@@ -101,7 +101,7 @@ export default function ContentDetail() {
               <div className="rounded-md shadow-md border-2 border-dark-500">
                 <Image
                   loader={imgLoader}
-                  src={(data.data.water_gate_image !== '') ? isMobile ? `${media_path}${data.data.water_gate_image_sm}` : `${media_path}${data.data.water_gate_image}` : '/no_image.png'}
+                  src={(data.data.water_gate_image !== '') ? isMobile ? `${media_path}${data.data.water_gate_image_sm}` : `${media_path}${data.data.water_gate_image}` : '/no_image.webp'}
                   alt={data.data.water_gate_name}
                   width={500}
                   height={400}
