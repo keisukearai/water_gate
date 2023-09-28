@@ -69,10 +69,10 @@ export default function ContentList() {
                         alt="水門画像"
                         width={300}
                         height={240}
-                        priority={true}
-                        loading={"eager"}
+                        priority={false}
+                        loading={"lazy"}
                         className="z-10 relative hover:opacity-75"
-                        quality={isMobile ? 5 : 50}
+                        quality={isMobile ? 50 : 70}
                       />
                     </div>
                     <div className="p-3 text-left hover:opacity-75">
