@@ -30,7 +30,7 @@ export default function ContentDetail() {
 
   {/* 画像loader設定 */}
   const imgLoader = () => {
-    return isMobile ? `${media_path}${data.data.water_gate_image_sm}` : `${media_path}${data.data.water_gate_image}`
+    return (data.data.water_gate_image !== '') ? isMobile ? `${media_path}${data.data.water_gate_image_sm}` : `${media_path}${data.data.water_gate_image}` : '/no_image.webp'
   }
 
   return (
