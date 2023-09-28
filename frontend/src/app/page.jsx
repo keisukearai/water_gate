@@ -1,8 +1,8 @@
 import ContentList from "src/app/components/ContentList"
 
 export const metadata = {
-  title: 'ホーム',
-  description: 'homeページの説明',
+  title: '一覧',
+  description: '一覧ページの説明',
 }
 
 {/*
