@@ -7,7 +7,7 @@ import HamburgerMenuButton from 'src/app/components/HamburgerMenuButton'
 export default function Header(props) {
   return (
     <header>
-      <div className="z-20 w-full">
+      <div className="z-20 w-full relative">
         <div className="fixed top-0 left-0 flex h-20 w-full text-header-text-color border-b-2 border-neutral-300 bg-gradient-to-r from-sky-700 to-sky-500">
           {/* ハンバーガーメニューボタン */}
           <HamburgerMenuButton handleMenuOpen={props.handleMenuOpen} />

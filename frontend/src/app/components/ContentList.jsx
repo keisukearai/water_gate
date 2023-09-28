@@ -71,7 +71,7 @@ export default function ContentList() {
                         height={240}
                         priority={true}
                         loading={"eager"}
-                        className="hover:opacity-75"
+                        className="z-10 relative hover:opacity-75"
                         quality={isMobile ? 5 : 50}
                       />
                     </div>
