@@ -65,7 +65,7 @@ export default function ContentList() {
                   <Link href={`detail/${item.id}`} rel="preload">
                     <div className="bg-sky-900">
                       <Image
-                        src={(item.id % 2 === 0) ? '/no_image_sm.png' : '/sample_sm.jpg'}
+                        src={(item.id % 2 === 0) ? '/no_image_sm2.png' : '/sample_sm2.jpg'}
                         alt="水門画像"
                         width={300}
                         height={240}
