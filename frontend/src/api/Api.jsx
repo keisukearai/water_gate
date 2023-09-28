@@ -32,7 +32,8 @@ export function useApiContenList(currentPage) {
 export function useApiContenDatail(slug) {
 
   // APIURL
-  const url = `${api_dummy_host_name}/products/${slug}`
+  // const url = `${api_dummy_host_name}/products/${slug}`
+  const url = `${api_host_name}/watergatedetai?id=${slug}`
 
   {/* API実行 */}
   const { data, error, isValidating } = useSWR(url, fetcher)

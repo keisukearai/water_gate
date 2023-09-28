@@ -59,7 +59,9 @@
             "area": 1,
             "water_gate_name": "サンプル水門1",
             "water_gateaddress": "東広島市安芸津町1-1",
-            "water_gate_supplement": "補足です。\r\n補足です。\r\n補足です。"
+            "water_gate_supplement": "補足です。\r\n補足です。\r\n補足です。",
+            "water_gate_latitude": "34.3221133465",
+            "water_gate_longitude": "132.8181288949"
         }
     },
     {

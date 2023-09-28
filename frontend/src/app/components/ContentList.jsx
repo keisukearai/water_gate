@@ -63,41 +63,43 @@ export default function ContentList() {
               <div key={item.id} className="p-1.5 md:p-3 w-1/2 md:w-1/3 lg:w-1/5">
                 <div className="max-w-sm bg-white border border-gray-200 rounded-md shadow">
                   <Link href={`detail/${item.id}`} rel="preload">
-                    <Image
-                      src="/sample.jpg"
-                      alt="水門画像"
-                      width={400}
-                      height={400}
-                      priority={true}
-                      loading={"eager"}
-                      className="hover:opacity-80"
-                      quality={isMobile ? 5 : 50}
-                    />
-                  </Link>
-                  <div className="p-5 text-left">
-                    <div className="mb-0.5 inline-block text-gray-500 text-sm font-bold">
-                      安芸津
+                    <div className="bg-sky-900">
+                      <Image
+                        src={(item.id % 2 === 0) ? '/no_image_sm.png' : '/sample_sm.jpg'}
+                        alt="水門画像"
+                        width={300}
+                        height={240}
+                        priority={true}
+                        loading={"eager"}
+                        className="hover:opacity-75"
+                        quality={isMobile ? 5 : 50}
+                      />
                     </div>
-                    <div className={`bg-gray-100 text-gray-800 text-sm font-medium w-14 px-3 py-0.5 rounded-md font-semibold border border-stone-200
+                    <div className="p-3 text-left hover:opacity-75">
+                      <div className="mb-0.5 ml-0.5 inline-block text-gray-500 text-sm font-bold">
+                        安芸津
+                      </div>
+                      <div className={`bg-gray-100 text-gray-800 text-sm font-medium w-14 px-3 py-0.5 rounded-md font-semibold border border-stone-200
                                     ${(item.id % 2 === 0) ? "bg-gray-600 text-white" : "bg-pink-100 text-pink-800"}`}>
                         {(item.id % 2 === 0) ? BASE_STATE.CLOSE.NAME : BASE_STATE.OPEN.NAME}
-                    </div>
-                    <h5 className="mb-1 md:text-lg font-bold tracking-tight text-gray-900">
-                      サンプルサンプル{(item.id % 2 === 0) ? "サンプルサンプル" : ""}水門{item.id}
-                    </h5>
-                    <div className="text-xs mb-1">
-                      バッテリー残量
-                    </div>
-                    <div className="w-8/12 bg-gray-200 rounded-xl" title={(item.stock >= 100 ? 100 + "%" : item.stock + "%")}>
-                      <div className="bg-teal-600 text-xs font-medium text-teal-100 text-center p-0.5 leading-none rounded-xl"
-                        style={{ width: (item.stock >= 100 ? 100 : item.stock) + '%' }}>
-                        {(item.stock >= 100 ? 100 : item.stock)}%
+                      </div>
+                      <h5 className="mb-1 md:text-lg font-bold tracking-tight text-gray-900">
+                        サンプルサンプル{(item.id % 2 === 0) ? "サンプルサンプル" : ""}水門{item.id}
+                      </h5>
+                      <div className="text-xs mb-1">
+                        バッテリー残量
+                      </div>
+                      <div className="w-8/12 bg-gray-200 rounded-xl" title={(item.stock >= 100 ? 100 + "%" : item.stock + "%")}>
+                        <div className="bg-teal-600 text-xs font-medium text-teal-100 text-center p-0.5 leading-none rounded-xl"
+                          style={{ width: (item.stock >= 100 ? 100 : item.stock) + '%' }}>
+                          {(item.stock >= 100 ? 100 : item.stock)}%
+                        </div>
+                      </div>
+                      <div className="text-xs mt-2">
+                        2023/09/27 12:34:56
                       </div>
                     </div>
-                    <div className="text-xs mt-2">
-                      2023/09/27 12:34:56
-                    </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
             )

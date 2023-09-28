@@ -13,16 +13,25 @@ import { useApiContenDatail } from "src/api/Api"
 */}
 export default function ContentDetail() {
 
+  {/* 画像パス */}
+  const media_path = process.env.NEXT_PUBLIC_API_MEDIA_PATH
+
   {/* リクエストパラメータ取得 */}
   const params = useParams()
 
   {/* API実行 */}
   const { data, error, isValidating } = useApiContenDatail(params.slug)
   // console.log(`data=${data}, error=${error}, isValidating=${isValidating}`)
+  // console.log(data)
 
   {/* ローディング処理 */}
   if (isValidating) return <Loading />
   if (error) return <Error />
+
+  {/* 画像loader設定 */}
+  const imgLoader = () => {
+    return isMobile ? `${media_path}${data.data.water_gate_image_sm}` : `${media_path}${data.data.water_gate_image}`
+  }
 
   return (
     <main className="p-5 pt-16 mb-6 sm:ml-64">
@@ -35,7 +44,7 @@ export default function ContentDetail() {
                   安芸津
                 </span>
                 <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl">
-                  サンプルサンプル水門{data.id}
+                  {data.data.water_gate_name}
                 </h2>
               </div>
               <div className="mb-4 md:mb-6">
@@ -57,7 +66,7 @@ export default function ContentDetail() {
                 <div className="flex flex-wrap gap-3">
                   <div className="w-8/12 bg-gray-200 rounded-xl">
                     <div className="bg-teal-600 text-base font-medium text-teal-100 text-center p-1 leading-none rounded-xl"
-                      style={{ width: (data.stock >= 100 ? 100 : data.stock) + '%' }}>{(data.stock >= 100 ? 100 : data.stock)}%
+                      style={{ width: (35 >= 100 ? 100 : 35) + '%' }}>{(35 >= 100 ? 100 : 35)}%
                     </div>
                   </div>
                 </div>
@@ -67,7 +76,7 @@ export default function ContentDetail() {
                   住所
                 </span>
                 <div className="flex flex-wrap gap-3">
-                  東広島市安芸津1234-5678
+                  { data.data.water_gateaddress }
                 </div>
               </div>
               <div className="mb-4 md:mb-6">
@@ -82,12 +91,8 @@ export default function ContentDetail() {
                 <div className="mb-3 inline-block text-sm font-semibold text-gray-500 md:text-base">
                   補足
                 </div>
-                <p>
-                  あいうえおあいうえおあいうえおあいうえおあいうえお
-                  かきくけこかきくけこかきくけこかきくけこかきくけこ
-                  さしすせそさしすせそさしすせそさしすせそさしすせそ
-                  たちつてとたちつてとたちつてとたちつてとたちつてと
-                  なにぬねのなにぬねのなにぬねのなにぬねのなにぬねの
+                <p className="whitespace-pre-wrap">
+                  {data.data.water_gate_supplement}
                 </p>
               </div>
             </div>
@@ -95,17 +100,19 @@ export default function ContentDetail() {
               {/* メイン画像 */}
               <div className="rounded-md shadow-md border-2 border-dark-500">
                 <Image
-                  src="/sample.jpg"
-                  alt="Vercel Logo"
+                  loader={imgLoader}
+                  src={(data.data.water_gate_image !== '') ? isMobile ? `${media_path}${data.data.water_gate_image_sm}` : `${media_path}${data.data.water_gate_image}` : '/no_image.png'}
+                  alt={data.data.water_gate_name}
                   width={500}
-                  height={500}
+                  height={400}
                   priority={true}
                   loading={"eager"}
                   quality={isMobile ? 10 : 100}
+                  unoptimized
                 />
               </div>
               <div className="z-5 relative w-full h-80 rounded-md shadow-md border-2 border-dark-500">
-                <MapGoogle lat="34.322113346548036" lng="132.8181288949294" />
+                <MapGoogle lat={data.data.water_gate_latitude} lng={data.data.water_gate_longitude} />
               </div>
             </div>
           </div>

@@ -143,3 +143,7 @@ python manage.py migrate
 
 ### data import
 python manage.py loaddata master.json
+
+# git rest
+git fetch origin main
+git reset --hard origin/main

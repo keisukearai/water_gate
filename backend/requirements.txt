@@ -3,4 +3,4 @@ pip install django-cors-headers
 pip install mysqlclient
 pip install python-dotenv
 pip install Pillow
-pip install resize-image
+pip install django-resized
