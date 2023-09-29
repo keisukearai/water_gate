@@ -21,13 +21,15 @@ export default function RootLayout({ children }) {
     return setMenuOpen(!menuOpen)
   }, [menuOpen])
 
+  // console.log("layout:" + menuOpen)
+
   return (
     <html lang="ja">
       <body className={inter.className} suppressHydrationWarning={true}>
         {/* ヘッダー */}
-        <Header handleMenuOpen={handleMenuOpen} />
+        <Header handleMenuOpen={handleMenuOpen} menuOpen={menuOpen} />
         {/* サイドバー */}
-        <SidebarMenu handleMenuOpen={handleMenuOpen} menuOpen={menuOpen} />
+        <SidebarMenu menuOpen={menuOpen} />
         {/* 子コンポーネント */}
         {children}
         {/* フッター */}

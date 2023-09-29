@@ -13,7 +13,7 @@ import { useAreaInfo } from 'src/api/Api'
 {/*
   機能名:サイドバーメニュー
 */}
-export default function SidebarMenu({ handleMenuOpen, menuOpen }) {
+export default function SidebarMenu(props) {
 
   {/* 状態用 */ }
   const [menuState, setMenuState] = useState(null)
@@ -65,8 +65,7 @@ export default function SidebarMenu({ handleMenuOpen, menuOpen }) {
     <div>
       {/* モバイルでハンバガーメニュークリックした場合のみクリック可能とする */}
       <Sidebar className={`fixed top-20 left-0 z-20 w-64 h-screen
-      ${menuOpen ? "-translate-x-full transition-transform sm:translate-x-0" : ""}`}
-        onClick={() => !menuOpen ? handleMenuOpen() : ""}
+      ${props.menuOpen ? "-translate-x-full transition-transform sm:translate-x-0" : ""}`}
         theme={SideBarTheme}
       >
         <Sidebar.Items>

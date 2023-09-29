@@ -105,9 +105,9 @@ export default function ContentDetail() {
                   alt={data.data.water_gate_name}
                   width={500}
                   height={400}
-                  priority={false}
-                  loading={"lazy"}
+                  priority={true}
                   quality={isMobile ? 50 : 70}
+                  unoptimized
                 />
               </div>
               <div className="z-5 relative w-full h-80 rounded-md shadow-md border-2 border-dark-500">
