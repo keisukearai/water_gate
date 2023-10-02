@@ -7,35 +7,36 @@ import Error from "src/app/components/Error"
 import MapGoogle from "src/app/components/GoogleMap"
 import { BASE_STATE } from 'src/app/utils/Constants'
 import { useApiContenDatail } from "src/api/Api"
+import Link from "next/link"
 
 {/*
   機能名:内容詳細
 */}
 export default function ContentDetail() {
 
-  {/* 画像パス */}
+  {/* 画像パス */ }
   const media_path = process.env.NEXT_PUBLIC_API_MEDIA_PATH
 
-  {/* リクエストパラメータ取得 */}
+  {/* リクエストパラメータ取得 */ }
   const params = useParams()
 
-  {/* API実行 */}
+  {/* API実行 */ }
   const { data, error, isValidating } = useApiContenDatail(params.slug)
   // console.log(`data=${data}, error=${error}, isValidating=${isValidating}`)
   // console.log(data)
 
-  {/* ローディング処理 */}
+  {/* ローディング処理 */ }
   if (isValidating) return <Loading />
   if (error) return <Error />
 
-  {/* 画像loader設定 */}
+  {/* 画像loader設定 */ }
   const imgLoader = () => {
     return (data.data.water_gate_image !== '') ? isMobile ? `${media_path}${data.data.water_gate_image_sm}` : `${media_path}${data.data.water_gate_image}` : '/no_image.webp'
   }
 
   return (
     <main className="p-5 pt-16 mb-6 sm:ml-64">
-      <div className="bg-white py-6 sm:py-4 lg:py-4">
+      <div className="bg-white py-3">
         <div className="mx-auto max-w-screen-lg p-4 md:p-8">
           <div className="grid gap-4 md:grid-cols-2">
             <div className="md:pb-8">
@@ -76,7 +77,7 @@ export default function ContentDetail() {
                   住所
                 </span>
                 <div className="flex flex-wrap gap-3">
-                  { data.data.water_gateaddress }
+                  {data.data.water_gateaddress}
                 </div>
               </div>
               <div className="mb-4 md:mb-6">
@@ -112,6 +113,17 @@ export default function ContentDetail() {
               </div>
               <div className="z-5 relative w-full h-80 rounded-md shadow-md border-2 border-dark-500">
                 <MapGoogle lat={data.data.water_gate_latitude} lng={data.data.water_gate_longitude} />
+              </div>
+              <div>
+                <Link href={`https://maps.google.com/maps?ll=${data.data.water_gate_latitude},${data.data.water_gate_longitude}&q=${data.data.water_gate_latitude},${data.data.water_gate_longitude}&z=18`}
+                  className="btn"
+                  target="_blank"
+                  passHref
+                >
+                  <button className="bg-blue-500 hover:bg-blue-700 text-white p-2 rounded">
+                    大きな地図で見る
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
