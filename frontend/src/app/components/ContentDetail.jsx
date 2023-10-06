@@ -4,10 +4,9 @@ import Image from "next/image"
 import { isMobile } from "react-device-detect"
 import { Loading } from "src/app/components/Loading"
 import Error from "src/app/components/Error"
-import MapGoogle from "src/app/components/GoogleMap"
+import GoogleMapIframe from "src/app/components/GoogleMapIframe"
 import { BASE_STATE } from 'src/app/utils/Constants'
 import { useApiContenDatail } from "src/api/Api"
-import Link from "next/link"
 
 {/*
   機能名:内容詳細
@@ -111,19 +110,8 @@ export default function ContentDetail() {
                   unoptimized
                 />
               </div>
-              <div className="z-5 relative w-full h-80 rounded-md shadow-md border-2 border-dark-500">
-                <MapGoogle lat={data.data.water_gate_latitude} lng={data.data.water_gate_longitude} />
-              </div>
-              <div>
-                <Link href={`https://maps.google.com/maps?ll=${data.data.water_gate_latitude},${data.data.water_gate_longitude}&q=${data.data.water_gate_latitude},${data.data.water_gate_longitude}&z=18`}
-                  className="btn"
-                  target="_blank"
-                  passHref
-                >
-                  <button className="bg-blue-500 hover:bg-blue-700 text-white p-2 rounded">
-                    大きな地図で見る
-                  </button>
-                </Link>
+              <div className="z-5 relative rounded-md shadow-md border-2 border-dark-500">
+                <GoogleMapIframe {...data.data} />
               </div>
             </div>
           </div>

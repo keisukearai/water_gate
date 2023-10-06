@@ -141,6 +141,9 @@ python manage.py migrate
 ### data import
 python manage.py loaddata master.json
 
+### local url
+http://localhost:8000/admin/
+
 # git rest
 git fetch origin main
 git reset --hard origin/main

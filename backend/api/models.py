@@ -42,8 +42,9 @@ class WaterGate(models.Model):
     water_gate_supplement = models.TextField(verbose_name="補足", blank=True, null=True)
     water_gate_image = ResizedImageField(verbose_name="大画像", size=[500, 400], crop=['middle', 'center'], force_format="WEBP", upload_to='', blank=True, null=True)
     water_gate_image_sm = ResizedImageField(verbose_name="小画像", size=[300, 240], crop=['middle', 'center'], force_format="WEBP", upload_to='', blank=True, null=True)
-    water_gate_latitude = models.DecimalField(verbose_name="緯度", max_digits=13, decimal_places=10, default=0)
-    water_gate_longitude = models.DecimalField(verbose_name="経度", max_digits=13, decimal_places=10, default=0)
+    water_gate_map_url = models.CharField(verbose_name="GoogleMapのIframeのsrc", max_length=512)
+    # water_gate_latitude = models.DecimalField(verbose_name="緯度", max_digits=13, decimal_places=10, default=0)
+    # water_gate_longitude = models.DecimalField(verbose_name="経度", max_digits=13, decimal_places=10, default=0)
 
     class Meta:
         db_table = 'watergate'
