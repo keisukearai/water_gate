@@ -70,7 +70,7 @@ export default function ContentList() {
                         width={300}
                         height={240}
                         priority={true}
-                        className="z-10 relative hover:opacity-75"
+                        className="z-10 relative hover:opacity-75 border-b border-gray-200"
                         quality={isMobile ? 50 : 70}
                       />
                     </div>

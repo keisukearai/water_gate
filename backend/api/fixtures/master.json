@@ -60,7 +60,7 @@
             "water_gate_name": "サンプル水門1",
             "water_gateaddress": "東広島市安芸津町1-1",
             "water_gate_supplement": "補足です。\r\n補足です。\r\n補足です。",
-            "water_gate_map_url": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3291.7664003621194!2d132.72763807612122!3d34.4072829730254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDI0JzI2LjIiTiAxMzLCsDQzJzQ4LjgiRQ!5e0!3m2!1sja!2sjp!4v1696569646319!5m2!1sja!2sjp"
+            "water_gate_map_url": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5536.102306614805!2d132.72961219999888!3d34.4067816655837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDI0JzI2LjIiTiAxMzLCsDQzJzQ4LjgiRQ!5e0!3m2!1sja!2sjp!4v1696574550765!5m2!1sja!2sjp"
         }
     },
     {
@@ -81,7 +81,8 @@
             "area": 1,
             "water_gate_name": "サンプル水門3",
             "water_gateaddress": "東広島市安芸津町3-3",
-            "water_gate_supplement": "補足です。\r\n補足です。\r\n補足です。"
+            "water_gate_supplement": "補足です。\r\n補足です。\r\n補足です。",
+            "water_gate_map_url" : "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3295.4380226350954!2d132.78605203125264!3d34.31386267291148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDE4JzUwLjEiTiAxMzLCsDQ3JzEwLjgiRQ!5e0!3m2!1sja!2sjp!4v1696574626208!5m2!1sja!2sjp"
         }
     },
     {
