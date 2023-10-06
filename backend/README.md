@@ -147,3 +147,32 @@ http://localhost:8000/admin/
 # git rest
 git fetch origin main
 git reset --hard origin/main
+
+# nginx 502エラー画面
+vi /var/www/html/custom_50x.html
+
+cd /etc/nginx/sites-available/
+
+vi testapi.kotoragk.com
+
+```config
+server {
+    ・・・・
+
+    location /media  {
+        alias /var/www/html/water_gate/backend/media; # Absolute path.
+    }
+
+    error_page 500 502 503 504 /custom_50x.html;
+    location = /custom_50x.html {
+        root /var/www/html;
+        internal;
+    }
+
+    ・・・・
+}
+```
+
+nginx -t
+
+systemctl restart nginx
