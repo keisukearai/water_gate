@@ -19,6 +19,8 @@ apt -y install libmysqlclient-dev
 
 apt-get install pkg-config
 
+apt install -y cron
+
 ### mysql version
 curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | sudo bash
 
