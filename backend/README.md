@@ -178,3 +178,25 @@ server {
 nginx -t
 
 systemctl restart nginx
+
+## certbot renew
+root
+
+mkdir -p .well-known/acme-challenge
+
+vi /etc/nginx/sites-enabled/test.kotoragk.com
+
+listen 80;
+
+location ^~ /.well-known/acme-challenge/ {
+    default_type "text/plain";
+    root /root;
+}
+
+### fw
+ufw allow 80
+
+### cron
+certbot renew
+
+00 02 01 * * certbot renew && systemctl restart nginx
