@@ -24,7 +24,7 @@ class Area(models.Model):
     area_name = models.CharField(verbose_name="地域名", max_length=100)
     area_supplement = models.TextField(verbose_name="補足", blank=True, null=True)
     water_gate_map = ResizedImageField(verbose_name="地図大画像", size=[1000, 800], crop=['middle', 'center'], force_format="WEBP", upload_to='', blank=True, null=True)
-    water_gate_map_sm = ResizedImageField(verbose_name="地図小画像", size=[300, 240], crop=['middle', 'center'], force_format="WEBP", upload_to='', blank=True, null=True)
+    water_gate_map_sm = ResizedImageField(verbose_name="地図小画像", size=[400, 320], crop=['middle', 'center'], force_format="WEBP", upload_to='', blank=True, null=True)
 
     class Meta:
         db_table = 'wg_area'

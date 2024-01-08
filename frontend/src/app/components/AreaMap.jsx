@@ -43,8 +43,8 @@ export default function AreaMap() {
           loader={imgLoader}
           src={(data.data[0].water_gate_map !== '') ? isMobile ? `${media_path}${data.data[0].water_gate_map_sm}` : `${media_path}${data.data[0].water_gate_map}` : '/no_image.webp'}
           alt={data.data[0].area_name}
-          width={(data.data[0].water_gate_map !== '') ? isMobile ? 300 : 900 : 500}
-          height={(data.data[0].water_gate_map !== '') ? isMobile ? 240 : 720 : 400}
+          width={(data.data[0].water_gate_map !== '') ? isMobile ? 400 : 900 : 500}
+          height={(data.data[0].water_gate_map !== '') ? isMobile ? 320 : 720 : 400}
           priority={true}
           className="z-10 relative hover:opacity-75 border border-gray-200"
           quality={isMobile ? 50 : 70}
