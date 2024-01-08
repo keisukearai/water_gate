@@ -2,11 +2,10 @@
 import 'src/app/globals.css'
 import { useCallback, useEffect, useState } from 'react'
 import { Sidebar } from 'flowbite-react'
-import { IoHomeSharp, IoLockClosed, IoLockOpen, IoMap } from "react-icons/io5"
+import { IoHomeSharp, IoLockClosed, IoLockOpen, IoAlbumsSharp } from "react-icons/io5"
 import { IconContext } from 'react-icons'
 import { BASE_STATE, AREA_STATE } from 'src/app/utils/Constants'
 import Error from "src/app/components/Error"
-import LoadingMenu from "src/app/components/SidebarLoadingMenu"
 import { SideBarTheme } from "src/app/utils/SideBarTheme"
 import { PageObject, isTypeofWindow } from "src/app/utils/StorageObject"
 import { useAreaInfo } from 'src/api/Api'
@@ -20,8 +19,9 @@ export default function SidebarMenu(props) {
   const [menuState, setMenuState] = useState(null)
   const [menuStateName, setMenuStateName] = useState(null)
 
-  {/* マップ用 */ }
+  {/* 地域用 */ }
   const [areaState, setAreaState] = useState(null)
+  const [areaStateName, setAreaStateName] = useState(null)
 
   {/* localStorageクリア */ }
   // localStorage.removeItem("pageInfo")
@@ -33,22 +33,20 @@ export default function SidebarMenu(props) {
       setMenuState((pageinfo?.state === undefined ? BASE_STATE.ALL.CODE : pageinfo.state))
       setMenuStateName(pageinfo?.stateName)
       setAreaState(pageinfo?.area)
+      setAreaStateName(pageinfo?.areaName)
     }
   }, [menuState, areaState])
 
   {/* メニューのリンククリック時の処理 */ }
-  const handleMenuLinkClick = useCallback((state, stateName, area) => {
+  const handleMenuLinkClick = useCallback((state, stateName, area, areaName) => {
     if (isTypeofWindow) {
       PageObject.currentPage = 1
       PageObject.state = state
       PageObject.stateName = stateName
       PageObject.area = area
+      PageObject.areaName = areaName
       // console.log("state=" + state + ",area=" + area)
-      if (state === BASE_STATE.NONE.CODE) {
-        PageObject.state = BASE_STATE.ALL.CODE
-        PageObject.stateName = BASE_STATE.ALL.NAME
-      }
-      if (area !== AREA_STATE.NONE) {
+      if (state === BASE_STATE.ALL.CODE && area !== AREA_STATE.NONE) {
         PageObject.state = BASE_STATE.NONE.CODE
         PageObject.stateName = BASE_STATE.NONE.NAME
       }
@@ -57,12 +55,11 @@ export default function SidebarMenu(props) {
   }, [])
 
   {/* API実行 */ }
-  const { data, error, isValidating } = useAreaInfo('')
+  const { data, error, isValidating } = useAreaInfo()
 
   {/* ローディング処理 */ }
   if (isValidating) return <LoadingMenu />
   if (error) return <Error />
-  // console.log("menuState:" + menuState)
 
   return (
     <div>
@@ -73,7 +70,6 @@ export default function SidebarMenu(props) {
       >
         <Sidebar.Items>
           <Sidebar.ItemGroup>
-            {/* すべて */ }
             <IconContext.Provider value={{ className: `${(menuState !== BASE_STATE.ALL.CODE) ? "text-white" : ""}` }}>
               <Sidebar.Item
                 href="/"
@@ -82,7 +78,8 @@ export default function SidebarMenu(props) {
                 onClick={() => handleMenuLinkClick(
                   BASE_STATE.ALL.CODE,
                   BASE_STATE.ALL.NAME,
-                  AREA_STATE.NONE)}
+                  AREA_STATE.NONE,
+                  AREA_STATE.NAME)}
               >
                 <p>
                   {BASE_STATE.ALL.NAME}
@@ -92,7 +89,6 @@ export default function SidebarMenu(props) {
                 </p>
               </Sidebar.Item>
             </IconContext.Provider>
-            {/* 全閉 */ }
             <IconContext.Provider value={{ className: `${(menuState !== BASE_STATE.OPEN.CODE) ? "text-white" : ""}` }}>
               <Sidebar.Item
                 href="/"
@@ -101,7 +97,8 @@ export default function SidebarMenu(props) {
                 onClick={() => handleMenuLinkClick(
                   BASE_STATE.OPEN.CODE,
                   BASE_STATE.OPEN.NAME,
-                  AREA_STATE.NONE)}
+                  areaState,
+                  areaStateName)}
               >
                 <p>
                   {BASE_STATE.OPEN.NAME}
@@ -111,7 +108,6 @@ export default function SidebarMenu(props) {
                 </p>
               </Sidebar.Item>
             </IconContext.Provider>
-            {/* 消灯 */ }
             <IconContext.Provider value={{ className: `${(menuState !== BASE_STATE.CLOSE.CODE) ? "text-white" : ""}` }}>
               <Sidebar.Item
                 href="/"
@@ -120,7 +116,8 @@ export default function SidebarMenu(props) {
                 onClick={() => handleMenuLinkClick(
                   BASE_STATE.CLOSE.CODE,
                   BASE_STATE.CLOSE.NAME,
-                  AREA_STATE.NONE)}
+                  areaState,
+                  areaStateName)}
               >
                 <p>
                   {BASE_STATE.CLOSE.NAME}
@@ -133,22 +130,26 @@ export default function SidebarMenu(props) {
             <IconContext.Provider value={{ className: "text-white group-hover:text-white" }}>
               <Sidebar.Collapse
                 open={true}
-                icon={IoMap}
-                label="マップ"
+                icon={IoAlbumsSharp}
+                label="地域"
                 className="text-white hover:bg-gray-800"
               >
                 {Object.values(data.data).map((item) => {
                   return (
                     <Sidebar.Item
                       key={item.id}
-                      href={`/areamap/${item.id}`}
+                      href="/"
                       className={`hover:bg-gray-800 hover:text-white ${(areaState === item.area_name) ? "bg-gray-50" : "text-white"}`}
                       onClick={() => handleMenuLinkClick(
                         menuState,
                         menuStateName,
+                        item.area_name,
                         item.area_name)}
                     >
                       {item.area_name}
+                      <span className="inline-flex items-center justify-center w-8 h-4 ml-4 text-xs font-semibold text-slate-700 bg-slate-300 rounded-full">
+                        20
+                      </span>
                     </Sidebar.Item>
                   )
                 })}
@@ -156,6 +157,66 @@ export default function SidebarMenu(props) {
             </IconContext.Provider>
           </Sidebar.ItemGroup>
         </Sidebar.Items>
+      </Sidebar>
+    </div>
+  )
+}
+
+{/*
+  機能名:ローディング中のメニュー
+*/}
+function LoadingMenu() {
+  return (
+    <div className="invisible md:visible">
+      <Sidebar className="fixed top-20 left-0 z-10 w-64 h-screen"
+        theme={SideBarTheme}
+      >
+        <IconContext.Provider value={{ className: "text-white" }}>
+          <Sidebar.Items>
+            <Sidebar.ItemGroup>
+              <Sidebar.Item
+                icon={IoHomeSharp}
+                className="text-white"
+              >
+                <p>
+                  {BASE_STATE.ALL.NAME}
+                  <span className="inline-flex items-center justify-center w-8 h-4 ml-6 text-xs font-semibold text-slate-700 bg-slate-300 rounded-full">
+                    -
+                  </span>
+                </p>
+              </Sidebar.Item>
+              <Sidebar.Item
+                icon={IoLockOpen}
+                className="text-white"
+              >
+                <p>
+                  {BASE_STATE.OPEN.NAME}
+                  <span className="inline-flex items-center justify-center w-8 h-4 ml-4 text-xs font-semibold bg-pink-100 text-pink-800 rounded-full">
+                    -
+                  </span>
+                </p>
+              </Sidebar.Item>
+              <Sidebar.Item
+                icon={IoLockClosed}
+                className="text-white"
+              >
+                <p>
+                  {BASE_STATE.CLOSE.NAME}
+                  <span className="inline-flex items-center justify-center w-8 h-4 ml-4 text-xs font-semibold text-gray-100 bg-gray-600 rounded-full">
+                    -
+                  </span>
+                </p>
+              </Sidebar.Item>
+              <Sidebar.Collapse
+                open={true}
+                icon={IoAlbumsSharp}
+                label="地域"
+                className="text-white"
+              >
+              </Sidebar.Collapse>
+            </Sidebar.ItemGroup>
+          </Sidebar.Items>
+        </IconContext.Provider>
       </Sidebar>
     </div>
   )

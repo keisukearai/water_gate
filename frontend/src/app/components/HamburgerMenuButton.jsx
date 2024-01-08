@@ -10,14 +10,14 @@ export default function HamburgerMenuButton(props) {
     <div>
       {props.menuOpen ? (
         <HiMenuAlt2 size={40}
-          className="inline-flex items-center border p-1.5 mt-5 ml-3 text-sm text-sky-100 rounded-lg sm:hidden bg-menu-color
-                    focus:outline-none focus:ring-2 focus:ring-sky-700"
+          className="inline-flex items-center border p-1.5 mt-5 ml-3 text-sm text-neutral-100 rounded-lg sm:hidden bg-gray-600
+                    focus:outline-none focus:ring-2 focus:ring-neutral-700"
           onClick={() => props.handleMenuOpen()}
         />
       ) : (
         <HiOutlineX size={40}
-          className="inline-flex items-center border p-1.5 mt-5 ml-3 text-sm text-sky-100 rounded-lg sm:hidden bg-gray-600
-                    focus:outline-none focus:ring-2 focus:ring-sky-700"
+          className="inline-flex items-center border p-1.5 mt-5 ml-3 text-sm text-neutral-100 rounded-lg sm:hidden bg-gray-600
+                    focus:outline-none focus:ring-2 focus:ring-neutral-700"
           onClick={() => props.handleMenuOpen()}
         />
       )}

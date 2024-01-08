@@ -47,10 +47,10 @@ export function useApiContenDatail(slug) {
 }
 
 {/* 地域情報取得 */}
-export function useAreaInfo(slug) {
+export function useAreaInfo() {
 
   // APIURL
-  const url = `${api_host_name}/area?id=${slug}`
+  const url = `${api_host_name}/area`
 
   {/* API実行 */}
   const { data, error, isValidating } = useSWR(url, fetcher)

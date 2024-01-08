@@ -6,12 +6,11 @@
 export const BASE_STATE = {
   NONE: {CODE: '', NAME: ''},
   ALL: { CODE: '0', NAME: 'すべて'},
-  OPEN: {CODE: '1', NAME: '開放'},
-  CLOSE: {CODE: '2', NAME: '閉鎖'}
+  OPEN: {CODE: '1', NAME: '全閉'},
+  CLOSE: {CODE: '2', NAME: '消灯'}
 }
 
-{/* 水門の地域選択状態 */}
+{/* 水門の地図選択状態 */}
 export const AREA_STATE = {
-  CODE: '',
-  NAME: ''
+  NONE: '',
 }

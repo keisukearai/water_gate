@@ -1,6 +1,5 @@
 {/*
-  機能名:ページネーションテーマ
-  pages.selector.baseのw-9で1マスのサイズを変更
+  機能名:サイドバーメニューのテーマ
 */}
 export const SideBarTheme = {
   "root": {
@@ -9,7 +8,7 @@ export const SideBarTheme = {
       "on": "w-16",
       "off": "w-64"
     },
-    "inner": "h-full overflow-y-auto overflow-x-hidden bg-gradient-to-b from-sky-700 to-sky-400 py-4 px-3 text-white"
+    "inner": "h-full overflow-y-auto overflow-x-hidden bg-gradient-to-b from-neutral-700 to-neutral-500 py-4 px-3 text-white"
   },
   "collapse": {
     "button": "group flex w-full items-center rounded-lg p-2 text-base font-normal text-white transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700",

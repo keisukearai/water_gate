@@ -1,9 +1,6 @@
 'use client'
-import Link from "next/link"
-import Image from "next/image"
 import { Pagination } from 'flowbite-react'
 import { useState, useCallback } from "react"
-import { isMobile } from "react-device-detect"
 import { Loading } from "src/app/components/Loading"
 import Error from "src/app/components/Error"
 import { paginationTheme } from "src/app/utils/PaginationTheme"
@@ -21,14 +18,10 @@ export default function ContentList() {
   const [currentPage, setCurrentPage] = useState(
     (typeof window !== 'undefined') ? (JSON.parse(localStorage.getItem("pageInfo"))?.currentPage == null) ? 1 : Number(JSON.parse(localStorage.getItem("pageInfo")).currentPage) : 1
   )
+
   {/* 状態用 */ }
   const [menuSelectedName, setMenuSelectedName] = useState(
     (typeof window !== 'undefined') ? (JSON.parse(localStorage.getItem("pageInfo"))?.stateName == null) ? BASE_STATE.ALL.NAME : JSON.parse(localStorage.getItem("pageInfo")).stateName : ''
-  )
-
-  {/* 地域用 */ }
-  const [areaSelectedName, setAreaSelectedName] = useState(
-    (typeof window !== 'undefined') ? (JSON.parse(localStorage.getItem("pageInfo"))?.areaName == null) ? '' : JSON.parse(localStorage.getItem("pageInfo")).areaName : ''
   )
 
   {/* ページネーションリンククリック処理 */ }
@@ -50,60 +43,51 @@ export default function ContentList() {
   if (isValidating) return <Loading />
   if (error) return <Error />
 
-  // console.log("areaSelectedName:" + areaSelectedName)
+  // console.log("menuSelectedName:" + menuSelectedName)
 
   return (
     <main className="p-5 pt-20 mb-12 sm:ml-64 bg-body-color">
       <div className="container mx-auto text-center">
-        <HashTag menuSelectedName={menuSelectedName} areaSelectedName={areaSelectedName} />
-        <div className="-mx-4 flex flex-wrap">
-          {/* 一覧の件数分ループ */}
-          {Object.values(data.products).map((item, index) => {
-            return (
-              <div key={item.id} className="p-1.5 md:p-3 w-1/2 md:w-1/3 lg:w-1/5">
-                <div className="max-w-sm bg-white border border-gray-200 rounded-md shadow">
-                  <Link href={`detail/${item.id}`} rel="preload">
-                    <div className="bg-sky-900">
-                      <Image
-                        src={(item.id % 2 === 0) ? '/no_image_sm.webp' : '/sample_sm.webp'}
-                        alt="水門画像"
-                        width={300}
-                        height={240}
-                        priority={true}
-                        className="z-10 relative hover:opacity-75 border-b border-gray-200"
-                        quality={isMobile ? 50 : 70}
-                      />
-                    </div>
-                    <div className="p-3 text-left hover:opacity-75">
-                      <div className="mb-0.5 ml-0.5 inline-block text-gray-500 text-sm font-bold">
-                        安芸津
-                      </div>
-                      <div className={`bg-gray-100 text-gray-800 text-sm font-medium w-14 px-3 py-0.5 rounded-md font-semibold border border-stone-200
-                                    ${(item.id % 2 === 0) ? "bg-gray-600 text-white" : "bg-pink-100 text-pink-800"}`}>
-                        {(item.id % 2 === 0) ? BASE_STATE.CLOSE.NAME : BASE_STATE.OPEN.NAME}
-                      </div>
-                      <h5 className="mb-1 md:text-lg font-bold tracking-tight text-gray-900">
-                        サンプルサンプル{(item.id % 2 === 0) ? "サンプルサンプル" : ""}水門{item.id}
-                      </h5>
-                      <div className="text-xs mb-1">
-                        バッテリー残量
-                      </div>
-                      <div className="w-8/12 bg-gray-200 rounded-xl" title={(item.stock >= 100 ? 100 + "%" : item.stock + "%")}>
-                        <div className="bg-teal-600 text-xs font-medium text-teal-100 text-center p-0.5 leading-none rounded-xl"
-                          style={{ width: (item.stock >= 100 ? 100 : item.stock) + '%' }}>
-                          {(item.stock >= 100 ? 100 : item.stock)}%
-                        </div>
-                      </div>
-                      <div className="text-xs mt-2">
-                        2023/09/27 12:34:56
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            )
-          })}
-        </div>
+        <HashTag selectedName={menuSelectedName} />
+        <table className="w-full text-sm text-left rtl:text-right text-gray-700">
+          <thead className="text-gray-800 uppercase bg-gray-100">
+            <tr>
+              <th scope="col" className="px-6 py-3">
+                扉番号
+              </th>
+              <th scope="col" className="px-6 py-3">
+                ゲート状態
+              </th>
+              <th scope="col" className="px-6 py-3">
+                電池残量
+              </th>
+              <th scope="col" className="px-6 py-3">
+                通信状態
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* 一覧の件数分ループ */}
+            {Object.values(data.products).map((item, index) => {
+              return (
+                <tr  key={item.id} className="bg-white border-b">
+                  <th className="px-6 py-4 font-medium whitespace-nowrap">
+                    12
+                  </th>
+                  <td className="px-6 py-4">
+                    全閉
+                  </td>
+                  <td className="px-6 py-4">
+                    80%
+                  </td>
+                  <td className="px-6 py-4">
+                    通信良好
+                  </td>
+                </tr>
+              )
+            })}
+          </tbody>
+        </table>
       </div>
       <div className="grid gap-1 md:grid-cols-2 p-2">
         <div className="text-sm py-2">
