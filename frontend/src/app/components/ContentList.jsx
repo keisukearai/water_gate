@@ -75,7 +75,10 @@ export default function ContentList() {
                     12
                   </th>
                   <td className="px-6 py-4">
-                    全閉
+                    <div className={`bg-gray-100 text-gray-800 text-sm font-medium w-14 px-3 py-0.5 rounded-md font-semibold border border-stone-200
+                                  ${(item.id % 2 === 0) ? "bg-gray-600 text-white" : "bg-pink-100 text-pink-800"}`}>
+                      {(item.id % 2 === 0) ? BASE_STATE.CLOSE.NAME : BASE_STATE.OPEN.NAME}
+                    </div>
                   </td>
                   <td className="px-6 py-4">
                     80%
