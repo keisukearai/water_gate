@@ -8,7 +8,7 @@ export const SideBarTheme = {
       "on": "w-16",
       "off": "w-64"
     },
-    "inner": "h-full overflow-y-auto overflow-x-hidden bg-gradient-to-b from-cyan-900 to-cyan-500 py-4 px-3 text-white"
+    "inner": "h-full overflow-y-auto overflow-x-hidden bg-gradient-to-b from-cyan-800 to-cyan-500 py-4 px-3 text-white"
   },
   "collapse": {
     "button": "group flex w-full items-center rounded-lg p-2 text-base font-normal text-white transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700",
