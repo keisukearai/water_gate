@@ -17,8 +17,16 @@ class AreaInfoView(TemplateView):
         logger = logging.getLogger('hp_admin')
         logger.debug(f"{ __class__.__name__ } get start")
 
+        # リクエストパラメータの取得
+        id = request.GET.get("id")
+        logger.debug(f"id:{id}")
+
         # エリア情報の取得
-        query = Area.objects.all()
+        if id != '':
+            query = Area.objects.filter(id=id)
+        else:
+            query = Area.objects.all()
+
         data = list(query.values())
 
         ##############################
@@ -32,34 +40,34 @@ class AreaInfoView(TemplateView):
         logger.debug(f"{ __class__.__name__ } get end")
         return JsonResponse(params)
 
-class WaterGateDetaiView(TemplateView):
-    """
-    水門詳細情報の取得
-    """
+# class WaterGateDetaiView(TemplateView):
+#     """
+#     水門詳細情報の取得
+#     """
 
-    def get(self, request):
-        # ログ出力
-        logger = logging.getLogger('hp_admin')
-        logger.debug(f"{ __class__.__name__ } get start")
+#     def get(self, request):
+#         # ログ出力
+#         logger = logging.getLogger('hp_admin')
+#         logger.debug(f"{ __class__.__name__ } get start")
 
-        # リクエストパラメータの取得
-        id = request.GET.get("id")
+#         # リクエストパラメータの取得
+#         id = request.GET.get("id")
 
-        # debug
-        if int(id) >= 5:
-            id = 2
+#         # debug
+#         if int(id) >= 5:
+#             id = 2
 
-        # 水門詳細情報の取得
-        query = WaterGate.objects.filter(id=id)
-        data = list(query.values())
+#         # 水門詳細情報の取得
+#         query = WaterGate.objects.filter(id=id)
+#         data = list(query.values())
 
-        ##############################
-        # 出力値の設定
-        ##############################
-        params = {
-            'ret': 'ok',
-            'data': data[0]
-        }
+#         ##############################
+#         # 出力値の設定
+#         ##############################
+#         params = {
+#             'ret': 'ok',
+#             'data': data[0]
+#         }
 
-        logger.debug(f"{ __class__.__name__ } get end")
-        return JsonResponse(params)
+#         logger.debug(f"{ __class__.__name__ } get end")
+#         return JsonResponse(params)

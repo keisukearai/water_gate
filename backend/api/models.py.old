@@ -9,7 +9,7 @@ class Prefecture(models.Model):
     prefecture_name = models.CharField(verbose_name="都道府県", max_length=20)
 
     class Meta:
-        db_table = 'wg_prefecture'
+        db_table = 'prefecture'
         verbose_name = f"{ db_table } (都道府県)"
         verbose_name_plural = f"{ db_table } (都道府県)"
 
@@ -23,11 +23,9 @@ class Area(models.Model):
     prefecture = models.ForeignKey(Prefecture, on_delete=models.CASCADE)
     area_name = models.CharField(verbose_name="地域名", max_length=100)
     area_supplement = models.TextField(verbose_name="補足", blank=True, null=True)
-    water_gate_map = ResizedImageField(verbose_name="地図大画像", size=[1000, 800], crop=['middle', 'center'], force_format="WEBP", upload_to='', blank=True, null=True)
-    water_gate_map_sm = ResizedImageField(verbose_name="地図小画像", size=[300, 240], crop=['middle', 'center'], force_format="WEBP", upload_to='', blank=True, null=True)
 
     class Meta:
-        db_table = 'wg_area'
+        db_table = 'area'
         verbose_name = f"{ db_table } (地域)"
         verbose_name_plural = f"{ db_table } (地域)"
 
@@ -36,18 +34,22 @@ class Area(models.Model):
 
 class WaterGate(models.Model):
     """
-    水門・陸閘基本テーブル
+    水門テーブル
     """
     area = models.ForeignKey(Area, on_delete=models.CASCADE, verbose_name="地域")
-    water_gate_no = models.CharField(verbose_name="扉番号", max_length=10)
-    water_gate_name = models.CharField(verbose_name="扉名", max_length=50)
-    water_gateaddress = models.CharField(verbose_name="扉住所", max_length=256)
+    water_gate_name = models.CharField(verbose_name="水門名", max_length=50)
+    water_gateaddress = models.CharField(verbose_name="住所", max_length=256)
     water_gate_supplement = models.TextField(verbose_name="補足", blank=True, null=True)
+    water_gate_image = ResizedImageField(verbose_name="大画像", size=[500, 400], crop=['middle', 'center'], force_format="WEBP", upload_to='', blank=True, null=True)
+    water_gate_image_sm = ResizedImageField(verbose_name="小画像", size=[300, 240], crop=['middle', 'center'], force_format="WEBP", upload_to='', blank=True, null=True)
+    water_gate_map_url = models.CharField(verbose_name="GoogleMapのIframeのsrc", max_length=512, blank=True, null=True)
+    # water_gate_latitude = models.DecimalField(verbose_name="緯度", max_digits=13, decimal_places=10, default=0)
+    # water_gate_longitude = models.DecimalField(verbose_name="経度", max_digits=13, decimal_places=10, default=0)
 
     class Meta:
-        db_table = 'wg_base'
-        verbose_name = f"{ db_table } (水門・陸閘)"
-        verbose_name_plural = f"{ db_table } (水門・陸閘)"
+        db_table = 'watergate'
+        verbose_name = f"{ db_table } (水門)"
+        verbose_name_plural = f"{ db_table } (水門)"
 
     def __str__(self):
-        return f"【{self.water_gate_no}】{self.water_gate_name}"
+        return self.water_gate_name

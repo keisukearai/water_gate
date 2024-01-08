@@ -1,0 +1,108 @@
+[
+    {
+        "model": "api.prefecture",
+        "pk": 1,
+        "fields": {
+            "prefecture_name": "広島県"
+        }
+    },
+    {
+        "model": "api.prefecture",
+        "pk": 2,
+        "fields": {
+            "prefecture_name": "岡山県"
+        }
+    },
+    {
+        "model": "api.prefecture",
+        "pk": 3,
+        "fields": {
+            "prefecture_name": "山口県"
+        }
+    },
+    {
+        "model": "api.prefecture",
+        "pk": 4,
+        "fields": {
+            "prefecture_name": "鳥取県"
+        }
+    },
+    {
+        "model": "api.prefecture",
+        "pk": 5,
+        "fields": {
+            "prefecture_name": "島根県"
+        }
+    },
+    {
+        "model": "api.area",
+        "pk": 1,
+        "fields": {
+            "prefecture": 1,
+            "area_name": "安芸津",
+            "area_supplement": ""
+        }
+    },
+    {
+        "model": "api.area",
+        "pk": 2,
+        "fields": {
+            "prefecture": 1,
+            "area_name": "西条",
+            "area_supplement": ""
+        }
+    },
+    {
+        "model": "api.watergate",
+        "pk": 1,
+        "fields": {
+            "area": 1,
+            "water_gate_name": "サンプル水門1",
+            "water_gateaddress": "東広島市安芸津町1-1",
+            "water_gate_supplement": "補足です。\r\n補足です。\r\n補足です。",
+            "water_gate_map_url": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5536.102306614805!2d132.72961219999888!3d34.4067816655837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDI0JzI2LjIiTiAxMzLCsDQzJzQ4LjgiRQ!5e0!3m2!1sja!2sjp!4v1696574550765!5m2!1sja!2sjp"
+        }
+    },
+    {
+        "model": "api.watergate",
+        "pk": 2,
+        "fields": {
+            "area": 1,
+            "water_gate_name": "サンプル水門2",
+            "water_gateaddress": "東広島市安芸津町2-2",
+            "water_gate_supplement": "補足です。\r\n補足です。\r\n補足です。",
+            "water_gate_map_url": "https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6580.207960693669!2d132.731269!3d34.4495083!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDI3JzAxLjUiTiAxMzLCsDQ0JzE1LjQiRQ!5e0!3m2!1sja!2sjp!4v1696568335574!5m2!1sja!2sjp"
+        }
+    },
+    {
+        "model": "api.watergate",
+        "pk": 3,
+        "fields": {
+            "area": 1,
+            "water_gate_name": "サンプル水門3",
+            "water_gateaddress": "東広島市安芸津町3-3",
+            "water_gate_supplement": "補足です。\r\n補足です。\r\n補足です。",
+            "water_gate_map_url" : "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3295.4380226350954!2d132.78605203125264!3d34.31386267291148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDE4JzUwLjEiTiAxMzLCsDQ3JzEwLjgiRQ!5e0!3m2!1sja!2sjp!4v1696574626208!5m2!1sja!2sjp"
+        }
+    },
+    {
+        "model": "api.watergate",
+        "pk": 4,
+        "fields": {
+            "area": 1,
+            "water_gate_name": "サンプル水門4",
+            "water_gateaddress": "東広島市安芸津町4-4",
+            "water_gate_supplement": "補足です。\r\n補足です。\r\n補足です。"
+        }
+    },
+    {
+        "model": "api.watergate",
+        "pk": 5,
+        "fields": {
+            "area": 1,
+            "water_gate_name": "サンプル水門5",
+            "water_gateaddress": "東広島市安芸津町5-5",
+            "water_gate_supplement": "補足です。\r\n補足です。\r\n補足です。"
+        }
+    }
+]

@@ -10,5 +10,5 @@ urlpatterns = [
     # エリア情報の取得
     path('area', views.AreaInfoView.as_view(), name='area'),
     # 水門詳細情報の取得
-    path('watergatedetai', views.WaterGateDetaiView.as_view(), name='watergatedetai'),
+    # path('watergatedetai', views.WaterGateDetaiView.as_view(), name='watergatedetai'),
 ]

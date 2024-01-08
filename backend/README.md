@@ -128,11 +128,17 @@ kill -9 %1
 
 ### table drop
 use wg_api_db;
-drop table watergate;
-drop table area;
-drop table prefecture;
+drop table wg_base;
+drop table wg_area;
+drop table wg_prefecture;
+
+truncate table wg_base
+truncate table wg_area
+truncate table wg_prefecture
+delete from wg_prefecture
 
 ### migrations file delete
+rm -rf ./api/migrations/*.py
 rm -rf /root/water_gate/water_gate/backend/api/migrations/*.py
 rm -rf /var/www/html/water_gate/backend/api/migrations/*.py
 
