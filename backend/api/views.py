@@ -5,7 +5,7 @@ from django.views.generic import TemplateView
 from django.http import JsonResponse
 
 from .models import Area
-from .models import WaterGate
+# from .models import WaterGate
 
 class AreaInfoView(TemplateView):
     """

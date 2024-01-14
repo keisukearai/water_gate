@@ -3,7 +3,9 @@
         "model": "api.prefecture",
         "pk": 1,
         "fields": {
-            "prefecture_name": "広島県"
+            "prefecture_name": "広島県",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
         }
     },
     {
@@ -12,51 +14,9 @@
         "fields": {
             "prefecture": 1,
             "area_name": "安芸津",
-            "area_supplement": ""
-        }
-    },
-    {
-        "model": "api.watergate",
-        "pk": 1,
-        "fields": {
-            "area": 1,
-            "water_gate_no": "1",
-            "water_gate_name": "サンプル水門1",
-            "water_gateaddress": "東広島市安芸津町1",
-            "water_gate_supplement": "補足です。\r\n補足です。\r\n補足です。"
-        }
-    },
-    {
-        "model": "api.watergate",
-        "pk": 2,
-        "fields": {
-            "area": 1,
-            "water_gate_no": "2",
-            "water_gate_name": "サンプル水門2",
-            "water_gateaddress": "東広島市安芸津町2",
-            "water_gate_supplement": "補足2です。\r\n補足2です。\r\n補足2です。"
-        }
-    },
-    {
-        "model": "api.watergate",
-        "pk": 3,
-        "fields": {
-            "area": 1,
-            "water_gate_no": "3",
-            "water_gate_name": "サンプル水門3",
-            "water_gateaddress": "東広島市安芸津町3",
-            "water_gate_supplement": "補足3です。\r\n補足3です。\r\n補足3です。"
-        }
-    },
-    {
-        "model": "api.watergate",
-        "pk": 4,
-        "fields": {
-            "area": 1,
-            "water_gate_no": "4",
-            "water_gate_name": "サンプル水門4",
-            "water_gateaddress": "東広島市安芸津町4",
-            "water_gate_supplement": "補足4です。\r\n補足4です。\r\n補足4です。"
+            "area_supplement": "",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
         }
     }
 ]

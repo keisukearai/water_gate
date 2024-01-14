@@ -1,0 +1,46 @@
+[
+    {
+        "model": "api.gateway",
+        "pk": 1,
+        "fields": {
+            "area": "1",
+            "gw_id": "d84a87fffefee757",
+            "gw_name": "ゲートウェイ1",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
+        }
+    },
+    {
+        "model": "api.enddevice",
+        "pk": 1,
+        "fields": {
+            "gw_id": "1",
+            "dev_eui": "d84a87fffefee700",
+            "end_device_gate_no": "1",
+            "end_device_name": "エンデバイス1",
+            "end_device_gateaddress": "エンデバイス1の住所",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
+        }
+    },
+    {
+        "model": "api.enddevicedata",
+        "pk": 1,
+        "fields": {
+            "dev_eui": "1",
+            "send_time": "2024-01-14 09:00:00",
+            "gate_status": "1",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
+        }
+    },
+    {
+        "model": "api.gatewayjsondata",
+        "pk": 1,
+        "fields": {
+            "gw_id": "1",
+            "json_data": "{'a':'b'}",
+            "create_date": "2024-01-14 09:00:00"
+        }
+    }
+]

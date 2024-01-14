@@ -128,7 +128,10 @@ kill -9 %1
 
 ### table drop
 use wg_api_db;
-drop table wg_base;
+drop table wg_gateway_json_data;
+drop table wg_end_device_receive_data;
+drop table wg_end_device;
+drop table wg_gateway;
 drop table wg_area;
 drop table wg_prefecture;
 
@@ -148,6 +151,7 @@ python manage.py migrate
 
 ### data import
 python manage.py loaddata master.json
+python manage.py loaddata gate_data.json
 
 ### local url
 http://localhost:8000/admin/
