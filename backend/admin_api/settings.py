@@ -59,7 +59,7 @@ ROOT_URLCONF = 'admin_api.urls'
 # CORS対策
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
-CSRF_TRUSTED_ORIGINS = ['https://test.kotoragk.com']
+CSRF_TRUSTED_ORIGINS = ['https://test.kotoragk.com', 'http://localhost']
 
 TEMPLATES = [
     {

@@ -40,7 +40,7 @@ class GateWay(models.Model):
     LoRaSPN ゲートウェイテーブル
     """
     area = models.ForeignKey(Area, on_delete=models.CASCADE, verbose_name="地域")
-    gw_id = models.CharField(verbose_name="LoRaSPNゲートウェイID", max_length=20)
+    gw_id = models.CharField(verbose_name="LoRaSPNゲートウェイID(gwid)", max_length=20)
     gw_name = models.CharField(verbose_name="LoRaSPNゲートウェイ名", max_length=50)
     create_date = models.DateTimeField(verbose_name="作成日時", auto_now_add=True)
     update_date = models.DateTimeField(verbose_name="更新日時", auto_now=True)
@@ -56,8 +56,8 @@ class EndDevice(models.Model):
     """
     LoRaWAN エンドデバイステーブル
     """
-    gw_id = models.ForeignKey(GateWay, on_delete=models.CASCADE, verbose_name="ゲートウェイID")
-    dev_eui = models.CharField(verbose_name="エンドデバイスID", max_length=20)
+    gateway = models.ForeignKey(GateWay, on_delete=models.CASCADE, verbose_name="ゲートウェイID")
+    dev_eui = models.CharField(verbose_name="エンドデバイスID(deveui)", max_length=20)
     end_device_gate_no = models.CharField(verbose_name="扉番号", max_length=5)
     end_device_name = models.CharField(verbose_name="扉名", max_length=50)
     end_device_gateaddress = models.CharField(verbose_name="扉住所", max_length=256, blank=True, null=True)
@@ -76,9 +76,13 @@ class EndDeviceData(models.Model):
     """
     エンドデバイス受信格納テーブル
     """
-    dev_eui = models.ForeignKey(EndDevice, on_delete=models.CASCADE, verbose_name="エンドデバイスID")
-    send_time = models.DateTimeField(verbose_name="受信日時")
+    enddevice = models.ForeignKey(EndDevice, on_delete=models.CASCADE, verbose_name="エンドデバイスID")
+    send_time = models.DateTimeField(verbose_name="送受信日時(time)")
     gate_status = models.CharField(verbose_name="ゲート状態", max_length=1, blank=True, null=True)
+    gate_battery_level = models.CharField(verbose_name="電池残量", max_length=1, blank=True, null=True)
+    gate_communication = models.CharField(verbose_name="通信状況", max_length=1, blank=True, null=True)
+    gate_rssi = models.IntegerField(verbose_name="受信 RSSI", blank=True, null=True)
+    gate_snr = models.CharField(verbose_name="受信 SNR", max_length=5, blank=True, null=True)
     create_date = models.DateTimeField(verbose_name="作成日時", auto_now_add=True)
     update_date = models.DateTimeField(verbose_name="更新日時", auto_now=True)
 
@@ -93,7 +97,7 @@ class GateWayJsonData(models.Model):
     """
     ゲートウェイJSON形式格納テーブル
     """
-    gw_id = models.ForeignKey(GateWay, on_delete=models.CASCADE, verbose_name="ゲートウェイ")
+    gateway = models.ForeignKey(GateWay, on_delete=models.CASCADE, verbose_name="ゲートウェイ")
     json_data = models.JSONField(verbose_name="JSON形式受信結果")
     create_date = models.DateTimeField(verbose_name="作成日時", auto_now_add=True)
 

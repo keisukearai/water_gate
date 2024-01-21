@@ -13,38 +13,80 @@ from api.models import GateWayJsonData
 class PrefectureAdmin(admin.ModelAdmin):
     """ 都道府県テーブル """
     ordering = ("id", ) # 並び順の変更
+    # 1ページ当たりに表示する件数
+    list_per_page = 20
+    # 全件表示を許容する最大件数
+    list_max_show_all = 5000
+
     list_display = ('prefecture_name',)
 
 class AreaAdmin(admin.ModelAdmin):
     """ 地域テーブル """
     ordering = ("id", ) # 並び順の変更
-    def image(self, obj):
+    # 1ページ当たりに表示する件数
+    list_per_page = 20
+    # 全件表示を許容する最大件数
+    list_max_show_all = 5000
+
+    def format_image(self, obj):
         # 画像の存在チェック
         if obj.water_gate_map:
             return mark_safe(f'<img src="{ obj.water_gate_map.url }" style="width:5rem;">')
-        return '-'
 
-    list_display = ('area_name', 'image')
+    # 画面表示タイトル
+    format_image.short_description = Area.water_gate_map.field.verbose_name
+    format_image.empty_value_display = "画像なし"
+
+    list_display = ('area_name', 'format_image')
 
 class GateWayAdmin(admin.ModelAdmin):
     """ LoRaSPN ゲートウェイテーブル """
     ordering = ("id",) # 並び順の変更
+    # 1ページ当たりに表示する件数
+    list_per_page = 20
+    # 全件表示を許容する最大件数
+    list_max_show_all = 5000
     list_display = ('gw_name', 'gw_id')
 
 class EndDeviceAdmin(admin.ModelAdmin):
     """ LoRaWAN エンドデバイステーブル """
     ordering = ("id",) # 並び順の変更
-    list_display = ('end_device_gate_no', 'end_device_name', 'dev_eui', 'gw_id')
+    # 1ページ当たりに表示する件数
+    list_per_page = 20
+    # 全件表示を許容する最大件数
+    list_max_show_all = 5000
+
+    list_display = ('end_device_gate_no', 'end_device_name', 'dev_eui', 'gateway')
 
 class EndDeviceDataAdmin(admin.ModelAdmin):
     """ エンドデバイス受信格納テーブル """
     ordering = ("-id",) # 並び順の変更
-    list_display = ('dev_eui', 'send_time')
+    # 1ページ当たりに表示する件数
+    list_per_page = 20
+    # 全件表示を許容する最大件数
+    list_max_show_all = 5000
+
+    def format_send_time(self, obj):
+        return obj.send_time.strftime('%Y-%m-%d %H:%M:%S')
+
+    # 画面表示タイトル
+    format_send_time.short_description = EndDeviceData.send_time.field.verbose_name
+    list_display = ('enddevice', 'format_send_time')
 
 class GateWayJsonDataAdmin(admin.ModelAdmin):
     """ ゲートウェイJSON形式格納テーブル """
     ordering = ("-id",) # 並び順の変更
-    list_display = ('gw_id', 'create_date')
+    # 1ページ当たりに表示する件数
+    list_per_page = 20
+    # 全件表示を許容する最大件数
+    list_max_show_all = 5000
+
+    def format_create_date(self, obj):
+        return obj.create_date.strftime('%Y-%m-%d %H:%M:%S')
+
+    # 画面表示タイトル
+    format_create_date.short_description = GateWayJsonData.create_date.field.verbose_name
+    list_display = ('gateway', 'format_create_date')
 
 # 管理画面に表示
 admin.site.register(Prefecture, PrefectureAdmin)
