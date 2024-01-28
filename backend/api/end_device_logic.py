@@ -12,9 +12,13 @@ class EndDeviceLogic:
         """
         コンストラクタ
         """
+        # リクエストのJson形式データ
         self.json_data = json_data
 
     def transform(self):
+        """
+        モデル変換ロジック
+        """
         # ログ出力
         logger = logging.getLogger('hp_admin')
         logger.debug(f"{ __class__.__name__ } transform start")
