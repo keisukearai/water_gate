@@ -43,3 +43,11 @@ class CommonLogic:
             10進数形式の文字列
         """
         return str(int(bi, 2))
+
+    def dictfetchall(self, cursor):
+        "Return all rows from a cursor as a dict"
+        columns = [col[0] for col in cursor.description]
+        return [
+            dict(zip(columns, row))
+            for row in cursor.fetchall()
+        ]

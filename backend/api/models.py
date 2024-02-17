@@ -31,6 +31,7 @@ class Area(models.Model):
     """
     地域テーブル
     """
+    objects = BaseManager()
     prefecture = models.ForeignKey(Prefecture, on_delete=models.CASCADE)
     area_name = models.CharField(verbose_name="地域名", max_length=100)
     area_supplement = models.TextField(verbose_name="補足", blank=True, null=True)

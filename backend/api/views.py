@@ -6,6 +6,7 @@ from django.views.generic import TemplateView
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
+from django.db import connection
 
 from .models import Area
 from .models import GateWay
@@ -14,6 +15,7 @@ from .models import EndDeviceData
 from .models import GateWayJsonData
 
 from .end_device_logic import EndDeviceLogic
+from .common_logic import CommonLogic
 
 class AreaInfoView(TemplateView):
     """
@@ -48,37 +50,58 @@ class AreaInfoView(TemplateView):
         logger.debug(f"{ __class__.__name__ } get end")
         return JsonResponse(params)
 
-# class WaterGateDetaiView(TemplateView):
-#     """
-#     水門詳細情報の取得
-#     """
+class WaterGateListView(TemplateView):
+    """
+    水門一覧情報の取得
+    """
 
-#     def get(self, request):
-#         # ログ出力
-#         logger = logging.getLogger('hp_admin')
-#         logger.debug(f"{ __class__.__name__ } get start")
+    def get(self, request):
+        # ログ出力
+        logger = logging.getLogger('hp_admin')
+        logger.debug(f"{ __class__.__name__ } get start")
 
-#         # リクエストパラメータの取得
-#         id = request.GET.get("id")
+        # 共通ロジック
+        cLogic = CommonLogic()
 
-#         # debug
-#         if int(id) >= 5:
-#             id = 2
+        # リクエストパラメータの取得
+        area_id = request.GET.get("area_id")
 
-#         # 水門詳細情報の取得
-#         query = WaterGate.objects.filter(id=id)
-#         data = list(query.values())
+        # エリア情報を取得
+        area = Area.objects.get_or_none(id=area_id)
+        sql_param = ""
+        if area != None:
+            sql_param = f"and gw.area_id = '{area.id}' "
 
-#         ##############################
-#         # 出力値の設定
-#         ##############################
-#         params = {
-#             'ret': 'ok',
-#             'data': data[0]
-#         }
+        with connection.cursor() as cursor:
+            sql = (
+            'select ed.end_device_gate_no, ed.end_device_name, '
+            'sg.status_name as gate_status, sb.status_name as battery_level, sc.status_name as com_status, '
+            'gw.gw_name '
+            'from wg_end_device_data da '
+            'inner join wg_end_device ed on da.enddevice_id = ed.id '
+            'inner join wg_gateway gw on ed.gateway_id = gw.id '
+            'left outer join wg_status_info sg on da.gate_status = sg.status_code and sg.class_code_id = 1 '
+            'left outer join wg_status_info sb on da.battery_level = sb.status_code and sb.class_code_id = 2 '
+            'left outer join wg_status_info sc on da.com_status = sc.status_code and sc.class_code_id = 3 '
+            'where (da.enddevice_id, da.update_date) in ('
+            'select enddevice_id, max(update_date) from wg_end_device_data group by enddevice_id'
+            ')'
+            f'{sql_param}'
+            'order by ed.end_device_gate_no'
+            )
+            cursor.execute(sql)
+            data = cLogic.dictfetchall(cursor)
 
-#         logger.debug(f"{ __class__.__name__ } get end")
-#         return JsonResponse(params)
+        ##############################
+        # 出力値の設定
+        ##############################
+        params = {
+            'ret': 'ok',
+            'data': data
+        }
+
+        logger.debug(f"{ __class__.__name__ } get end")
+        return JsonResponse(params)
 
 class GwUplinkView(TemplateView):
     """
