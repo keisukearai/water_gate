@@ -3,6 +3,7 @@ import logging
 
 from .model_end_device import ModelEndDevice
 from .model_end_device_data import ModelEndDeviceData
+from .common_logic import CommonLogic
 
 class EndDeviceLogic:
     """
@@ -60,9 +61,12 @@ class EndDeviceLogic:
         logger = logging.getLogger('hp_admin')
         logger.debug(f"{ __class__.__name__ } detail_data_transform start")
 
+        # 共通ロジック
+        cLogic = CommonLogic()
+
         # 装置状態
         device_status = detail_data[16:18]
-        device_status_bin = self.hex_to_bin(device_status)
+        device_status_bin = cLogic.hex_to_bin(device_status)
         logger.debug(f"装置状態(2進数):{device_status_bin}")
 
         # 装置状態から電池残量b1を取得
@@ -72,12 +76,12 @@ class EndDeviceLogic:
         # 装置状態から通信(communication)状況b2-3を取得
         com_status_bin = device_status_bin[4:6]
         logger.debug(f"通信状況(2進数):{com_status_bin}")
-        com_status = self.bin_to_int(com_status_bin)
+        com_status = cLogic.bin_to_int(com_status_bin)
         logger.debug(f"通信状況:{com_status}")
 
         # ゲート状態
         gate_data_status = detail_data[28:30]
-        gate_status_bin = self.hex_to_bin(gate_data_status)
+        gate_status_bin = cLogic.hex_to_bin(gate_data_status)
         logger.debug(f"ゲート状態(2進数):{gate_status_bin}")
         gate_status = gate_status_bin[7:]
         logger.debug(f"ゲート状態:{gate_status}")
@@ -93,41 +97,3 @@ class EndDeviceLogic:
 
         logger.debug(f"{ __class__.__name__ } detail_data_transform end")
         return model
-
-    def hex_to_bin(self, hs):
-        """
-        16進数から2進数への変換(パラメータに0xを付与して16進数として処理する)
-
-        Parameters
-        ----------
-        hs : str
-            16進数のバイト部分
-
-        Returns
-        -------
-        n_bin : str
-            8桁の2進数形式の文字列
-        """
-        # 16進数の形の文字列へ変換
-        hex_s = f"0x{hs}"
-        # 数値へ
-        hex_i = int(hex_s, 16)
-        # 8桁の2進数に変換
-        n_bin = format(hex_i, "08b")
-        return n_bin
-
-    def bin_to_int(self, bi):
-        """
-        2進数から10進数への変換
-
-        Parameters
-        ----------
-        bi : str
-            2進数のバイト部分
-
-        Returns
-        -------
-        n_int : str
-            10進数形式の文字列
-        """
-        return str(int(bi, 2))
