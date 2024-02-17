@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import logging
 
-from .end_device_model import EndDeviceModel
-from .end_device_data_model import EndDeviceDataModel
+from .model_end_device import ModelEndDevice
+from .model_end_device_data import ModelEndDeviceData
 
 class EndDeviceLogic:
     """
@@ -32,7 +32,7 @@ class EndDeviceLogic:
         detail_data = self.json_data['data']
 
         # モデルインスタンス生成
-        model = EndDeviceModel()
+        model = ModelEndDevice()
         # ゲートウェイID
         model.gw_id = head1['gwid']
         # エンドデバイスID
@@ -83,7 +83,7 @@ class EndDeviceLogic:
         logger.debug(f"ゲート状態:{gate_status}")
 
         # モデルインスタンス生成
-        model = EndDeviceDataModel()
+        model = ModelEndDeviceData()
         # 電池残量
         model.battery_level = battery_level
         # 通信状況

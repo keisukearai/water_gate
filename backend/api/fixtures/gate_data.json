@@ -17,8 +17,8 @@
             "gateway": "1",
             "dev_eui": "d84a87fffefee701",
             "end_device_gate_no": "1",
-            "end_device_name": "エンデバイス1",
-            "end_device_gateaddress": "エンデバイス1の住所",
+            "end_device_name": "エンドデバイス1",
+            "end_device_gateaddress": "エンドデバイス1の住所",
             "create_date": "2024-01-14 09:00:00",
             "update_date": "2024-01-14 09:00:00"
         }
@@ -30,8 +30,8 @@
             "gateway": "1",
             "dev_eui": "d84a87fffefee702",
             "end_device_gate_no": "2",
-            "end_device_name": "エンデバイス2",
-            "end_device_gateaddress": "エンデバイス2の住所",
+            "end_device_name": "エンドデバイス2",
+            "end_device_gateaddress": "エンドデバイス2の住所",
             "create_date": "2024-01-14 09:00:00",
             "update_date": "2024-01-14 09:00:00"
         }
@@ -43,8 +43,8 @@
             "gateway": "1",
             "dev_eui": "d84a87fffefee703",
             "end_device_gate_no": "3",
-            "end_device_name": "エンデバイス3",
-            "end_device_gateaddress": "エンデバイス3の住所",
+            "end_device_name": "エンドデバイス3",
+            "end_device_gateaddress": "エンドデバイス3の住所",
             "create_date": "2024-01-14 09:00:00",
             "update_date": "2024-01-14 09:00:00"
         }

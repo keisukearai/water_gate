@@ -80,7 +80,7 @@ class GateWay(models.Model):
 
     class Meta:
         db_table = 'wg_gateway'
-        verbose_name_plural = "【機器】1.LoRaSPNゲートウェイ"
+        verbose_name_plural = "【機器】1.ゲートウェイ"
 
     def __str__(self):
         return f"【{self.gw_name}】{self.gw_id}"
@@ -100,7 +100,7 @@ class EndDevice(models.Model):
 
     class Meta:
         db_table = 'wg_end_device'
-        verbose_name_plural = "【機器】2.LoRaWANエンドデバイス"
+        verbose_name_plural = "【機器】2.エンドデバイス"
 
     def __str__(self):
         return f"({self.end_device_gate_no}){self.end_device_name} - {self.dev_eui}"
@@ -121,7 +121,7 @@ class EndDeviceData(models.Model):
 
     class Meta:
         db_table = 'wg_end_device_data'
-        verbose_name_plural = "【機器】3.LoRaWANエンドデバイス受信データ"
+        verbose_name_plural = "【機器】3.エンドデバイス受信データ"
 
     # def __str__(self):
     #     return self.dev_eui
