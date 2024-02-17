@@ -35,6 +35,39 @@ class Area(models.Model):
     def __str__(self):
         return self.area_name
 
+class ClassInfo(models.Model):
+    """
+    分類情報テーブル
+    """
+    class_name = models.CharField(verbose_name="分類名", max_length=100)
+    create_date = models.DateTimeField(verbose_name="作成日時", auto_now_add=True)
+    update_date = models.DateTimeField(verbose_name="更新日時", auto_now=True)
+
+    class Meta:
+        db_table = 'wg_class_info'
+        verbose_name_plural = "【マスタ】3.分類情報"
+
+    def __str__(self):
+        return self.class_name
+
+class StatusInfo(models.Model):
+    """
+    ステータス情報テーブル
+    """
+    class_code = models.ForeignKey(ClassInfo, on_delete=models.CASCADE)
+    status_code = models.CharField(verbose_name="ステータスコード", max_length=10)
+    status_name = models.CharField(verbose_name="ステータス名", max_length=100)
+    status_supplement = models.TextField(verbose_name="補足", blank=True, null=True)
+    create_date = models.DateTimeField(verbose_name="作成日時", auto_now_add=True)
+    update_date = models.DateTimeField(verbose_name="更新日時", auto_now=True)
+
+    class Meta:
+        db_table = 'wg_status_info'
+        verbose_name_plural = "【マスタ】4.ステータス情報"
+
+    def __str__(self):
+        return self.status_name
+
 class GateWay(models.Model):
     """
     LoRaSPN ゲートウェイテーブル
@@ -70,7 +103,7 @@ class EndDevice(models.Model):
         verbose_name_plural = "【機器】2.LoRaWANエンドデバイス"
 
     def __str__(self):
-        return f"【{self.end_device_gate_no}】{self.end_device_name} - {self.dev_eui}"
+        return f"({self.end_device_gate_no}){self.end_device_name} - {self.dev_eui}"
 
 class EndDeviceData(models.Model):
     """

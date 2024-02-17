@@ -18,5 +18,128 @@
             "create_date": "2024-01-14 09:00:00",
             "update_date": "2024-01-14 09:00:00"
         }
+    },
+    {
+        "model": "api.classinfo",
+        "pk": 1,
+        "fields": {
+            "class_name": "1.ゲート状態",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
+        }
+    },
+    {
+        "model": "api.classinfo",
+        "pk": 2,
+        "fields": {
+            "class_name": "2.電池残量",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
+        }
+    },
+    {
+        "model": "api.classinfo",
+        "pk": 3,
+        "fields": {
+            "class_name": "3.通信状況",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
+        }
+    },
+    {
+        "model": "api.statusinfo",
+        "pk": 1,
+        "fields": {
+            "class_code": 1,
+            "status_code": "0",
+            "status_name": "消灯",
+            "status_supplement": "Open",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
+        }
+    },
+    {
+        "model": "api.statusinfo",
+        "pk": 2,
+        "fields": {
+            "class_code": 1,
+            "status_code": "1",
+            "status_name": "全閉",
+            "status_supplement": "Close",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
+        }
+    },
+    {
+        "model": "api.statusinfo",
+        "pk": 3,
+        "fields": {
+            "class_code": 2,
+            "status_code": "0",
+            "status_name": "良",
+            "status_supplement": "無「復旧」",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
+        }
+    },
+    {
+        "model": "api.statusinfo",
+        "pk": 4,
+        "fields": {
+            "class_code": 2,
+            "status_code": "1",
+            "status_name": "低下",
+            "status_supplement": "発生",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
+        }
+    },
+    {
+        "model": "api.statusinfo",
+        "pk": 5,
+        "fields": {
+            "class_code": 3,
+            "status_code": "0",
+            "status_name": "未受信",
+            "status_supplement": "",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
+        }
+    },
+    {
+        "model": "api.statusinfo",
+        "pk": 6,
+        "fields": {
+            "class_code": 3,
+            "status_code": "1",
+            "status_name": "不良",
+            "status_supplement": "悪「-115dBm未満」",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
+        }
+    },
+    {
+        "model": "api.statusinfo",
+        "pk": 7,
+        "fields": {
+            "class_code": 3,
+            "status_code": "2",
+            "status_name": "普通",
+            "status_supplement": "普「-105～-115dBm」",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
+        }
+    },
+    {
+        "model": "api.statusinfo",
+        "pk": 8,
+        "fields": {
+            "class_code": 3,
+            "status_code": "3",
+            "status_name": "良好",
+            "status_supplement": "良「-105dBm以上」",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
+        }
     }
 ]
