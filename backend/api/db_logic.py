@@ -8,7 +8,7 @@ class DbLogic:
     DBロジッククラス
     """
 
-    def get_device_count(self, status=None):
+    def get_device_count(self, state=None):
         """
         デバイス件数取得
         """
@@ -17,8 +17,8 @@ class DbLogic:
         logger.debug(f"{ __class__.__name__ } get start")
 
         where_param = ""
-        if status != None:
-            where_param = f"where gate_status = '{status}' "
+        if state != None:
+            where_param = f"and da.gate_status = '{state}' "
 
         # 件数の取得
         with connection.cursor() as cursor:
@@ -29,9 +29,9 @@ class DbLogic:
                 'inner join wg_gateway gw on ed.gateway_id = gw.id '
                 'where (da.enddevice_id, da.update_date) in ('
                 'select enddevice_id, max(update_date) from wg_end_device_data '
-                f'{where_param}'
                 'group by enddevice_id '
-                ')'
+                ') '
+                f'{where_param}'
             )
             # logger.debug(f"sql:{sql}")
             cursor.execute(sql)

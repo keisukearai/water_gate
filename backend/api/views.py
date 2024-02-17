@@ -110,14 +110,23 @@ class WaterGateListView(TemplateView):
         if str(offset).isdigit() == False:
             offset = 0
 
+        # 状態選択
+        state = request.GET.get("state", None)
+        state_param = ""
+        if state in ('0', '1'):
+            state_param = f"and gate_status = '{state}' "
+        else:
+            state = None
+        logger.debug(f"state:{state}")
+
         # エリア情報を取得
         area = Area.objects.get_or_none(id=area_id)
-        sql_param = ""
+        area_param = ""
         if area != None:
-            sql_param = f"and gw.area_id = '{area.id}' "
+            area_param = f"and gw.area_id = '{area.id}' "
 
         # 件数の取得
-        all_count = dbLogic.get_device_count()
+        all_count = dbLogic.get_device_count(state)
         logger.debug(f"all_count:{all_count}")
 
         # ページ情報
@@ -143,7 +152,8 @@ class WaterGateListView(TemplateView):
                 'where (da.enddevice_id, da.update_date) in ('
                 'select enddevice_id, max(update_date) from wg_end_device_data group by enddevice_id'
                 ')'
-                f'{sql_param} '
+                f'{area_param} '
+                f'{state_param}'
                 'order by ed.end_device_gate_no '
                 f'limit {limit} offset {offset}'
             )

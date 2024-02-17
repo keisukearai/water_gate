@@ -11,10 +11,12 @@ const api_host_name = process.env.NEXT_PUBLIC_API_HOST_NAME
 const limit = process.env.NEXT_PUBLIC_LIST_MAX_ROW
 
 {/* 一覧情報取得 */}
-export function useApiContenList(currentPage) {
+export function useApiContenList(currentPage, stateSelected) {
+
+  // console.log("stateSelected:" + stateSelected)
 
   // APIURL
-  const url = `${api_host_name}/watergatelist?limit=${limit}&skip=${(currentPage - 1) * limit}`
+  const url = `${api_host_name}/watergatelist?limit=${limit}&skip=${(currentPage - 1) * limit}&state=${stateSelected}`
 
   {/* API実行 */}
   const { data, error, isValidating } = useSWR(url, fetcher)

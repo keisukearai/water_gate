@@ -24,6 +24,11 @@ export default function ContentList() {
     (typeof window !== 'undefined') ? (JSON.parse(localStorage.getItem("pageInfo"))?.stateName == null) ? BASE_STATE.ALL.NAME : JSON.parse(localStorage.getItem("pageInfo")).stateName : ''
   )
 
+  {/* 状態用コード */ }
+  const [menuSelected, setMenuSelected] = useState(
+    (typeof window !== 'undefined') ? (JSON.parse(localStorage.getItem("pageInfo"))?.state == null) ? BASE_STATE.ALL.CODE : JSON.parse(localStorage.getItem("pageInfo")).state : ''
+  )
+
   {/* ページネーションリンククリック処理 */ }
   const handlePageChange = useCallback((page) => {
     // console.log("page change:" + page)
@@ -36,7 +41,7 @@ export default function ContentList() {
   }, [])
 
   {/* API実行 */ }
-  const { data, error, isValidating } = useApiContenList(currentPage)
+  const { data, error, isValidating } = useApiContenList(currentPage, menuSelected)
   // console.log(`data=${data}, error=${error}, isValidating=${isValidating}`)
 
   {/* ローディング処理 */ }
