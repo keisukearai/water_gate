@@ -9,7 +9,7 @@ import Error from "src/app/components/Error"
 import LoadingMenu from "src/app/components/SidebarLoadingMenu"
 import { SideBarTheme } from "src/app/utils/SideBarTheme"
 import { PageObject, isTypeofWindow } from "src/app/utils/StorageObject"
-import { useAreaInfo } from 'src/api/Api'
+import { useApiMenuInfo } from 'src/api/Api'
 
 {/*
   機能名:サイドバーメニュー
@@ -57,7 +57,7 @@ export default function SidebarMenu(props) {
   }, [])
 
   {/* API実行 */ }
-  const { data, error, isValidating } = useAreaInfo('')
+  const { data, error, isValidating } = useApiMenuInfo()
 
   {/* ローディング処理 */ }
   if (isValidating) return <LoadingMenu />
@@ -87,12 +87,12 @@ export default function SidebarMenu(props) {
                 <p>
                   {BASE_STATE.ALL.NAME}
                   <span className="inline-flex items-center justify-center w-8 h-4 ml-4 text-xs font-semibold text-slate-700 bg-slate-300 rounded-full">
-                    99
+                    {data.all_count}{/* 件数 */ }
                   </span>
                 </p>
               </Sidebar.Item>
             </IconContext.Provider>
-            {/* 全閉 */ }
+            {/* 消灯 */ }
             <IconContext.Provider value={{ className: `${(menuState !== BASE_STATE.OPEN.CODE) ? "text-white" : ""}` }}>
               <Sidebar.Item
                 href="/"
@@ -106,12 +106,12 @@ export default function SidebarMenu(props) {
                 <p>
                   {BASE_STATE.OPEN.NAME}
                   <span className="inline-flex items-center justify-center w-8 h-4 ml-4 text-xs font-semibold bg-pink-100 text-pink-800 rounded-full">
-                    19
+                    {data.open_count}{/* 件数 */ }
                   </span>
                 </p>
               </Sidebar.Item>
             </IconContext.Provider>
-            {/* 消灯 */ }
+            {/* 全閉 */ }
             <IconContext.Provider value={{ className: `${(menuState !== BASE_STATE.CLOSE.CODE) ? "text-white" : ""}` }}>
               <Sidebar.Item
                 href="/"
@@ -125,7 +125,7 @@ export default function SidebarMenu(props) {
                 <p>
                   {BASE_STATE.CLOSE.NAME}
                   <span className="inline-flex items-center justify-center w-8 h-4 ml-4 text-xs font-semibold text-gray-100 bg-gray-600 rounded-full">
-                    80
+                    {data.close_count}{/* 件数 */ }
                   </span>
                 </p>
               </Sidebar.Item>
@@ -137,7 +137,7 @@ export default function SidebarMenu(props) {
                 label="マップ"
                 className="text-white hover:bg-gray-800"
               >
-                {Object.values(data.data).map((item) => {
+                {Object.values(data.area).map((item) => {
                   return (
                     <Sidebar.Item
                       key={item.id}

@@ -68,23 +68,23 @@ export default function ContentList() {
           </thead>
           <tbody>
             {/* 一覧の件数分ループ */}
-            {Object.values(data.products).map((item, index) => {
+            {Object.values(data.data).map((item, index) => {
               return (
                 <tr  key={item.id} className="bg-white border-b">
                   <th className="px-6 py-4 font-medium whitespace-nowrap">
-                    12
+                    {item.end_device_gate_no}
                   </th>
                   <td className="px-6 py-4">
                     <div className={`bg-gray-100 text-gray-800 text-sm font-medium w-14 px-3 py-0.5 rounded-md font-semibold border border-stone-200
-                                  ${(item.id % 2 === 0) ? "bg-gray-600 text-white" : "bg-pink-100 text-pink-800"}`}>
-                      {(item.id % 2 === 0) ? BASE_STATE.CLOSE.NAME : BASE_STATE.OPEN.NAME}
+                      ${(item.gate_status_code === '1') ? "bg-gray-600 text-white" : "bg-pink-100 text-pink-800"}`}>
+                      {item.gate_status}
                     </div>
                   </td>
                   <td className="px-6 py-4">
-                    80%
+                    {item.battery_level}
                   </td>
                   <td className="px-6 py-4">
-                    通信良好
+                    {item.com_status}
                   </td>
                 </tr>
               )
@@ -95,7 +95,7 @@ export default function ContentList() {
       <div className="grid gap-1 md:grid-cols-2 p-2">
         <div className="text-sm py-2">
           <span className="bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded border border-gray-300">
-            全100件
+            全{data.allCount}件
           </span>
         </div>
         <div className="text-right">
@@ -106,7 +106,7 @@ export default function ContentList() {
             nextLabel=">"
             currentPage={currentPage}
             onPageChange={handlePageChange}
-            totalPages={10}
+            totalPages={data.totalPages}
             theme={paginationTheme}
           />
         </div>

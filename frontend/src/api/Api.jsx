@@ -6,7 +6,6 @@ import { fetcher } from 'src/app/utils/Fetcher'
 */}
 {/* APIホスト名 */}
 const api_host_name = process.env.NEXT_PUBLIC_API_HOST_NAME
-const api_dummy_host_name = process.env.NEXT_PUBLIC_API_DUMMY_HOST_NAME
 
 {/* 一覧の表示件数 */}
 const limit = process.env.NEXT_PUBLIC_LIST_MAX_ROW
@@ -15,7 +14,7 @@ const limit = process.env.NEXT_PUBLIC_LIST_MAX_ROW
 export function useApiContenList(currentPage) {
 
   // APIURL
-  const url = `${api_dummy_host_name}/products?limit=${limit}&skip=${(currentPage - 1) * limit}`
+  const url = `${api_host_name}/watergatelist?limit=${limit}&skip=${(currentPage - 1) * limit}`
 
   {/* API実行 */}
   const { data, error, isValidating } = useSWR(url, fetcher)
@@ -28,15 +27,16 @@ export function useApiContenList(currentPage) {
   }
 }
 
-{/* 詳細情報取得 */}
-export function useApiContenDatail(slug) {
+{/* メニュー情報取得 */}
+export function useApiMenuInfo() {
 
   // APIURL
-  // const url = `${api_dummy_host_name}/products/${slug}`
-  const url = `${api_host_name}/watergatedetai?id=${slug}`
+  const url = `${api_host_name}/menuinfo`
 
   {/* API実行 */}
   const { data, error, isValidating } = useSWR(url, fetcher)
+  // console.log(`data=${data}, error=${error}, isValidating=${isValidating}`)
+  // console.log(data)
 
   {/* 結果返却 */}
   return {
@@ -47,15 +47,13 @@ export function useApiContenDatail(slug) {
 }
 
 {/* 地域情報取得 */}
-export function useAreaInfo(slug) {
+export function useApiAreaInfo(slug) {
 
   // APIURL
   const url = `${api_host_name}/area?id=${slug}`
 
   {/* API実行 */}
   const { data, error, isValidating } = useSWR(url, fetcher)
-  // console.log(`data=${data}, error=${error}, isValidating=${isValidating}`)
-  // console.log(data)
 
   {/* 結果返却 */}
   return {

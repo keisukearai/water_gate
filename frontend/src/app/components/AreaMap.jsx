@@ -5,7 +5,7 @@ import Image from "next/image"
 import { Loading } from "src/app/components/Loading"
 import Error from "src/app/components/Error"
 import { isMobile } from "react-device-detect"
-import { useAreaInfo } from 'src/api/Api'
+import { useApiAreaInfo } from 'src/api/Api'
 import { HashTag } from "src/app/components/HashTag"
 
 {/*
@@ -24,7 +24,7 @@ export default function AreaMap() {
   const params = useParams()
 
   {/* API実行 */ }
-  const { data, error, isValidating } = useAreaInfo(params.slug)
+  const { data, error, isValidating } = useApiAreaInfo(params.slug)
 
   {/* ローディング処理 */ }
   if (isValidating) return <Loading />
