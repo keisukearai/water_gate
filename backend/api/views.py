@@ -122,9 +122,9 @@ class GwUplinkView(TemplateView):
         endDeviceData = EndDeviceData(
             enddevice_id=endDevice.id,
             send_time=model.send_time,
-            gate_status=None,
-            gate_battery_level=None,
-            gate_communication=None,
+            gate_status=model.data_model.gate_status,
+            battery_level=model.data_model.battery_level,
+            com_status=model.data_model.com_status,
             gate_rssi=model.rssi,
             gate_snr=model.snr
         )

@@ -15,6 +15,8 @@ class EndDeviceModel:
     rssi = None
     # 受信 SNR
     snr = None
+    # data部モデル
+    data_model = None
 
     ##############################
     # getter
@@ -44,6 +46,11 @@ class EndDeviceModel:
     def snr(self):
         return self.__snr
 
+    # data部モデルのゲッター
+    @property
+    def data_model(self):
+        return self.__data_model
+
     ##############################
     # setter
     ##############################
@@ -71,3 +78,8 @@ class EndDeviceModel:
     @snr.setter
     def snr(self, value):
         self.__snr = value
+
+    # data部モデルのセッター
+    @data_model.setter
+    def data_model(self, value):
+        self.__data_model = value

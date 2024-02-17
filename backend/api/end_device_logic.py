@@ -2,6 +2,7 @@
 import logging
 
 from .end_device_model import EndDeviceModel
+from .end_device_data_model import EndDeviceDataModel
 
 class EndDeviceLogic:
     """
@@ -44,7 +45,9 @@ class EndDeviceLogic:
         model.snr = head2['snr']
 
         # data部変換
-        self.detail_data_transform(detail_data)
+        data_model = self.detail_data_transform(detail_data)
+        # detaモデルに設定
+        model.data_model = data_model
 
         logger.debug(f"{ __class__.__name__ } transform end")
         return model
@@ -62,8 +65,34 @@ class EndDeviceLogic:
         device_status_bin = self.hex_to_bin(device_status)
         logger.debug(f"装置状態(2進数):{device_status_bin}")
 
+        # 装置状態から電池残量b1を取得
+        battery_level = device_status_bin[6:7]
+        logger.debug(f"電池残量:{battery_level}")
+
+        # 装置状態から通信(communication)状況b2-3を取得
+        com_status_bin = device_status_bin[4:6]
+        logger.debug(f"通信状況(2進数):{com_status_bin}")
+        com_status = self.bin_to_int(com_status_bin)
+        logger.debug(f"通信状況:{com_status}")
+
+        # ゲート状態
+        gate_data_status = detail_data[28:30]
+        gate_status_bin = self.hex_to_bin(gate_data_status)
+        logger.debug(f"ゲート状態(2進数):{gate_status_bin}")
+        gate_status = gate_status_bin[7:]
+        logger.debug(f"ゲート状態:{gate_status}")
+
+        # モデルインスタンス生成
+        model = EndDeviceDataModel()
+        # 電池残量
+        model.battery_level = battery_level
+        # 通信状況
+        model.com_status = com_status
+        # ゲート状態
+        model.gate_status = gate_status
+
         logger.debug(f"{ __class__.__name__ } detail_data_transform end")
-        return
+        return model
 
     def hex_to_bin(self, hs):
         """
@@ -86,3 +115,19 @@ class EndDeviceLogic:
         # 8桁の2進数に変換
         n_bin = format(hex_i, "08b")
         return n_bin
+
+    def bin_to_int(self, bi):
+        """
+        2進数から10進数への変換
+
+        Parameters
+        ----------
+        bi : str
+            2進数のバイト部分
+
+        Returns
+        -------
+        n_int : str
+            10進数形式の文字列
+        """
+        return str(int(bi, 2))
