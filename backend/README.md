@@ -134,6 +134,8 @@ drop table wg_end_device;
 drop table wg_gateway;
 drop table wg_area;
 drop table wg_prefecture;
+drop table wg_status_info;
+drop table wg_class_info;
 
 truncate table wg_base
 truncate table wg_area

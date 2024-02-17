@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import logging
+from datetime import datetime
 
 from .model_end_device import ModelEndDevice
 from .model_end_device_data import ModelEndDeviceData
@@ -13,6 +14,11 @@ class EndDeviceLogic:
     def __init__(self, json_data):
         """
         コンストラクタ
+
+        Parameters
+        ----------
+        json_data: dict
+            リクエスト情報
         """
         # リクエストのJson形式データ格納
         self.json_data = json_data
@@ -20,6 +26,15 @@ class EndDeviceLogic:
     def transform(self):
         """
         リクエスト→モデル変換ロジック
+
+        Parameters
+        ----------
+        None
+
+        Returns
+        -------
+        model: ModelEndDevice
+            エンドデバイスのモデル
         """
         # ログ出力
         logger = logging.getLogger('hp_admin')
@@ -47,7 +62,8 @@ class EndDeviceLogic:
 
         # data部変換
         data_model = self.detail_data_transform(detail_data)
-        # detaモデルに設定
+
+        # deta部モデルに設定
         model.data_model = data_model
 
         logger.debug(f"{ __class__.__name__ } transform end")
@@ -56,6 +72,16 @@ class EndDeviceLogic:
     def detail_data_transform(self, detail_data):
         """
         データ部の変換ロジック
+
+        Parameters
+        ----------
+        detail_data: dict
+            リクエストdata部
+
+        Returns
+        -------
+        model: ModelEndDeviceData
+            エンドデバイスデータ部をモデル化
         """
         # ログ出力
         logger = logging.getLogger('hp_admin')
@@ -97,3 +123,52 @@ class EndDeviceLogic:
 
         logger.debug(f"{ __class__.__name__ } detail_data_transform end")
         return model
+
+    def make_response_data(self, gateWay, endDevice, json_data):
+        """
+        リクエスト返却結果を生成
+
+        Parameters
+        ----------
+        gateWay: GateWay
+            GateWayモデル
+        endDevice: EndDevice
+            EndDeviceモデル
+        json_data: dict
+            EndDeviceモデル
+
+        Returns
+        -------
+        check: boolean
+            チェック結果(True:正常、False:異常)
+        ret_json: dict
+            レスポンス情報
+        """
+        # 返却値
+        check = True
+        ret_json = {
+            'head1': {},
+            'head2': {},
+            'data': "00" # 0x00 正常
+        }
+
+        # DBと突合して取得できない場合
+        if (gateWay == None or endDevice == None):
+            check = False
+            ret_json['data'] = "02" # 0x02 異常（パラメーター）
+
+        # head1
+        ret_json['head1']['kind'] = "81"
+        ret_json['head1']['appeui'] = json_data['head1']['appeui']
+        ret_json['head1']['gwid'] = json_data['head1']['gwid']
+        ret_json['head1']['seqno'] = json_data['head1']['seqno']
+        # head2
+        ret_json['head2']['time'] = dt_now = datetime.now().replace(second=0, microsecond=0)
+        ret_json['head2']['deveui'] = json_data['head2']['deveui']
+        ret_json['head2']['devaddr'] = json_data['head2']['devaddr']
+        ret_json['head2']['fport'] = json_data['head2']['fport']
+        ret_json['head2']['pkttoken'] = json_data['head2']['pkttoken']
+        ret_json['head2']['fmtver'] = json_data['head2']['fmtver']
+        ret_json['head2']['lendt'] = "1"
+
+        return check, ret_json

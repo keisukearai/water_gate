@@ -2,6 +2,16 @@
 from django.db import models
 from django_resized import ResizedImageField
 
+class BaseManager(models.Manager):
+   def get_or_none(self, **kwargs):
+       """
+       検索にヒットすればそのモデルを、しなければNoneを返します。
+       """
+       try:
+           return self.get_queryset().get(**kwargs)
+       except self.model.DoesNotExist:
+           return None
+
 class Prefecture(models.Model):
     """
     都道府県テーブル
@@ -70,8 +80,9 @@ class StatusInfo(models.Model):
 
 class GateWay(models.Model):
     """
-    LoRaSPN ゲートウェイテーブル
+    ゲートウェイテーブル
     """
+    objects = BaseManager()
     area = models.ForeignKey(Area, on_delete=models.CASCADE, verbose_name="地域")
     gw_id = models.CharField(verbose_name="LoRaSPNゲートウェイID(gwid)", max_length=20)
     gw_name = models.CharField(verbose_name="LoRaSPNゲートウェイ名", max_length=50)
@@ -87,8 +98,9 @@ class GateWay(models.Model):
 
 class EndDevice(models.Model):
     """
-    LoRaWAN エンドデバイステーブル
+    エンドデバイステーブル
     """
+    objects = BaseManager()
     gateway = models.ForeignKey(GateWay, on_delete=models.CASCADE, verbose_name="ゲートウェイID")
     dev_eui = models.CharField(verbose_name="エンドデバイスID(deveui)", max_length=20)
     end_device_gate_no = models.CharField(verbose_name="扉番号", max_length=5)
@@ -123,20 +135,14 @@ class EndDeviceData(models.Model):
         db_table = 'wg_end_device_data'
         verbose_name_plural = "【機器】3.エンドデバイス受信データ"
 
-    # def __str__(self):
-    #     return self.dev_eui
-
 class GateWayJsonData(models.Model):
     """
-    ゲートウェイJSON形式格納テーブル
+    ゲートウェイからのエンドデバイスJSON形式格納テーブル
     """
-    gateway = models.ForeignKey(GateWay, on_delete=models.CASCADE, verbose_name="ゲートウェイ")
+    enddevice = models.ForeignKey(EndDevice, on_delete=models.CASCADE, verbose_name="エンドデバイスID")
     json_data = models.JSONField(verbose_name="JSON形式受信結果")
     create_date = models.DateTimeField(verbose_name="作成日時", auto_now_add=True)
 
     class Meta:
         db_table = 'wg_gateway_json_data'
         verbose_name_plural = "【機器】4.ゲートウェイJSON形式データ"
-
-    # def __str__(self):
-    #     return self.gw_id

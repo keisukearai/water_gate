@@ -129,7 +129,8 @@ class GateWayJsonDataAdmin(admin.ModelAdmin):
 
     # 画面表示タイトル
     format_create_date.short_description = GateWayJsonData.create_date.field.verbose_name
-    list_display = ('gateway', 'format_create_date')
+
+    list_display = ('enddevice', 'format_create_date')
 
 # 管理画面に表示
 admin.site.register(Prefecture, PrefectureAdmin)

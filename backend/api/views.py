@@ -84,6 +84,9 @@ class GwUplinkView(TemplateView):
     """
     ゲートウェイからの受信情報の格納
     """
+    @method_decorator(csrf_exempt)
+    def dispatch(self, *args, **kwargs):
+        return super(GwUplinkView, self).dispatch(*args, **kwargs)
 
     @csrf_exempt
     def post(self, request):
@@ -96,23 +99,27 @@ class GwUplinkView(TemplateView):
         logger.debug(json_data)
 
         # エンドデバイスロジックインスタンス生成
-        end_device_logic = EndDeviceLogic(json_data)
+        elogic = EndDeviceLogic(json_data)
         # モデルへ変換
-        model = end_device_logic.transform()
+        model = elogic.transform()
 
         # ゲートウェイテーブルより、FKとなるidを取得
-        gateWay = GateWay.objects.get(gw_id=model.gw_id)
-        logger.debug(f"gateWay fk id:{gateWay.id}")
+        gateWay = GateWay.objects.get_or_none(gw_id=model.gw_id)
 
         # エンドデバイステーブルより、FKとなるidを取得
-        endDevice = EndDevice.objects.get(dev_eui=model.deveui)
-        logger.debug(f"endDevice fk id:{endDevice.id}")
+        endDevice = EndDevice.objects.get_or_none(dev_eui=model.deveui)
 
-        # TOD:取得できない場合のエラー返却
+        # 取得できない場合のエラー返却
+        check, res_json = elogic.make_response_data(gateWay, endDevice, json_data)
+        if (check == False):
+            return JsonResponse(res_json)
+
+        logger.debug(f"endDevice fk id:{endDevice.id}")
+        logger.debug(f"gateWay fk id:{gateWay.id}")
 
         # ゲートウェイJSON形式格納用パラメータ
         gateWayJsonData = GateWayJsonData(
-            gateway_id=gateWay.id,
+            enddevice_id=endDevice.id,
             json_data=json_data
         )
         # 登録
@@ -131,16 +138,5 @@ class GwUplinkView(TemplateView):
         # 登録
         endDeviceData.save()
 
-        ##############################
-        # 出力値の設定
-        ##############################
-        params = {
-            'ret': 'ok',
-        }
-
         logger.debug(f"{ __class__.__name__ } get end")
-        return JsonResponse(params)
-
-    @method_decorator(csrf_exempt)
-    def dispatch(self, *args, **kwargs):
-        return super(GwUplinkView, self).dispatch(*args, **kwargs)
+        return JsonResponse(res_json)
