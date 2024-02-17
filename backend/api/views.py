@@ -66,13 +66,19 @@ class MenuInfoView(TemplateView):
         all_count = dbLogic.get_device_count()
         logger.debug(f"all_count:{all_count}")
 
+        # Openの件数
+        open_count = dbLogic.get_device_count("0")
+        logger.debug(f"open_count:{open_count}")
+
         ##############################
         # 出力値の設定
         ##############################
         params = {
             'ret': 'ok',
             'area': area,
-            'all_count': all_count
+            'all_count': all_count,
+            'open_count': open_count,
+            'close_count': all_count - open_count
         }
 
         logger.debug(f"{ __class__.__name__ } get end")
