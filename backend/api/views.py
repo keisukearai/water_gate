@@ -16,6 +16,7 @@ from .models import GateWayJsonData
 
 from .end_device_logic import EndDeviceLogic
 from .common_logic import CommonLogic
+from .db_logic import DbLogic
 
 class AreaInfoView(TemplateView):
     """
@@ -29,14 +30,8 @@ class AreaInfoView(TemplateView):
 
         # リクエストパラメータの取得
         id = request.GET.get("id")
-        logger.debug(f"id:{id}")
-
-        # エリア情報の取得
-        if id != '':
-            query = Area.objects.filter(id=id)
-        else:
-            query = Area.objects.all()
-
+        # 情報取得
+        query = Area.objects.filter(id=id)
         data = list(query.values())
 
         ##############################
@@ -45,6 +40,39 @@ class AreaInfoView(TemplateView):
         params = {
             'ret': 'ok',
             'data': data
+        }
+
+        logger.debug(f"{ __class__.__name__ } get end")
+        return JsonResponse(params)
+
+class MenuInfoView(TemplateView):
+    """
+    メニュー情報の取得
+    """
+
+    def get(self, request):
+        # ログ出力
+        logger = logging.getLogger('hp_admin')
+        logger.debug(f"{ __class__.__name__ } get start")
+
+        # 共通ロジック
+        dbLogic = DbLogic()
+
+        # エリア情報の取得
+        query = Area.objects.all()
+        area = list(query.values())
+
+        # 件数の取得
+        all_count = dbLogic.get_device_count()
+        logger.debug(f"all_count:{all_count}")
+
+        ##############################
+        # 出力値の設定
+        ##############################
+        params = {
+            'ret': 'ok',
+            'area': area,
+            'all_count': all_count
         }
 
         logger.debug(f"{ __class__.__name__ } get end")
@@ -62,6 +90,7 @@ class WaterGateListView(TemplateView):
 
         # 共通ロジック
         cLogic = CommonLogic()
+        dbLogic = DbLogic()
 
         # リクエストパラメータの取得
         area_id = request.GET.get("area_id")
@@ -82,25 +111,15 @@ class WaterGateListView(TemplateView):
             sql_param = f"and gw.area_id = '{area.id}' "
 
         # 件数の取得
-        with connection.cursor() as cursor:
-            sql = (
-                'select count(*) as all_cnt '
-                'from wg_end_device_data da '
-                'inner join wg_end_device ed on da.enddevice_id = ed.id '
-                'inner join wg_gateway gw on ed.gateway_id = gw.id '
-                'where (da.enddevice_id, da.update_date) in ('
-                'select enddevice_id, max(update_date) from wg_end_device_data group by enddevice_id'
-                ')'
-            )
-            cursor.execute(sql)
-            all_count = cursor.fetchone()
+        all_count = dbLogic.get_device_count()
+        logger.debug(f"all_count:{all_count}")
 
-            # ページ情報
-            pages = divmod(int(all_count[0]), int(limit))
-            if pages[1] > 0:
-                totalPages = pages[0] + 1
-            else:
-                totalPages = pages[0]
+        # ページ情報
+        pages = divmod(int(all_count), int(limit))
+        if pages[1] > 0:
+            totalPages = pages[0] + 1
+        else:
+            totalPages = pages[0]
 
         # 一覧情報を取得
         with connection.cursor() as cursor:
@@ -131,7 +150,7 @@ class WaterGateListView(TemplateView):
         params = {
             'ret': 'ok',
             'totalPages': totalPages,
-            'allCount': all_count[0],
+            'allCount': all_count,
             'data': data
         }
 

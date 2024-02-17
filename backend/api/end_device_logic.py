@@ -2,6 +2,8 @@
 import logging
 from datetime import datetime
 
+from django.db import connection
+
 from .model_end_device import ModelEndDevice
 from .model_end_device_data import ModelEndDeviceData
 from .common_logic import CommonLogic
@@ -172,3 +174,21 @@ class EndDeviceLogic:
         ret_json['head2']['lendt'] = "1"
 
         return check, ret_json
+
+    def device_count(self):
+
+        # 件数の取得
+        with connection.cursor() as cursor:
+            sql = (
+                'select count(*) as all_cnt '
+                'from wg_end_device_data da '
+                'inner join wg_end_device ed on da.enddevice_id = ed.id '
+                'inner join wg_gateway gw on ed.gateway_id = gw.id '
+                'where (da.enddevice_id, da.update_date) in ('
+                'select enddevice_id, max(update_date) from wg_end_device_data group by enddevice_id'
+                ')'
+            )
+            cursor.execute(sql)
+            all_count = cursor.fetchone()
+
+        return all_count[0]
