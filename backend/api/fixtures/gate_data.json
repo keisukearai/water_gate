@@ -1,63 +1,13 @@
 [
     {
-        "model": "api.gateway",
-        "pk": 1,
-        "fields": {
-            "area": "1",
-            "gw_id": "d84a87fffefee757",
-            "gw_name": "ゲートウェイ1",
-            "create_date": "2024-01-14 09:00:00",
-            "update_date": "2024-01-14 09:00:00"
-        }
-    },
-    {
-        "model": "api.enddevice",
-        "pk": 1,
-        "fields": {
-            "gateway": "1",
-            "dev_eui": "d84a87fffefee701",
-            "end_device_gate_no": "1",
-            "end_device_name": "エンデバイス1",
-            "end_device_gateaddress": "エンデバイス1の住所",
-            "create_date": "2024-01-14 09:00:00",
-            "update_date": "2024-01-14 09:00:00"
-        }
-    },
-    {
-        "model": "api.enddevice",
-        "pk": 2,
-        "fields": {
-            "gateway": "1",
-            "dev_eui": "d84a87fffefee702",
-            "end_device_gate_no": "2",
-            "end_device_name": "エンデバイス2",
-            "end_device_gateaddress": "エンデバイス2の住所",
-            "create_date": "2024-01-14 09:00:00",
-            "update_date": "2024-01-14 09:00:00"
-        }
-    },
-    {
-        "model": "api.enddevice",
-        "pk": 3,
-        "fields": {
-            "gateway": "1",
-            "dev_eui": "d84a87fffefee703",
-            "end_device_gate_no": "3",
-            "end_device_name": "エンデバイス3",
-            "end_device_gateaddress": "エンデバイス3の住所",
-            "create_date": "2024-01-14 09:00:00",
-            "update_date": "2024-01-14 09:00:00"
-        }
-    },
-    {
         "model": "api.enddevicedata",
         "pk": 1,
         "fields": {
             "enddevice": "1",
             "send_time": "2024-01-14 09:00:00",
             "gate_status": "1",
-            "battery_level": "0",
-            "com_status": "1",
+            "battery_level": "1",
+            "com_status": "3",
             "gate_rssi": "-120",
             "gate_snr": "-100",
             "create_date": "2024-01-14 09:00:00",
@@ -72,7 +22,7 @@
             "send_time": "2024-01-15 09:00:00",
             "gate_status": "1",
             "battery_level": "0",
-            "com_status": "1",
+            "com_status": "2",
             "gate_rssi": "-122",
             "gate_snr": "-102",
             "create_date": "2024-01-15 09:00:00",
@@ -87,7 +37,7 @@
             "send_time": "2024-01-15 09:00:00",
             "gate_status": "0",
             "battery_level": "1",
-            "com_status": "0",
+            "com_status": "3",
             "gate_rssi": "-123",
             "gate_snr": "-103",
             "create_date": "2024-01-16 09:00:00",
@@ -115,9 +65,84 @@
         "fields": {
             "enddevice": "2",
             "send_time": "2024-01-15 09:00:00",
+            "gate_status": "0",
+            "battery_level": "0",
+            "com_status": "1",
+            "gate_rssi": "-112",
+            "gate_snr": "-112",
+            "create_date": "2024-01-15 09:00:00",
+            "update_date": "2024-01-15 09:00:00"
+        }
+    },
+    {
+        "model": "api.enddevicedata",
+        "pk": 6,
+        "fields": {
+            "enddevice": "3",
+            "send_time": "2024-01-15 09:00:00",
             "gate_status": "1",
             "battery_level": "0",
             "com_status": "1",
+            "gate_rssi": "-112",
+            "gate_snr": "-112",
+            "create_date": "2024-01-15 09:00:00",
+            "update_date": "2024-01-15 09:00:00"
+        }
+    },
+    {
+        "model": "api.enddevicedata",
+        "pk": 7,
+        "fields": {
+            "enddevice": "4",
+            "send_time": "2024-01-15 09:00:00",
+            "gate_status": "0",
+            "battery_level": "0",
+            "com_status": "0",
+            "gate_rssi": "-112",
+            "gate_snr": "-112",
+            "create_date": "2024-01-15 09:00:00",
+            "update_date": "2024-01-15 09:00:00"
+        }
+    },
+    {
+        "model": "api.enddevicedata",
+        "pk": 8,
+        "fields": {
+            "enddevice": "5",
+            "send_time": "2024-01-15 09:00:00",
+            "gate_status": "1",
+            "battery_level": "1",
+            "com_status": "0",
+            "gate_rssi": "-112",
+            "gate_snr": "-112",
+            "create_date": "2024-01-15 09:00:00",
+            "update_date": "2024-01-15 09:00:00"
+        }
+    },
+    {
+        "model": "api.enddevicedata",
+        "pk": 9,
+        "fields": {
+            "enddevice": "6",
+            "send_time": "2024-01-15 09:00:00",
+            "gate_status": "0",
+            "battery_level": "0",
+            "com_status": "2",
+            "gate_rssi": "-112",
+            "gate_snr": "-112",
+            "create_date": "2024-01-15 09:00:00",
+            "update_date": "2024-01-15 09:00:00"
+        }
+    },
+    {
+        "model": "api.enddevicedata",
+        "pk": 10,
+        "fields": {
+            "enddevice": "7",
+            "send_time": "2024-01-15 09:00:00",
+            "gate_status": "0",
+            "battery_level": "0",
+            "com_status": "3",
             "gate_rssi": "-112",
             "gate_snr": "-112",
             "create_date": "2024-01-15 09:00:00",
