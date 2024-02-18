@@ -66,20 +66,25 @@ sudo apt install -y npm
 ### npm latest
 sudo npm install -g n
 
-# sudo n stable
-
-# sudo apt purge nodejs npm
-
-# suto apt autoremove
-
+### nコマンドでバーション指定
 n v16.19.1
 
-npm -v
+### root 反映
+$ echo 'export PATH=$HOME/bin:$PATH' >> ~/.bash_profile
+$ source ~/.bash_profile
+$ node -v
 
+### 一旦削除
+#sudo apt purge -y nodejs npm
+#suto apt autoremove -y
+### 最新インストール
+#sudo n stable
+
+### バーション確認
+npm -v
 8.19.3
 
 node -v
-
 v16.19.1
 
 ### chmod html
@@ -118,11 +123,13 @@ server {
     }
 }
 ```
-
-ln -s /etc/nginx/sites-available/test.kotoragk.com /etc/nginx/sites-enabled/
-
+### 構文チェック
 nginx -t
 
+### シンボリックリンク
+ln -s /etc/nginx/sites-available/test.kotoragk.com /etc/nginx/sites-enabled/
+
+### リスタート
 systemctl restart nginx
 
 ### git config
