@@ -100,13 +100,13 @@ rm /etc/nginx/sites-enabled/default
 
 cd /etc/nginx/sites-available/
 
-vi test.kotoragk.com
+vi gateremo.com
 
 ```config
 server {
     client_max_body_size 64M;
     listen 80;
-    server_name test.kotoragk.com www.test.kotoragk.com;
+    server_name gateremo.com www.gateremo.com;
 
     location / {
         proxy_pass http://127.0.0.1:3000;
@@ -127,7 +127,7 @@ server {
 nginx -t
 
 ### シンボリックリンク
-ln -s /etc/nginx/sites-available/test.kotoragk.com /etc/nginx/sites-enabled/
+ln -s /etc/nginx/sites-available/gateremo.com /etc/nginx/sites-enabled/
 
 ### リスタート
 systemctl restart nginx
@@ -140,22 +140,25 @@ git config --global user.email "hoge@hoge.com"
 #### git access token
 git config credential.helper 'cache --timeout=86400'
 
-### git clone
+### git clone 一般ユーザで実施
 cd /var/www/html
 
 git clone https://github.com/keisukearai/water_gate.git
 
 ### deplopy
-cd /var/www/html/water_gate
+cd /var/www/html/water_gate/frontend
 
 npm install --force
 
 #### env (see error url](https://stackoverflow.com/questions/76543198/error-while-deploying-next-js-app-on-vercel)
 vi .env.local
+### 注意「NEXT_PUBLIC_API_HOST_NAME」、「NEXT_PUBLIC_API_MEDIA_PATH」はドメインを設定!!!!!
 
 npm run build
 
 npm run start
+
+### ここからpythonへ
 
 ### mp2 install
 sudo npm install pm2 -g
@@ -178,7 +181,8 @@ certbot --nginx -d test.kotoragk.com -d www.test.kotoragk.com
 ### ufw delete & add
 ufw status numbered
 
-ufw delete 2
+### 80ポートは閉じない
+#ufw delete 2
 
 ufw allow 443
 

@@ -1,13 +1,19 @@
 ### python version
-python -V
+python3 -V
 Python 3.10.6
 
 ### python link
 cd /usr/bin
 
+#### version確認
 ls -l | grep python
+#### link削除
+rm -rf /usr/bin/python
+#### 再link
+ln -s ./python3.10 ./python
 
-ln -s ./python3.8 ./python
+### python version
+python -V
 
 # pip install
 apt install -y python3-pip
@@ -43,27 +49,36 @@ create database wg_api_db CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 grant all on wg_api_db.* to 'admin'@'localhost';
 
 ### Django install
-# python -m pip install Django
+#python -m pip install Django
 
 ### make project
-django-admin startproject admin_api
+#django-admin startproject admin_api
 
 ### make sub project
-python manage.py startapp api
+#python manage.py startapp api
+
+### requirements
+cd /var/www/html/watar_gate/backend
+#python -m pip install -r requirements.txt
+python -m pip install django==4.2.5
+python -m pip install django-cors-headers
+python -m pip install mysqlclient
+python -m pip install python-dotenv
+python -m pip install Pillow
+python -m pip install django-resized
 
 ### runserver
 python manage.py runserver
 
+### logsディレクトリ作成
+mkdir logs
+
 ### migrate
+python manage.py makemigrations api
 python manage.py migrate
 
 ### createsuperuser admin
 python manage.py createsuperuser
-
-### makemigrations
-python manage.py makemigrations api
-
-python manage.py migrate
 
 ### nginx config
 cd /etc/nginx/sites-available/
@@ -97,25 +112,30 @@ server {
     ・・・・
 }
 ```
-
+### 構文チェック
 nginx -t
 
+### リスタート
 systemctl restart nginx
+
+### ALLOWED_HOSTS設定
+cd /var/www/html/backend
+vi admin_api/settings.py
 
 ### admin site confirm
 https://test.kotoragk.com/admin
 
-### gunicorn
+### gunicorn 実施しない
 #apt install gunicorn
 #python -m pip install gunicorn
 
-### gunicorn start
+### gunicorn start 実施しない
 #gunicorn --bind 127.0.0.1:8000 admin_api.wsgi -D --insecure
 
-### gunicorn stop
+### gunicorn stop 実施しない
 #pkill gunicorn
 
-### gunicorn status
+### gunicorn status 実施しない
 #ps aux | grep gunicorn
 
 ### runserver
@@ -153,6 +173,7 @@ python manage.py migrate
 
 ### data import
 python manage.py loaddata master.json
+python manage.py loaddata master_gate_data.json
 python manage.py loaddata gate_data.json
 
 ### local url
@@ -187,8 +208,10 @@ server {
 }
 ```
 
+### 構文チェック
 nginx -t
 
+### リスタート
 systemctl restart nginx
 
 ## certbot renew
