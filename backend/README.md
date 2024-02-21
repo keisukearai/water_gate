@@ -235,3 +235,25 @@ ufw allow 80
 certbot renew
 
 00 02 01 * * certbot renew && systemctl restart nginx
+
+
+### Basis認証
+#### アプリインストール
+apt-get install apache2-utils
+
+#### 認証情報の設定
+htpasswd -c /etc/nginx/sites-available/.htpasswd admin
+
+vi /etc/nginx/sites-enabled/test.kotoragk.com
+
+location / {
+    auth_basic "Login Authentication"; # 認証時に表示されるメッセージ
+    auth_basic_user_file /etc/nginx/sites-available/.htpasswd; # .htpasswdファイルのパス
+}
+
+#### 構文チェック
+nginx -t
+
+#### リスタート
+systemctl stop nginx
+systemctl start nginx
