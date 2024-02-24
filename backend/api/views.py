@@ -83,6 +83,11 @@ class AreaInfoView(TemplateView):
         query = Area.objects.filter(id=id)
         data = list(query.values())
 
+        # 取得できない場合
+        if len(data) == 0:
+            data = [{"water_gate_map": "", "area_name": ""}]
+        # logger.debug(data)
+
         ##############################
         # 出力値の設定
         ##############################
