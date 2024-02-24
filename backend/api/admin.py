@@ -55,7 +55,7 @@ class AreaAdmin(admin.ModelAdmin):
     format_image.short_description = Area.water_gate_map.field.verbose_name
     format_image.empty_value_display = "画像なし"
 
-    list_display = ('prefecture_disp', 'area_name', 'format_image')
+    list_display = ('area_name', 'prefecture_disp', 'format_image')
 
 class ClassInfoAdmin(admin.ModelAdmin):
     """ 分類情報テーブル """
