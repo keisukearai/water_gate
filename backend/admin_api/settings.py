@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'test.kotoragk.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'gateremo.com']
 
 
 # Application definition
@@ -59,7 +59,7 @@ ROOT_URLCONF = 'admin_api.urls'
 # CORS対策
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
-CSRF_TRUSTED_ORIGINS = ['https://test.kotoragk.com', 'http://localhost']
+CSRF_TRUSTED_ORIGINS = ['https://gateremo.com', 'http://localhost']
 
 TEMPLATES = [
     {
