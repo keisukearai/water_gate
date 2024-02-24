@@ -12,6 +12,23 @@ class BaseManager(models.Manager):
        except self.model.DoesNotExist:
            return None
 
+class SystemInfo(models.Model):
+    """
+    システム情報テーブル
+    """
+    objects = BaseManager()
+    system_name = models.CharField(verbose_name="名称", max_length=100)
+    system_value = models.CharField(verbose_name="値", max_length=1024, blank=True, null=True)
+    create_date = models.DateTimeField(verbose_name="作成日時", auto_now_add=True)
+    update_date = models.DateTimeField(verbose_name="更新日時", auto_now=True)
+
+    class Meta:
+        db_table = 'wg_system_info'
+        verbose_name_plural = "【マスタ】1.システム情報"
+
+    def __str__(self):
+        return f"【{self.system_name}】{self.system_value}"
+
 class Prefecture(models.Model):
     """
     都道府県テーブル
@@ -22,7 +39,7 @@ class Prefecture(models.Model):
 
     class Meta:
         db_table = 'wg_prefecture'
-        verbose_name_plural = "【マスタ】1.都道府県"
+        verbose_name_plural = "【マスタ】2.都道府県"
 
     def __str__(self):
         return self.prefecture_name
@@ -41,7 +58,7 @@ class Area(models.Model):
 
     class Meta:
         db_table = 'wg_area'
-        verbose_name_plural = "【マスタ】2.地域"
+        verbose_name_plural = "【マスタ】3.地域"
 
     def __str__(self):
         return self.area_name
@@ -56,7 +73,7 @@ class ClassInfo(models.Model):
 
     class Meta:
         db_table = 'wg_class_info'
-        verbose_name_plural = "【マスタ】3.分類情報"
+        verbose_name_plural = "【マスタ】4.分類情報"
 
     def __str__(self):
         return self.class_name
@@ -74,7 +91,7 @@ class StatusInfo(models.Model):
 
     class Meta:
         db_table = 'wg_status_info'
-        verbose_name_plural = "【マスタ】4.ステータス情報"
+        verbose_name_plural = "【マスタ】5.ステータス情報"
 
     def __str__(self):
         return self.status_name

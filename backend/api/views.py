@@ -8,6 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 from django.db import connection
 
+from .models import SystemInfo
 from .models import Area
 from .models import GateWay
 from .models import EndDevice
@@ -17,6 +18,61 @@ from .models import GateWayJsonData
 from .end_device_logic import EndDeviceLogic
 from .common_logic import CommonLogic
 from .db_logic import DbLogic
+
+class HeadernfoView(TemplateView):
+    """
+    ヘッダー情報の取得
+    """
+
+    def get(self, request):
+        # ログ出力
+        logger = logging.getLogger('hp_admin')
+        logger.debug(f"{ __class__.__name__ } get start")
+
+        # 情報取得(タイトル)
+        query = SystemInfo.objects.filter(id=1)
+        data = list(query.values())
+
+        ##############################
+        # 出力値の設定
+        ##############################
+        params = {
+            'ret': 'ok',
+            'header_title': data[0]['system_value']
+        }
+
+        logger.debug(f"{ __class__.__name__ } get end")
+        return JsonResponse(params)
+
+class FooterInfoView(TemplateView):
+    """
+    フッター情報の取得
+    """
+
+    def get(self, request):
+        # ログ出力
+        logger = logging.getLogger('hp_admin')
+        logger.debug(f"{ __class__.__name__ } get start")
+
+        # 情報取得(コピーライト)
+        query = SystemInfo.objects.filter(id=2)
+        cp_data = list(query.values())
+
+        # 情報取得(URL)
+        query = SystemInfo.objects.filter(id=3)
+        cp_url_data = list(query.values())
+
+        ##############################
+        # 出力値の設定
+        ##############################
+        params = {
+            'ret': 'ok',
+            'copy_right': cp_data[0]['system_value'],
+            'copy_right_url': cp_url_data[0]['system_value']
+        }
+
+        logger.debug(f"{ __class__.__name__ } get end")
+        return JsonResponse(params)
 
 class AreaInfoView(TemplateView):
     """
@@ -31,7 +87,7 @@ class AreaInfoView(TemplateView):
         # リクエストパラメータの取得
         id = request.GET.get("id")
         # 情報取得
-        query = Area.objects.filter(id=id)
+        query = Area.objects.get_or_none(id=id)
         data = list(query.values())
 
         ##############################

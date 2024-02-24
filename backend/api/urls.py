@@ -7,6 +7,10 @@ app_name = 'api'
 
 # URL
 urlpatterns = [
+    # ヘッダー情報の取得
+    path('header', views.HeadernfoView.as_view(), name='header'),
+    # フッター情報の取得
+    path('footer', views.FooterInfoView.as_view(), name='footer'),
     # エリア情報の取得
     path('area', views.AreaInfoView.as_view(), name='area'),
     # メニュー情報の取得

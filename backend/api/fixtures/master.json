@@ -1,5 +1,35 @@
 [
     {
+        "model": "api.systeminfo",
+        "pk": 1,
+        "fields": {
+            "system_name": "システム名",
+            "system_value": "ゲートリモートモニター",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
+        }
+    },
+    {
+        "model": "api.systeminfo",
+        "pk": 2,
+        "fields": {
+            "system_name": "コピーライト",
+            "system_value": "コピーライトの会社名",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
+        }
+    },
+    {
+        "model": "api.systeminfo",
+        "pk": 3,
+        "fields": {
+            "system_name": "コピーライトURL",
+            "system_value": "https://nextjs.org/",
+            "create_date": "2024-01-14 09:00:00",
+            "update_date": "2024-01-14 09:00:00"
+        }
+    },
+    {
         "model": "api.prefecture",
         "pk": 1,
         "fields": {

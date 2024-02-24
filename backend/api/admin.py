@@ -3,6 +3,7 @@ from django.contrib import admin
 from django.utils.safestring import mark_safe
 
 # Register your models here.
+from api.models import SystemInfo
 from api.models import Prefecture
 from api.models import Area
 from api.models import ClassInfo
@@ -11,6 +12,14 @@ from api.models import GateWay
 from api.models import EndDevice
 from api.models import EndDeviceData
 from api.models import GateWayJsonData
+
+class SystemInfoAdmin(admin.ModelAdmin):
+    """ システム情報テーブル """
+    ordering = ("id", ) # 並び順の変更
+    # 1ページ当たりに表示する件数
+    list_per_page = 20
+    # 全件表示を許容する最大件数
+    list_max_show_all = 5000
 
 class PrefectureAdmin(admin.ModelAdmin):
     """ 都道府県テーブル """
@@ -133,6 +142,7 @@ class GateWayJsonDataAdmin(admin.ModelAdmin):
     list_display = ('enddevice', 'format_create_date')
 
 # 管理画面に表示
+admin.site.register(SystemInfo, SystemInfoAdmin)
 admin.site.register(Prefecture, PrefectureAdmin)
 admin.site.register(Area, AreaAdmin)
 admin.site.register(ClassInfo, ClassInfoAdmin)
