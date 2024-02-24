@@ -126,7 +126,7 @@ class EndDeviceLogic:
         logger.debug(f"{ __class__.__name__ } detail_data_transform end")
         return model
 
-    def make_response_data(self, gateWay, endDevice, json_data):
+    def make_response_data(self, gateWay, endDevice, json_data, format_flag=True):
         """
         リクエスト返却結果を生成
 
@@ -138,6 +138,8 @@ class EndDeviceLogic:
             EndDeviceモデル
         json_data: dict
             EndDeviceモデル
+        format_flag: bool
+            フォーマットフラグ
 
         Returns
         -------
@@ -154,10 +156,15 @@ class EndDeviceLogic:
             'data': "00" # 0x00 正常
         }
 
-        # DBと突合して取得できない場合
-        if (gateWay == None or endDevice == None):
+        # data部などのフォーマット変換エラー
+        if format_flag == False:
             check = False
-            ret_json['data'] = "02" # 0x02 異常（パラメーター）
+            ret_json['data'] = "FF" # 0xFF その他のエラー
+        else:
+            # DBと突合して取得できない場合
+            if (gateWay == None or endDevice == None):
+                check = False
+                ret_json['data'] = "02" # 0x02 異常（パラメーター）
 
         # head1
         ret_json['head1']['kind'] = "81"
