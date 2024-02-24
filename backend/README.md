@@ -199,9 +199,9 @@ server {
         alias /var/www/html/water_gate/backend/media; # Absolute path.
     }
 
-    error_page 500 502 503 504 /custom_50x.html;
-    location = /custom_50x.html {
-        root /var/www/html;
+    error_page 500 502 503 504 /500.html;
+    location = /500.html {
+        root /var/www/html/water_gate/backend/templates;
         internal;
     }
 
