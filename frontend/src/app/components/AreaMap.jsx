@@ -32,7 +32,7 @@ export default function AreaMap() {
 
   {/* 画像loader設定 */ }
   const imgLoader = () => {
-    return (data.data[0].water_gate_map !== '') ? isMobile ? `${media_path}${data.data[0].water_gate_map_sm}` : `${media_path}${data.data[0].water_gate_map}` : '/no_image.webp'
+    return (data.data[0].water_gate_map !== '') ? `${media_path}${data.data[0].water_gate_map}` : '/no_image.webp'
   }
 
   return (
@@ -41,7 +41,7 @@ export default function AreaMap() {
         <HashTag selectedName='安芸津' />
         <Image
           loader={imgLoader}
-          src={(data.data[0].water_gate_map !== '') ? isMobile ? `${media_path}${data.data[0].water_gate_map_sm}` : `${media_path}${data.data[0].water_gate_map}` : '/no_image.webp'}
+          src={(data.data[0].water_gate_map !== '') ? `${media_path}${data.data[0].water_gate_map}` : '/no_image.webp'}
           alt={data.data[0].area_name}
           width={(data.data[0].water_gate_map !== '') ? isMobile ? 400 : 900 : 500}
           height={(data.data[0].water_gate_map !== '') ? isMobile ? 320 : 720 : 400}
