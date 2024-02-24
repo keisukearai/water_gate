@@ -258,3 +258,9 @@ nginx -t
 #### リスタート
 systemctl stop nginx
 systemctl start nginx
+
+#### セキュリティ関連
+コノハ管理画面で、SSHのセキュリティグループを追加する IPv4v6-SSH Ex
+不要なグループを削除する
+OSで「ufw deny 22/tcp」でデフォルトをNGとする
+「ufw allow xxx22」で許可する
