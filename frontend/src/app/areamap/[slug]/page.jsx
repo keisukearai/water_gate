@@ -2,7 +2,7 @@ import AreaMap from "src/app/components/AreaMap"
 
 export const metadata = {
   title: '地域マップ',
-  description: '地域マップの説明',
+  description: 'ゲートが設置されている地域のマップ情報',
 }
 
 {/*
