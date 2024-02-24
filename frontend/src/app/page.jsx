@@ -1,12 +1,12 @@
 import ContentList from "src/app/components/ContentList"
 
 export const metadata = {
-  title: '一覧',
-  description: '一覧ページの説明',
+  title: 'ゲート一覧',
+  description: '遠隔監視しているゲート一覧',
 }
 
 {/*
-  画面名:ホーム
+  画面名:ゲート一覧'
 */}
 export default function Home() {
   return (

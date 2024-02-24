@@ -1,11 +1,20 @@
 import 'src/app/globals.css'
+
+import HeaderLoading from "src/app/components/HeaderLoading"
 import HamburgerMenuButton from 'src/app/components/HamburgerMenuButton'
+import { useApiHeaderInfo } from "src/api/Api"
 
 {/*
   機能名:ヘッダー
 */}
 export default function Header(props) {
   // console.log("header:" + props.menuOpen)
+
+  {/* API実行 */ }
+  const { data, error, isValidating } = useApiHeaderInfo()
+  {/* ローディング処理 */ }
+  if (isValidating) return <HeaderLoading />
+
   return (
     <header>
       <div className="z-20 w-full relative">
@@ -13,7 +22,7 @@ export default function Header(props) {
           {/* ハンバーガーメニューボタン */}
           <HamburgerMenuButton {...props} />
           <div className="text-header-text-color text-center flex justify-center items-center px-10 text-2xl font-semibold font-mono">
-            {process.env.NEXT_PUBLIC_SITE_NAME}
+            {data.header_title}
           </div>
         </div>
       </div>

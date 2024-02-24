@@ -64,3 +64,37 @@ export function useApiAreaInfo(slug) {
     isValidating: isValidating
   }
 }
+
+{/* ヘッダー情報取得 */}
+export function useApiHeaderInfo() {
+
+  // APIURL
+  const url = `${api_host_name}/header`
+
+  {/* API実行 */}
+  const { data, error, isValidating } = useSWR(url, fetcher)
+
+  {/* 結果返却 */}
+  return {
+    data: data,
+    error: error,
+    isValidating: isValidating
+  }
+}
+
+{/* フッター情報取得 */}
+export function useApiFooterInfo() {
+
+  // APIURL
+  const url = `${api_host_name}/footer`
+
+  {/* API実行 */}
+  const { data, error, isValidating } = useSWR(url, fetcher)
+
+  {/* 結果返却 */}
+  return {
+    data: data,
+    error: error,
+    isValidating: isValidating
+  }
+}

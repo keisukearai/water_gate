@@ -1,10 +1,19 @@
 import 'src/app/globals.css'
+
 import Link from 'next/link'
+import FooterLoading from "src/app/components/FooterLoading"
+import { useApiFooterInfo } from "src/api/Api"
 
 {/*
   機能名:フッター
 */}
 export default function Footer() {
+
+  {/* API実行 */ }
+  const { data, error, isValidating } = useApiFooterInfo()
+  {/* ローディング処理 */ }
+  if (isValidating) return <FooterLoading />
+
   return (
     <footer className="z-20 fixed bottom-0 left-0 w-full">
       {/* <!--Copyright section--> */}
@@ -12,10 +21,10 @@ export default function Footer() {
         © 2023 Copyright{' '}
         <Link
           className="text-footer-text-color"
-          href={process.env.NEXT_PUBLIC_COPY_RIGHT_URL}
+          href={data.copy_right_url}
           target="_blank"
         >
-          {process.env.NEXT_PUBLIC_COPY_RIGHT_NAME}
+          {data.copy_right}
         </Link>
       </div>
     </footer>
