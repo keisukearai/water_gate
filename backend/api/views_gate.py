@@ -71,6 +71,7 @@ class GwUplinkView(TemplateView):
         # エンドデバイス受信格納用パラメータ
         endDeviceData = EndDeviceData(
             enddevice_id=endDevice.id,
+            send_kind=model.get_send_kind_name(),
             send_time=model.send_time,
             gate_status=model.data_model.gate_status,
             battery_level=model.data_model.battery_level,

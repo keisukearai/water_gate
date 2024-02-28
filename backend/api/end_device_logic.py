@@ -53,6 +53,8 @@ class EndDeviceLogic:
         model = ModelEndDevice()
         # ゲートウェイID
         model.gw_id = head1['gwid']
+        # 送受種別
+        model.send_kind = head1['kind']
         # エンドデバイスID
         model.deveui = head2['deveui']
         # 受信日時
@@ -63,7 +65,7 @@ class EndDeviceLogic:
         model.snr = head2['snr']
 
         # data部変換
-        data_model = self.detail_data_transform(detail_data)
+        data_model = self.detail_data_transform(detail_data, model)
 
         # deta部モデルに設定
         model.data_model = data_model
@@ -71,7 +73,7 @@ class EndDeviceLogic:
         logger.debug(f"{ __class__.__name__ } transform end")
         return model
 
-    def detail_data_transform(self, detail_data):
+    def detail_data_transform(self, detail_data, model):
         """
         データ部の変換ロジック
 
@@ -92,6 +94,8 @@ class EndDeviceLogic:
         # 共通ロジック
         cLogic = CommonLogic()
 
+        logger.debug(f"送信種別:{model.get_send_kind_name()}")
+
         # 装置状態
         device_status = detail_data[16:18]
         device_status_bin = cLogic.hex_to_bin(device_status)
@@ -108,9 +112,15 @@ class EndDeviceLogic:
         logger.debug(f"通信状況:{com_status}")
 
         # ゲート状態
-        gate_data_status = detail_data[28:30]
+        # 周期送信の場合
+        if model.is_period() == True:
+            gate_data_status = detail_data[28:30]
+        # 状変送信の場合
+        else:
+            gate_data_status = detail_data[30:32]
+        logger.debug(f"ゲート状態(16進数変換前):{gate_data_status}")
         gate_status_bin = cLogic.hex_to_bin(gate_data_status)
-        logger.debug(f"ゲート状態(2進数):{gate_status_bin}")
+        logger.debug(f"ゲート状態(2進数の8桁目):{gate_status_bin}")
         gate_status = gate_status_bin[7:]
         logger.debug(f"ゲート状態:{gate_status}")
 

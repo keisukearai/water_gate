@@ -118,12 +118,18 @@ class EndDeviceDataAdmin(admin.ModelAdmin):
     # 全件表示を許容する最大件数
     list_max_show_all = 5000
 
+    def disp_enddevice(self, obj):
+        return f"扉番号{obj.enddevice}"
+
+    # 画面表示タイトル
+    disp_enddevice.short_description = "エンドデバイス"
+
     def format_send_time(self, obj):
         return obj.send_time.strftime('%Y-%m-%d %H:%M:%S')
 
     # 画面表示タイトル
     format_send_time.short_description = EndDeviceData.send_time.field.verbose_name
-    list_display = ('enddevice', 'format_send_time')
+    list_display = ('disp_enddevice', 'send_kind', 'format_send_time')
 
 class GateWayJsonDataAdmin(admin.ModelAdmin):
     """ ゲートウェイJSON形式格納テーブル """
@@ -133,13 +139,19 @@ class GateWayJsonDataAdmin(admin.ModelAdmin):
     # 全件表示を許容する最大件数
     list_max_show_all = 5000
 
+    def disp_enddevice(self, obj):
+        return f"扉番号{obj.enddevice}"
+
+    # 画面表示タイトル
+    disp_enddevice.short_description = "エンドデバイス"
+
     def format_create_date(self, obj):
         return obj.create_date.strftime('%Y-%m-%d %H:%M:%S')
 
     # 画面表示タイトル
     format_create_date.short_description = GateWayJsonData.create_date.field.verbose_name
 
-    list_display = ('enddevice', 'format_create_date')
+    list_display = ('disp_enddevice', 'format_create_date')
 
 # 管理画面に表示
 admin.site.register(SystemInfo, SystemInfoAdmin)

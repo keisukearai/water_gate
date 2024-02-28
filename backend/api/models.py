@@ -140,6 +140,7 @@ class EndDeviceData(models.Model):
     エンドデバイス受信格納テーブル
     """
     enddevice = models.ForeignKey(EndDevice, on_delete=models.CASCADE, verbose_name="エンドデバイスID")
+    send_kind = models.CharField(verbose_name="送受種別", max_length=2, blank=True, null=True)
     send_time = models.DateTimeField(verbose_name="送受信日時(time)")
     gate_status = models.CharField(verbose_name="ゲート状態(0:消灯-open, 1:全閉-close)", max_length=1, blank=True, null=True)
     battery_level = models.CharField(verbose_name="電池残量(0:良, 1:低下)", max_length=1, blank=True, null=True)

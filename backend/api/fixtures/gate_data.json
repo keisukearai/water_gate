@@ -4,6 +4,7 @@
         "pk": 1,
         "fields": {
             "enddevice": "1",
+            "send_kind": "周期",
             "send_time": "2024-01-14 09:00:00",
             "gate_status": "1",
             "battery_level": "1",
@@ -19,6 +20,7 @@
         "pk": 2,
         "fields": {
             "enddevice": "1",
+            "send_kind": "周期",
             "send_time": "2024-01-15 09:00:00",
             "gate_status": "1",
             "battery_level": "0",
@@ -34,6 +36,7 @@
         "pk": 3,
         "fields": {
             "enddevice": "1",
+            "send_kind": "周期",
             "send_time": "2024-01-15 09:00:00",
             "gate_status": "0",
             "battery_level": "1",
@@ -49,6 +52,7 @@
         "pk": 4,
         "fields": {
             "enddevice": "2",
+            "send_kind": "状変",
             "send_time": "2024-01-14 09:00:00",
             "gate_status": "1",
             "battery_level": "0",
@@ -64,6 +68,7 @@
         "pk": 5,
         "fields": {
             "enddevice": "2",
+            "send_kind": "状変",
             "send_time": "2024-01-15 09:00:00",
             "gate_status": "0",
             "battery_level": "0",
@@ -79,6 +84,7 @@
         "pk": 6,
         "fields": {
             "enddevice": "3",
+            "send_kind": "状変",
             "send_time": "2024-01-15 09:00:00",
             "gate_status": "1",
             "battery_level": "0",
@@ -94,6 +100,7 @@
         "pk": 7,
         "fields": {
             "enddevice": "4",
+            "send_kind": "状変",
             "send_time": "2024-01-15 09:00:00",
             "gate_status": "0",
             "battery_level": "0",
@@ -109,6 +116,7 @@
         "pk": 8,
         "fields": {
             "enddevice": "5",
+            "send_kind": "状変",
             "send_time": "2024-01-15 09:00:00",
             "gate_status": "1",
             "battery_level": "1",
@@ -124,6 +132,7 @@
         "pk": 9,
         "fields": {
             "enddevice": "6",
+            "send_kind": "状変",
             "send_time": "2024-01-15 09:00:00",
             "gate_status": "0",
             "battery_level": "0",
@@ -139,6 +148,7 @@
         "pk": 10,
         "fields": {
             "enddevice": "7",
+            "send_kind": "状変",
             "send_time": "2024-01-15 09:00:00",
             "gate_status": "0",
             "battery_level": "0",
