@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import logging
-import json
 
 from django.views.generic import TemplateView
 from django.http import JsonResponse

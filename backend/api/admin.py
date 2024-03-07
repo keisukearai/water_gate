@@ -124,12 +124,43 @@ class EndDeviceDataAdmin(admin.ModelAdmin):
     # 画面表示タイトル
     disp_enddevice.short_description = "エンドデバイス"
 
+    # ゲート状態
+    def disp_gate_status(self, obj):
+        data = StatusInfo.objects.filter(class_code='1', status_code=obj.gate_status).first()
+        if data == None:
+            return ''
+        return f"{obj.gate_status}:{data.status_name}"
+
+    # ゲート状態のタイトル
+    disp_gate_status.short_description = EndDeviceData.gate_status.field.verbose_name
+
+    # 電池状態
+    def disp_battery_level(self, obj):
+        data = StatusInfo.objects.filter(class_code='2', status_code=obj.battery_level).first()
+        if data == None:
+            return ''
+        return f"{obj.battery_level}:{data.status_name}"
+
+    # 電池状態のタイトル
+    disp_battery_level.short_description = EndDeviceData.battery_level.field.verbose_name
+
+    # 通信状況
+    def disp_com_status(self, obj):
+        data = StatusInfo.objects.filter(class_code='3', status_code=obj.com_status).first()
+        if data == None:
+            return ''
+        return f"{obj.com_status}:{data.status_name}"
+
+    # 通信状況のタイトル
+    disp_com_status.short_description = EndDeviceData.com_status.field.verbose_name
+
+    # 送受信日時フォーマット
     def format_send_time(self, obj):
         return obj.send_time.strftime('%Y-%m-%d %H:%M:%S')
 
     # 画面表示タイトル
     format_send_time.short_description = EndDeviceData.send_time.field.verbose_name
-    list_display = ('disp_enddevice', 'send_kind', 'format_send_time')
+    list_display = ('disp_enddevice', 'send_kind', 'disp_gate_status', 'disp_battery_level', 'disp_com_status', 'format_send_time')
 
 class GateWayJsonDataAdmin(admin.ModelAdmin):
     """ ゲートウェイJSON形式格納テーブル """
