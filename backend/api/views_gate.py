@@ -43,6 +43,7 @@ class GwUplinkView(TemplateView):
             logger.debug(e)
             # フォーマット変換エラー返却
             check, res_json = elogic.make_response_data(False, False, json_data, False)
+            logger.debug(f"data部フォーマット変換エラー:{res_json}")
             return JsonResponse(res_json)
 
         # ゲートウェイテーブルより、FKとなるidを取得
@@ -54,6 +55,7 @@ class GwUplinkView(TemplateView):
         # 取得できない場合のエラー返却
         check, res_json = elogic.make_response_data(gateWay, endDevice, json_data)
         if (check == False):
+            logger.debug(f"ゲートウェイ・エンドデバイス設定不備:{res_json}")
             return JsonResponse(res_json)
 
         logger.debug(f"endDevice fk id:{endDevice.id}")
@@ -71,7 +73,7 @@ class GwUplinkView(TemplateView):
         # エンドデバイス受信格納用パラメータ
         endDeviceData = EndDeviceData(
             enddevice_id=endDevice.id,
-            send_kind=model.get_send_kind_name(),
+            send_kind=model.data_model.get_send_kind_name(),
             send_time=model.send_time,
             gate_status=model.data_model.gate_status,
             battery_level=model.data_model.battery_level,
@@ -82,5 +84,6 @@ class GwUplinkView(TemplateView):
         # 登録
         endDeviceData.save()
 
+        logger.debug(f"正常終了:{res_json}")
         logger.debug(f"{ __class__.__name__ } get end")
         return JsonResponse(res_json)

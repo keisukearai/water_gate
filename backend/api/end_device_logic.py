@@ -53,8 +53,6 @@ class EndDeviceLogic:
         model = ModelEndDevice()
         # ゲートウェイID
         model.gw_id = head1['gwid']
-        # 送受種別
-        model.send_kind = head1['kind']
         # エンドデバイスID
         model.deveui = head2['deveui']
         # 受信日時
@@ -65,7 +63,7 @@ class EndDeviceLogic:
         model.snr = head2['snr']
 
         # data部変換
-        data_model = self.detail_data_transform(detail_data, model)
+        data_model = self.detail_data_transform(detail_data)
 
         # deta部モデルに設定
         model.data_model = data_model
@@ -73,7 +71,7 @@ class EndDeviceLogic:
         logger.debug(f"{ __class__.__name__ } transform end")
         return model
 
-    def detail_data_transform(self, detail_data, model):
+    def detail_data_transform(self, detail_data):
         """
         データ部の変換ロジック
 
@@ -93,8 +91,16 @@ class EndDeviceLogic:
 
         # 共通ロジック
         cLogic = CommonLogic()
+        # 送受種別
+        send_kind = detail_data[0:2]
+        logger.debug(f"送信種別:{send_kind}")
 
-        logger.debug(f"送信種別:{model.get_send_kind_name()}")
+        ##############################
+        # モデルインスタンス生成
+        ##############################
+        model = ModelEndDeviceData()
+        # 送信種別
+        model.send_kind = send_kind
 
         # 装置状態
         device_status = detail_data[16:18]
@@ -124,8 +130,9 @@ class EndDeviceLogic:
         gate_status = gate_status_bin[7:]
         logger.debug(f"ゲート状態:{gate_status}")
 
-        # モデルインスタンス生成
-        model = ModelEndDeviceData()
+        ##############################
+        # モデルインスタンス設定
+        ##############################
         # 電池残量
         model.battery_level = battery_level
         # 通信状況
