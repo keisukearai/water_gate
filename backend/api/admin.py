@@ -39,23 +39,24 @@ class AreaAdmin(admin.ModelAdmin):
     # 全件表示を許容する最大件数
     list_max_show_all = 5000
 
+    def disp_prefecture(self, obj):
+        # 都道府県名
+        return obj.prefecture
+
+    # 都道府県のタイトル
+    disp_prefecture.short_description = Prefecture.prefecture_name.field.verbose_name
+
     def format_image(self, obj):
         # 画像の存在チェック
         if obj.water_gate_map:
             return mark_safe(f'<img src="{ obj.water_gate_map.url }" style="width:5rem;">')
 
-    def prefecture_disp(self, obj):
-        # 都道府県名
-        return obj.prefecture
-
-    # 画面表示タイトル
-    prefecture_disp.short_description = Prefecture.prefecture_name.field.verbose_name
-
-    # 画面表示タイトル
+    # 画像のタイトル
     format_image.short_description = Area.water_gate_map.field.verbose_name
+    # 画像なしの場合
     format_image.empty_value_display = "画像なし"
 
-    list_display = ('area_name', 'prefecture_disp', 'format_image')
+    list_display = ('area_name', 'disp_prefecture', 'format_image')
 
 class ClassInfoAdmin(admin.ModelAdmin):
     """ 分類情報テーブル """
@@ -158,7 +159,8 @@ class EndDeviceDataAdmin(admin.ModelAdmin):
     def format_send_time(self, obj):
         return obj.send_time.strftime('%Y-%m-%d %H:%M:%S')
 
-    # 画面表示タイトル
+    # 送受信日時のタイトル
+
     format_send_time.short_description = EndDeviceData.send_time.field.verbose_name
     list_display = ('disp_enddevice', 'send_kind', 'disp_gate_status', 'disp_battery_level', 'disp_com_status', 'format_send_time')
 
