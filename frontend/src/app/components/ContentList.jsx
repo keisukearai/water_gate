@@ -74,6 +74,7 @@ export default function ContentList() {
           <tbody>
             {/* 一覧の件数分ループ */}
             {Object.values(data.data).map((item, index) => {
+              let ed_title = `${item.send_kind} ${item.send_time}`;
               return (
                 <tr  key={item.id} className="bg-white border-b">
                   <th className="px-6 py-4 font-medium whitespace-nowrap">
@@ -81,7 +82,9 @@ export default function ContentList() {
                   </th>
                   <td className="px-6 py-4">
                     <div className={`bg-gray-100 text-gray-800 text-sm font-medium w-14 px-3 py-0.5 rounded-md font-semibold border border-stone-200
-                      ${(item.gate_status_code === '1') ? "bg-gray-600 text-white" : "bg-pink-100 text-pink-800"}`}>
+                      ${(item.gate_status_code === '1') ? "bg-gray-600 text-white" : "bg-pink-100 text-pink-800"}`}
+                      title={ed_title}
+                      >
                       {item.gate_status}
                     </div>
                   </td>

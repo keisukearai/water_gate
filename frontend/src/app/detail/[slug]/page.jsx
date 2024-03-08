@@ -1,8 +1,8 @@
 import ContentDetail from "src/app/components/ContentDetail"
 
 export const metadata = {
-  title: '詳細',
-  description: '詳細ページの説明',
+  title: 'サンプル詳細',
+  description: 'サンプル詳細ページの説明',
 }
 
 {/*

@@ -9,7 +9,7 @@ import { BASE_STATE } from 'src/app/utils/Constants'
 import { useApiContenDatail } from "src/api/Api"
 
 {/*
-  機能名:内容詳細
+  機能名:サンプル詳細
 */}
 export default function ContentDetail() {
 

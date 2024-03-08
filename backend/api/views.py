@@ -195,7 +195,8 @@ class WaterGateListView(TemplateView):
                 'select ed.id, ed.end_device_gate_no, ed.end_device_name, '
                 'da.gate_status as gate_status_code, sg.status_name as gate_status, '
                 'sb.status_name as battery_level, sc.status_name as com_status, '
-                'gw.gw_name '
+                'gw.gw_name, da.send_kind, '
+                "date_format(da.send_time, '%Y/%m/%d %H:%k:%s') as send_time "
                 'from wg_end_device_data da '
                 'inner join wg_end_device ed on da.enddevice_id = ed.id '
                 'inner join wg_gateway gw on ed.gateway_id = gw.id '
