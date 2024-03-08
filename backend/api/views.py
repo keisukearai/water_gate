@@ -205,6 +205,8 @@ class WaterGateListView(TemplateView):
                 'where (da.enddevice_id, da.id) in ('
                 'select enddevice_id, max(id) from wg_end_device_data group by enddevice_id'
                 ')'
+                # 画面表示ありの場合
+                'and ed.is_disp = 1 and gw.is_disp = 1 '
                 f'{area_param} '
                 f'{state_param}'
                 'order by ed.end_device_gate_no '

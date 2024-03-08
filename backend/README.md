@@ -164,12 +164,12 @@ truncate table wg_prefecture
 delete from wg_prefecture
 
 ### migrations file delete
-rm -rf ./api/migrations/*.py
+rm -rf ./api/migrations/*
 rm -rf /root/water_gate/water_gate/backend/api/migrations/*.py
 rm -rf /var/www/html/water_gate/backend/api/migrations/*.py
 
-python manage.py migrate --fake api zero
 python manage.py makemigrations api
+python manage.py migrate --fake api zero
 python manage.py migrate
 
 ### data import

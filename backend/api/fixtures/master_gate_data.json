@@ -6,6 +6,7 @@
             "area": "1",
             "gw_id": "d84a87fffefee757",
             "gw_name": "ゲートウェイ1",
+            "is_disp": true,
             "create_date": "2024-01-14 09:00:00",
             "update_date": "2024-01-14 09:00:00"
         }
@@ -19,6 +20,7 @@
             "end_device_gate_no": "1",
             "end_device_name": "エンデバイス1",
             "end_device_gateaddress": "エンデバイス1の住所",
+            "is_disp": true,
             "create_date": "2024-01-14 09:00:00",
             "update_date": "2024-01-14 09:00:00"
         }
@@ -32,6 +34,7 @@
             "end_device_gate_no": "2",
             "end_device_name": "エンデバイス2",
             "end_device_gateaddress": "エンデバイス2の住所",
+            "is_disp": true,
             "create_date": "2024-01-14 09:00:00",
             "update_date": "2024-01-14 09:00:00"
         }
@@ -45,6 +48,7 @@
             "end_device_gate_no": "3",
             "end_device_name": "エンデバイス3",
             "end_device_gateaddress": "エンデバイス3の住所",
+            "is_disp": true,
             "create_date": "2024-01-14 09:00:00",
             "update_date": "2024-01-14 09:00:00"
         }
@@ -58,6 +62,7 @@
             "end_device_gate_no": "4",
             "end_device_name": "エンデバイス4",
             "end_device_gateaddress": "エンデバイス4の住所",
+            "is_disp": true,
             "create_date": "2024-01-14 09:00:00",
             "update_date": "2024-01-14 09:00:00"
         }
@@ -71,6 +76,7 @@
             "end_device_gate_no": "5",
             "end_device_name": "エンデバイス5",
             "end_device_gateaddress": "エンデバイス5の住所",
+            "is_disp": true,
             "create_date": "2024-01-14 09:00:00",
             "update_date": "2024-01-14 09:00:00"
         }
@@ -84,6 +90,7 @@
             "end_device_gate_no": "6",
             "end_device_name": "エンデバイス6",
             "end_device_gateaddress": "エンデバイス6の住所",
+            "is_disp": true,
             "create_date": "2024-02-14 09:00:00",
             "update_date": "2024-02-14 09:00:00"
         }
@@ -97,6 +104,7 @@
             "end_device_gate_no": "7",
             "end_device_name": "エンデバイス7",
             "end_device_gateaddress": "エンデバイス7の住所",
+            "is_disp": true,
             "create_date": "2024-01-14 09:00:00",
             "update_date": "2024-01-14 09:00:00"
         }

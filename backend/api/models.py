@@ -104,6 +104,7 @@ class GateWay(models.Model):
     area = models.ForeignKey(Area, on_delete=models.CASCADE, verbose_name="地域")
     gw_id = models.CharField(verbose_name="LoRaSPNゲートウェイID(gwid)", max_length=20)
     gw_name = models.CharField(verbose_name="LoRaSPNゲートウェイ名", max_length=50)
+    is_disp = models.BooleanField(verbose_name='画面表示', default=True)
     create_date = models.DateTimeField(verbose_name="作成日時", auto_now_add=True)
     update_date = models.DateTimeField(verbose_name="更新日時", auto_now=True)
 
@@ -125,6 +126,7 @@ class EndDevice(models.Model):
     end_device_name = models.CharField(verbose_name="扉名", max_length=50)
     end_device_gateaddress = models.CharField(verbose_name="扉住所", max_length=256, blank=True, null=True)
     end_device_supplement = models.TextField(verbose_name="補足", blank=True, null=True)
+    is_disp = models.BooleanField(verbose_name='画面表示', default=True)
     create_date = models.DateTimeField(verbose_name="作成日時", auto_now_add=True)
     update_date = models.DateTimeField(verbose_name="更新日時", auto_now=True)
 

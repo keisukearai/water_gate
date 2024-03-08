@@ -92,30 +92,55 @@ class GateWayAdmin(admin.ModelAdmin):
     list_per_page = 20
     # 全件表示を許容する最大件数
     list_max_show_all = 5000
-    list_display = ('gw_name', 'gw_id')
+
+    def disp_gw_name(self, obj):
+        return f"【{obj.gw_name}】{obj.gw_id}"
+
+    # 画面表示のタイトル
+    disp_gw_name.short_description = "ゲートウェイID"
+
+    def disp_is_disp(self, obj):
+        # 画面表示有無
+        if obj.is_disp == True:
+            return "あり"
+        return ""
+
+    # 画面表示のタイトル
+    disp_is_disp.short_description = GateWay.is_disp.field.verbose_name
+
+    list_display = ('disp_gw_name', 'disp_is_disp', 'create_date', 'update_date')
 
 class EndDeviceAdmin(admin.ModelAdmin):
     """ LoRaWAN エンドデバイステーブル """
     ordering = ("id",) # 並び順の変更
     # 1ページ当たりに表示する件数
-    list_per_page = 20
+    list_per_page = 10
     # 全件表示を許容する最大件数
     list_max_show_all = 5000
 
-    def end_device_gate_no_disp(self, obj):
-        # ゲート番号
-        return f"({obj.end_device_gate_no})"
+    def disp_end_device_gate_no(self, obj):
+        # エンドデバイス
+        return f"扉番号({obj.end_device_gate_no}){obj.end_device_name} - {obj.dev_eui}"
 
-    # 画面表示タイトル
-    end_device_gate_no_disp.short_description = EndDevice.end_device_gate_no.field.verbose_name
+    # エンドデバイスのタイトル
+    disp_end_device_gate_no.short_description = "エンドデバイス"
 
-    list_display = ('end_device_gate_no_disp', 'end_device_name', 'dev_eui', 'gateway')
+    def disp_is_disp(self, obj):
+        # 画面表示有無
+        if obj.is_disp == True:
+            return "あり"
+        return ""
+
+    # 画面表示のタイトル
+    disp_is_disp.short_description = EndDevice.is_disp.field.verbose_name
+
+    list_display = ('disp_end_device_gate_no', 'disp_is_disp', 'gateway', 'create_date', 'update_date')
 
 class EndDeviceDataAdmin(admin.ModelAdmin):
     """ エンドデバイス受信格納テーブル """
     ordering = ("-id",) # 並び順の変更
     # 1ページ当たりに表示する件数
-    list_per_page = 20
+    list_per_page = 30
     # 全件表示を許容する最大件数
     list_max_show_all = 5000
 

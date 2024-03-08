@@ -29,6 +29,8 @@ class DbLogic:
                 'inner join wg_gateway gw on ed.gateway_id = gw.id '
                 'where (da.enddevice_id, da.id) in ('
                 'select enddevice_id, max(id) from wg_end_device_data '
+                # 画面表示ありの場合
+                'where ed.is_disp = 1 and gw.is_disp = 1 '
                 'group by enddevice_id '
                 ') '
                 f'{where_param}'
