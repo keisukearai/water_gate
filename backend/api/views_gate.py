@@ -26,7 +26,7 @@ class GwUplinkView(TemplateView):
     @csrf_exempt
     def post(self, request):
         # ログ出力
-        logger = logging.getLogger('hp_admin')
+        logger = logging.getLogger('gw_req')
         logger.debug(f"{ __class__.__name__ } post start")
 
         # Json形式変換
@@ -89,5 +89,5 @@ class GwUplinkView(TemplateView):
         endDeviceData.save()
 
         logger.debug(f"正常終了:{res_json}")
-        logger.debug(f"{ __class__.__name__ } get end")
+        logger.debug(f"{ __class__.__name__ } post end")
         return JsonResponse(res_json)

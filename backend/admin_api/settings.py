@@ -188,7 +188,16 @@ LOGGING = {
         'api_file': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/api.log'),
+            'filename': os.path.join(BASE_DIR, 'logs/web.log'),
+            'maxBytes': 1024 * 1024 * 10, # 10MB
+            'backupCount': '5',
+            'encoding': 'utf-8',
+            'formatter': 'production',
+        },
+        'gw_file': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/gw.log'),
             'maxBytes': 1024 * 1024 * 10, # 10MB
             'backupCount': '5',
             'encoding': 'utf-8',
@@ -203,8 +212,13 @@ LOGGING = {
     # ロガーの設定
     'loggers': {
         # アプリケーションのロガー
-        'hp_admin': {
+        'gw_web': {
             'handlers': ['api_file', 'console'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+        'gw_req': {
+            'handlers': ['gw_file'],
             'level': 'DEBUG',
             'propagate': False,
         },

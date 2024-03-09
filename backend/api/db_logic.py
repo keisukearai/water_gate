@@ -13,7 +13,7 @@ class DbLogic:
         デバイス件数取得
         """
         # ログ出力
-        logger = logging.getLogger('hp_admin')
+        logger = logging.getLogger('gw_web')
         logger.debug(f"{ __class__.__name__ } get start")
 
         where_param = ""

@@ -18,7 +18,7 @@ class HeadernfoView(TemplateView):
 
     def get(self, request):
         # ログ出力
-        logger = logging.getLogger('hp_admin')
+        logger = logging.getLogger('gw_web')
         logger.debug(f"{ __class__.__name__ } get start")
 
         # 情報取得(タイトル)
@@ -43,7 +43,7 @@ class FooterInfoView(TemplateView):
 
     def get(self, request):
         # ログ出力
-        logger = logging.getLogger('hp_admin')
+        logger = logging.getLogger('gw_web')
         logger.debug(f"{ __class__.__name__ } get start")
 
         # 情報取得(コピーライト)
@@ -73,7 +73,7 @@ class AreaInfoView(TemplateView):
 
     def get(self, request):
         # ログ出力
-        logger = logging.getLogger('hp_admin')
+        logger = logging.getLogger('gw_web')
         logger.debug(f"{ __class__.__name__ } get start")
 
         # リクエストパラメータの取得
@@ -105,7 +105,7 @@ class MenuInfoView(TemplateView):
 
     def get(self, request):
         # ログ出力
-        logger = logging.getLogger('hp_admin')
+        logger = logging.getLogger('gw_web')
         logger.debug(f"{ __class__.__name__ } get start")
 
         # 共通ロジック
@@ -144,7 +144,7 @@ class WaterGateListView(TemplateView):
 
     def get(self, request):
         # ログ出力
-        logger = logging.getLogger('hp_admin')
+        logger = logging.getLogger('gw_web')
         logger.debug(f"{ __class__.__name__ } get start")
 
         # 共通ロジック
