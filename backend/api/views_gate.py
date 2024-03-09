@@ -36,6 +36,32 @@ class GwUplinkView(TemplateView):
         # エンドデバイスロジックインスタンス生成
         elogic = EndDeviceLogic(json_data)
 
+        # ゲートウェイテーブルより、FKとなるidを取得
+        gateWay = GateWay.objects.get_or_none(gw_id=json_data['head1']['gwid'])
+
+        # エンドデバイステーブルより、FKとなるidを取得
+        endDevice = EndDevice.objects.get_or_none(dev_eui=json_data['head2']['deveui'])
+
+        logger.debug(f"endDevice fk id:{endDevice.id}")
+        logger.debug(f"gateWay fk id:{gateWay.id}")
+        # logger.debug(type(json.dumps(json_data, indent=2)))
+
+        # 取得できない場合のエラー返却
+        check, res_json = elogic.make_response_data(gateWay, endDevice, json_data)
+        if (check == False):
+            logger.debug(f"ゲートウェイ・エンドデバイス設定不備:{res_json}")
+            return JsonResponse(res_json)
+
+        ##############################
+        # ゲートウェイJSON形式格納用パラメータ
+        ##############################
+        gateWayJsonData = GateWayJsonData(
+            enddevice_id=endDevice.id,
+            json_data=json_data
+        )
+        # 登録
+        gateWayJsonData.save()
+
         try:
             # モデルへ変換
             model = elogic.transform()
@@ -46,31 +72,9 @@ class GwUplinkView(TemplateView):
             logger.debug(f"data部フォーマット変換エラー:{res_json}")
             return JsonResponse(res_json)
 
-        # ゲートウェイテーブルより、FKとなるidを取得
-        gateWay = GateWay.objects.get_or_none(gw_id=model.gw_id)
-
-        # エンドデバイステーブルより、FKとなるidを取得
-        endDevice = EndDevice.objects.get_or_none(dev_eui=model.deveui)
-
-        # 取得できない場合のエラー返却
-        check, res_json = elogic.make_response_data(gateWay, endDevice, json_data)
-        if (check == False):
-            logger.debug(f"ゲートウェイ・エンドデバイス設定不備:{res_json}")
-            return JsonResponse(res_json)
-
-        logger.debug(f"endDevice fk id:{endDevice.id}")
-        logger.debug(f"gateWay fk id:{gateWay.id}")
-        # logger.debug(type(json.dumps(json_data, indent=2)))
-
-        # ゲートウェイJSON形式格納用パラメータ
-        gateWayJsonData = GateWayJsonData(
-            enddevice_id=endDevice.id,
-            json_data=json_data
-        )
-        # 登録
-        gateWayJsonData.save()
-
+        ##############################
         # エンドデバイス受信格納用パラメータ
+        ##############################
         endDeviceData = EndDeviceData(
             enddevice_id=endDevice.id,
             send_kind=model.data_model.get_send_kind_name(),

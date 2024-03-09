@@ -205,7 +205,7 @@ class EndDeviceDataAdmin(admin.ModelAdmin):
     disp_send_time.short_description = EndDeviceData.send_time.field.verbose_name
 
     # 画面一覧表示項目
-    list_display = ('disp_enddevice', 'send_kind', 'disp_gate_status', 'disp_battery_level', 'disp_com_status', 'disp_send_time')
+    list_display = ('disp_enddevice', 'id', 'send_kind', 'disp_gate_status', 'disp_battery_level', 'disp_com_status', 'disp_send_time')
 
 class GateWayJsonDataAdmin(admin.ModelAdmin):
     """ ゲートウェイJSON形式格納テーブル """
@@ -231,7 +231,7 @@ class GateWayJsonDataAdmin(admin.ModelAdmin):
     disp_create_date.short_description = GateWayJsonData.create_date.field.verbose_name
 
     # 画面一覧表示項目
-    list_display = ('disp_enddevice', 'disp_create_date')
+    list_display = ('disp_enddevice', 'id', 'disp_create_date')
 
 # 管理画面に表示
 admin.site.register(SystemInfo, SystemInfoAdmin)

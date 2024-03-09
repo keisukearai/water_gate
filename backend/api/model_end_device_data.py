@@ -9,6 +9,8 @@ class ModelEndDeviceData:
     SEND_KIND_PERIOD = '05'
     # 送信種別(状変)
     SEND_KIND_STATE = '08'
+    # 送信種別(テスト)
+    SEND_KIND_TEST = '15'
 
     # 送受種別
     send_kind = None
@@ -72,7 +74,7 @@ class ModelEndDeviceData:
         """
         周期送信判定
         """
-        if self.send_kind == self.SEND_KIND_PERIOD:
+        if self.send_kind in (self.SEND_KIND_PERIOD, self.SEND_KIND_TEST):
             return True
         return False
 
@@ -92,4 +94,6 @@ class ModelEndDeviceData:
             return "周期"
         elif self.send_kind == self.SEND_KIND_STATE:
             return "状変"
+        elif self.send_kind == self.SEND_KIND_TEST:
+            return "テスト"
         return None
