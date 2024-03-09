@@ -127,7 +127,7 @@ TIME_ZONE = 'Asia/Tokyo'
 USE_I18N = True
 
 # TrueならUTCで、FalseならJST
-USE_TZ = False
+USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
