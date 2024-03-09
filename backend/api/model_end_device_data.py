@@ -8,7 +8,7 @@ class ModelEndDeviceData:
     # 送信種別(周期)
     SEND_KIND_PERIOD = '05'
     # 送信種別(状変)
-    SEND_KIND_STATE = '08'
+    SEND_KIND_STATE = '07'
     # 送信種別(テスト)
     SEND_KIND_TEST = '15'
 
