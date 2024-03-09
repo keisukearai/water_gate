@@ -12,6 +12,18 @@
         }
     },
     {
+        "model": "api.gateway",
+        "pk": 2,
+        "fields": {
+            "area": "1",
+            "gw_id": "d84a87fffeff6d7b",
+            "gw_name": "ポータブルゲートウェイ（黒）貸出",
+            "is_disp": true,
+            "create_date": "2024-03-09 10:00:00",
+            "update_date": "2024-03-09 10:00:00"
+        }
+    },
+    {
         "model": "api.enddevice",
         "pk": 1,
         "fields": {
@@ -107,6 +119,20 @@
             "is_disp": true,
             "create_date": "2024-01-14 09:00:00",
             "update_date": "2024-01-14 09:00:00"
+        }
+    },
+    {
+        "model": "api.enddevice",
+        "pk": 8,
+        "fields": {
+            "gateway": "2",
+            "dev_eui": "d84a87fffefedda2",
+            "end_device_gate_no": "10",
+            "end_device_name": "OiNET-950NU82貸出",
+            "end_device_gateaddress": "エンデバイス10の住所",
+            "is_disp": true,
+            "create_date": "2024-03-09 10:00:00",
+            "update_date": "2024-03-09 10:00:00"
         }
     }
 ]
