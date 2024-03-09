@@ -2,6 +2,8 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
 
+from .common_logic import CommonLogic
+
 # Register your models here.
 from api.models import SystemInfo
 from api.models import Prefecture
@@ -15,6 +17,7 @@ from api.models import GateWayJsonData
 
 class SystemInfoAdmin(admin.ModelAdmin):
     """ システム情報テーブル """
+
     ordering = ("id", ) # 並び順の変更
     # 1ページ当たりに表示する件数
     list_per_page = 20
@@ -23,16 +26,19 @@ class SystemInfoAdmin(admin.ModelAdmin):
 
 class PrefectureAdmin(admin.ModelAdmin):
     """ 都道府県テーブル """
+
     ordering = ("id", ) # 並び順の変更
     # 1ページ当たりに表示する件数
     list_per_page = 20
     # 全件表示を許容する最大件数
     list_max_show_all = 5000
 
+    # 画面一覧表示項目
     list_display = ('prefecture_name',)
 
 class AreaAdmin(admin.ModelAdmin):
     """ 地域テーブル """
+
     ordering = ("id", ) # 並び順の変更
     # 1ページ当たりに表示する件数
     list_per_page = 20
@@ -56,20 +62,24 @@ class AreaAdmin(admin.ModelAdmin):
     # 画像なしの場合
     format_image.empty_value_display = "画像なし"
 
+    # 画面一覧表示項目
     list_display = ('area_name', 'disp_prefecture', 'format_image')
 
 class ClassInfoAdmin(admin.ModelAdmin):
     """ 分類情報テーブル """
+
     ordering = ("id", ) # 並び順の変更
     # 1ページ当たりに表示する件数
     list_per_page = 20
     # 全件表示を許容する最大件数
     list_max_show_all = 5000
 
+    # 画面一覧表示項目
     list_display = ('class_name',)
 
 class StatusInfoAdmin(admin.ModelAdmin):
     """ ステータス情報テーブル """
+
     ordering = ("id", ) # 並び順の変更
     # 1ページ当たりに表示する件数
     list_per_page = 20
@@ -83,10 +93,12 @@ class StatusInfoAdmin(admin.ModelAdmin):
     # 画面表示タイトル
     class_code_disp.short_description = ClassInfo.class_name.field.verbose_name
 
+    # 画面一覧表示項目
     list_display = ('class_code_disp', 'status_code', 'status_name', 'status_supplement')
 
 class GateWayAdmin(admin.ModelAdmin):
     """ LoRaSPN ゲートウェイテーブル """
+
     ordering = ("id",) # 並び順の変更
     # 1ページ当たりに表示する件数
     list_per_page = 20
@@ -108,13 +120,15 @@ class GateWayAdmin(admin.ModelAdmin):
     # 画面表示のタイトル
     disp_is_disp.short_description = GateWay.is_disp.field.verbose_name
 
+    # 画面一覧表示項目
     list_display = ('disp_gw_name', 'disp_is_disp', 'create_date', 'update_date')
 
 class EndDeviceAdmin(admin.ModelAdmin):
     """ LoRaWAN エンドデバイステーブル """
+
     ordering = ("id",) # 並び順の変更
     # 1ページ当たりに表示する件数
-    list_per_page = 10
+    list_per_page = 20
     # 全件表示を許容する最大件数
     list_max_show_all = 5000
 
@@ -134,13 +148,15 @@ class EndDeviceAdmin(admin.ModelAdmin):
     # 画面表示のタイトル
     disp_is_disp.short_description = EndDevice.is_disp.field.verbose_name
 
+    # 画面一覧表示項目
     list_display = ('disp_end_device_gate_no', 'disp_is_disp', 'gateway', 'create_date', 'update_date')
 
 class EndDeviceDataAdmin(admin.ModelAdmin):
     """ エンドデバイス受信格納テーブル """
+
     ordering = ("-id",) # 並び順の変更
     # 1ページ当たりに表示する件数
-    list_per_page = 30
+    list_per_page = 20
     # 全件表示を許容する最大件数
     list_max_show_all = 5000
 
@@ -181,16 +197,19 @@ class EndDeviceDataAdmin(admin.ModelAdmin):
     disp_com_status.short_description = EndDeviceData.com_status.field.verbose_name
 
     # 送受信日時フォーマット
-    def format_send_time(self, obj):
-        return obj.send_time.strftime('%Y-%m-%d %H:%M:%S')
+    def disp_send_time(self, obj):
+        "時刻jst変換"
+        return CommonLogic().utc_to_jst(obj.send_time)
 
     # 送受信日時のタイトル
+    disp_send_time.short_description = EndDeviceData.send_time.field.verbose_name
 
-    format_send_time.short_description = EndDeviceData.send_time.field.verbose_name
-    list_display = ('disp_enddevice', 'send_kind', 'disp_gate_status', 'disp_battery_level', 'disp_com_status', 'format_send_time')
+    # 画面一覧表示項目
+    list_display = ('disp_enddevice', 'send_kind', 'disp_gate_status', 'disp_battery_level', 'disp_com_status', 'disp_send_time')
 
 class GateWayJsonDataAdmin(admin.ModelAdmin):
     """ ゲートウェイJSON形式格納テーブル """
+
     ordering = ("-id",) # 並び順の変更
     # 1ページ当たりに表示する件数
     list_per_page = 20
@@ -198,18 +217,21 @@ class GateWayJsonDataAdmin(admin.ModelAdmin):
     list_max_show_all = 5000
 
     def disp_enddevice(self, obj):
+        "エンドデバイス"
         return f"扉番号{obj.enddevice}"
 
-    # 画面表示タイトル
+    # エンドデバイスのタイトル
     disp_enddevice.short_description = "エンドデバイス"
 
-    def format_create_date(self, obj):
-        return obj.create_date.strftime('%Y-%m-%d %H:%M:%S')
+    def disp_create_date(self, obj):
+        "時刻jst変換"
+        return CommonLogic().utc_to_jst(obj.create_date)
 
     # 画面表示タイトル
-    format_create_date.short_description = GateWayJsonData.create_date.field.verbose_name
+    disp_create_date.short_description = GateWayJsonData.create_date.field.verbose_name
 
-    list_display = ('disp_enddevice', 'format_create_date')
+    # 画面一覧表示項目
+    list_display = ('disp_enddevice', 'disp_create_date')
 
 # 管理画面に表示
 admin.site.register(SystemInfo, SystemInfoAdmin)

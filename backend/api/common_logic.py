@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import logging
+from datetime import timedelta
 
 class CommonLogic:
     """
@@ -51,3 +52,7 @@ class CommonLogic:
             dict(zip(columns, row))
             for row in cursor.fetchall()
         ]
+
+    def utc_to_jst(self, timestamp):
+        "utc jst change"
+        return  (timestamp + timedelta(hours=9)).strftime('%Y-%m-%d %H:%M:%S')
