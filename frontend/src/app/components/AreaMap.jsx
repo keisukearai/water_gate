@@ -38,7 +38,7 @@ export default function AreaMap() {
   return (
     <main className="p-5 pt-20 mb-12 sm:ml-64 bg-body-color">
       <div className="container mx-auto text-center">
-        <HashTag selectedName='安芸津' />
+        <HashTag selectedName={data.data[0].area_name} />
         <Image
           loader={imgLoader}
           src={(data.data[0].water_gate_map !== '') ? `${media_path}${data.data[0].water_gate_map}` : '/no_image.webp'}
