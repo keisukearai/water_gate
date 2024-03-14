@@ -83,7 +83,7 @@ class GwUplinkView(TemplateView):
             battery_level=model.data_model.battery_level,
             com_status=model.data_model.com_status,
             gate_rssi=model.rssi,
-            gate_snr=model.snr
+            gate_snr=round(model.snr, 2)
         )
         # 登録
         endDeviceData.save()
