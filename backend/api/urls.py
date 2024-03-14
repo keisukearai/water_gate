@@ -20,4 +20,5 @@ urlpatterns = [
     path('watergatelist', views.WaterGateListView.as_view(), name='watergatelist'),
     # ゲートウェイからの受信
     path('uplink', views_gate.GwUplinkView.as_view(), name='uplink'),
+    path('Uplink', views_gate.GwUplinkView.as_view(), name='Uplink'),
 ]
