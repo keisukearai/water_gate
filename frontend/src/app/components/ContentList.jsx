@@ -81,7 +81,7 @@ export default function ContentList() {
                     {item.end_device_gate_no}
                   </th>
                   <td className="px-6 py-4">
-                    <div className={`bg-gray-100 text-gray-800 text-sm font-medium w-14 px-3 py-0.5 rounded-md font-semibold border border-stone-200
+                    <div className={`bg-gray-100 text-gray-800 text-center text-sm font-medium w-14 px-3 py-0.5 rounded-md font-semibold border border-stone-200
                       ${(item.gate_status_code === '1') ? "bg-gray-600 text-white" : "bg-pink-100 text-pink-800"}`}
                       title={ed_title}
                       >

@@ -6,7 +6,7 @@
 export const BASE_STATE = {
   NONE: {CODE: '', NAME: ''},
   ALL: { CODE: '9', NAME: 'すべて'},
-  OPEN: {CODE: '0', NAME: '消灯'},
+  OPEN: {CODE: '0', NAME: '開'},
   CLOSE: {CODE: '1', NAME: '全閉'}
 }
 
