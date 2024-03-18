@@ -207,6 +207,9 @@ class EndDeviceDataAdmin(admin.ModelAdmin):
     # 画面一覧表示項目
     list_display = ('disp_enddevice', 'id', 'send_kind', 'disp_gate_status', 'disp_battery_level', 'disp_com_status', 'disp_send_time')
 
+    # 検索窓(扉番号、扉名、エンドデバイスID)
+    search_fields = ['enddevice__end_device_gate_no', 'enddevice__end_device_name', 'enddevice__dev_eui']
+
 class GateWayJsonDataAdmin(admin.ModelAdmin):
     """ ゲートウェイJSON形式格納テーブル """
 
@@ -232,6 +235,9 @@ class GateWayJsonDataAdmin(admin.ModelAdmin):
 
     # 画面一覧表示項目
     list_display = ('disp_enddevice', 'id', 'disp_create_date')
+
+    # 検索窓(扉番号、扉名、エンドデバイスID)
+    search_fields = ['enddevice__end_device_gate_no', 'enddevice__end_device_name', 'enddevice__dev_eui']
 
 # 管理画面に表示
 admin.site.register(SystemInfo, SystemInfoAdmin)
