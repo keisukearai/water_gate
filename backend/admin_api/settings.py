@@ -170,7 +170,7 @@ LOGGING = {
     # ログ出力フォーマットの設定
     'formatters': {
         'production': {
-            'format': '%(asctime)s [%(levelname)s] %(process)d %(thread)d '
+            'format': '%(asctime)s [%(levelname)s] '
                       '%(pathname)s:%(lineno)d %(message)s'
         },
     },
