@@ -54,22 +54,22 @@ export default function ContentList() {
     <main className="p-5 pt-20 mb-12 sm:ml-64 bg-body-color">
       <div className="container mx-auto text-center">
         <HashTag selectedName={menuSelectedName} />
-        <table className="w-full text-sm text-left rtl:text-right text-gray-700">
+        <table className="w-full table-fixed text-sm text-left rtl:text-right text-gray-700">
           <thead className="text-gray-800 uppercase bg-gray-100">
             <tr>
-              <th scope="col" className="px-6 py-3">
+              <th scope="col" className="px-6 py-3 w-1/12">
                 扉番号
               </th>
-              <th scope="col" className="px-6 py-3">
+              <th scope="col" className="px-6 py-3 w-4/12">
                 扉名
               </th>
-              <th scope="col" className="px-6 py-3">
+              <th scope="col" className="px-6 py-3 w-3/12">
                 ゲート状態
               </th>
-              <th scope="col" className="px-6 py-3">
+              <th scope="col" className="px-6 py-3 w-2/12">
                 電池残量
               </th>
-              <th scope="col" className="px-6 py-3">
+              <th scope="col" className="px-6 py-3 w-2/12">
                 通信状態
               </th>
             </tr>
@@ -87,7 +87,7 @@ export default function ContentList() {
                     {item.end_device_name}
                   </td>
                   <td className="px-6 py-4">
-                    <div className={`bg-gray-100 text-gray-800 text-center text-sm font-medium w-14 px-3 py-0.5 rounded-md font-semibold border border-stone-200
+                    <div className={`bg-gray-100 text-gray-800 text-center text-sm font-medium w-12 py-0.5 rounded-md font-semibold border border-stone-200
                       ${(item.gate_status_code === '1') ? "bg-gray-600 text-white" : "bg-pink-100 text-pink-800"}`}
                       title={ed_title}
                       >
