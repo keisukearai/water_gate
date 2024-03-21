@@ -83,7 +83,7 @@ export default function ContentList() {
                   <td className="pl-6 pr-2 py-4 font-medium whitespace-nowrap">
                     {item.end_device_gate_no}
                   </td>
-                  <td className="pl-6 pr-2 py-4">
+                  <td className="pl-6 py-4">
                     {item.end_device_name}
                   </td>
                   <td className="px-6 py-4">
