@@ -61,6 +61,9 @@ export default function ContentList() {
                 扉番号
               </th>
               <th scope="col" className="px-6 py-3">
+                扉名
+              </th>
+              <th scope="col" className="px-6 py-3">
                 ゲート状態
               </th>
               <th scope="col" className="px-6 py-3">
@@ -77,9 +80,12 @@ export default function ContentList() {
               let ed_title = `${item.send_kind} ${item.send_time}`;
               return (
                 <tr  key={item.id} className="bg-white border-b">
-                  <th className="px-6 py-4 font-medium whitespace-nowrap">
+                  <td className="px-6 py-4 font-medium whitespace-nowrap">
                     {item.end_device_gate_no}
-                  </th>
+                  </td>
+                  <td className="px-6 py-4">
+                    {item.end_device_name}
+                  </td>
                   <td className="px-6 py-4">
                     <div className={`bg-gray-100 text-gray-800 text-center text-sm font-medium w-14 px-3 py-0.5 rounded-md font-semibold border border-stone-200
                       ${(item.gate_status_code === '1') ? "bg-gray-600 text-white" : "bg-pink-100 text-pink-800"}`}
