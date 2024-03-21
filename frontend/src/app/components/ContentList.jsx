@@ -80,10 +80,10 @@ export default function ContentList() {
               let ed_title = `${item.send_kind} ${item.send_time}`;
               return (
                 <tr  key={item.id} className="bg-white border-b">
-                  <td className="px-6 py-4 font-medium whitespace-nowrap">
+                  <td className="pl-6 pr-2 py-4 font-medium whitespace-nowrap">
                     {item.end_device_gate_no}
                   </td>
-                  <td className="px-6 py-4">
+                  <td className="pl-6 pr-2 py-4">
                     {item.end_device_name}
                   </td>
                   <td className="px-6 py-4">
